@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "slices": [
+    {
+      "year": 2016,
+      "n": 118,
+      "m": 174,
+      "lambda2": 0.0699248414061,
+      "top_bridge_id": "synth-0347"
+    },
+    {
+      "year": 2017,
+      "n": 227,
+      "m": 559,
+      "lambda2": 0.129953461041,
+      "top_bridge_id": "synth-0565"
+    },
+    {
+      "year": 2018,
+      "n": 320,
+      "m": 1000,
+      "lambda2": 0.142936151467,
+      "top_bridge_id": "synth-0751"
+    },
+    {
+      "year": 2019,
+      "n": 413,
+      "m": 1592,
+      "lambda2": 0.176709743834,
+      "top_bridge_id": "synth-0282"
+    },
+    {
+      "year": 2020,
+      "n": 513,
+      "m": 2394,
+      "lambda2": 0.200263896788,
+      "top_bridge_id": "synth-0347"
+    },
+    {
+      "year": 2021,
+      "n": 614,
+      "m": 3383,
+      "lambda2": 0.207593698541,
+      "top_bridge_id": "synth-0305"
+    },
+    {
+      "year": 2022,
+      "n": 719,
+      "m": 4590,
+      "lambda2": 0.21375298487,
+      "top_bridge_id": "synth-0924"
+    },
+    {
+      "year": 2023,
+      "n": 811,
+      "m": 5846,
+      "lambda2": 0.222390484686,
+      "top_bridge_id": "synth-0921"
+    },
+    {
+      "year": 2024,
+      "n": 924,
+      "m": 7579,
+      "lambda2": 0.234053981032,
+      "top_bridge_id": "synth-0906"
+    },
+    {
+      "year": 2025,
+      "n": 928,
+      "m": 7777,
+      "lambda2": 0.239942728588,
+      "top_bridge_id": "synth-0906"
+    }
+  ]
+}

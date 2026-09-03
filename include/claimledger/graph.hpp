@@ -5,6 +5,7 @@
 #include <optional>
 #include <span>
 #include <string>
+#include <string_view>
 #include <unordered_map>
 #include <vector>
 
@@ -40,6 +41,18 @@ public:
     [[nodiscard]] std::vector<int> components() const;
 
     [[nodiscard]] bool is_symmetric() const;
+
+    /// Graph on V \ {v}: papers keep relative order; citations incident to v drop.
+    [[nodiscard]] Graph without_vertex(NodeId v) const;
+
+    /// Cumulative temporal slice: papers with year <= t, citations whose citing
+    /// year is <= t. Dangling endpoints (cited paper not yet in the slice) drop.
+    static Graph cumulative_at_year(const std::vector<Paper>& papers,
+                                    const std::vector<Citation>& citations, int year);
+
+    /// Induced subgraph on papers whose field is `field_a` or `field_b`.
+    /// Used for the two-field interdiction problem in PROBLEM.md.
+    [[nodiscard]] Graph induced_fields(std::string_view field_a, std::string_view field_b) const;
 
 private:
     std::vector<Paper> papers_;

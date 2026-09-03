@@ -1,7 +1,10 @@
 # ClaimLedger data schema
 
-All fixture identifiers are synthetic (`synth-NNNN`). They are not arXiv ids and
-do not name real papers.
+The **default** fixture identifiers are synthetic (`synth-NNNN`). They are
+not arXiv ids and do not name real papers.
+
+A second, optional fixture `data/fixtures/arxiv-slice/` holds **real
+public arXiv metadata** (see below). It is not the Pages default.
 
 ## `papers.csv`
 
@@ -61,12 +64,48 @@ Matches `cobol/copy/JOURNAL.cpy`:
 
 ## Atlas JSON (`out/*.json`, copied to `docs/data/`)
 
-- `embedding.json` — nodes with spectral coordinates `x` (raw) and `u` (row-normalized).
-- `bridges.json` — ranked spectral bridges plus the Fiedler field pair.
-- `graph_meta.json` — `n`, `m`, components, `λ₂`, category legend.
+Version field is `2`.
+
+- `embedding.json` — nodes with spectral coordinates `x` (raw), `u`
+  (row-normalized), and scalar `z` (third nontrivial coordinate).
+- `bridges.json` — ranked spectral bridges, Fiedler field pair, and
+  `delta_lambda2` from leave-one-out (or `null` if `--no-loo`).
+- `timeline.json` — cumulative year slices
+  `{year, n, m, lambda2, top_bridge_id}`.
+- `graph_meta.json` — `n`, `m`, components, `λ₂`, category legend, LOO counts.
 - `ledger.json` — trial balance and a journal sample for the drill-down panel.
 
 ## Tiny fixture
 
 `data/fixtures/tiny/` is a 10-node hand-planted two-clique + liaison graph used
-by unit tests. The liaison id is `synth-0007`.
+by unit tests. The liaison id is `synth-0007`. Leave-one-out on this graph
+is exhaustive (n < 64); the liaison has the largest `delta_lambda2`.
+
+## arXiv slice (real public metadata)
+
+`data/fixtures/arxiv-slice/` is a committed snapshot from
+`scripts/fetch_arxiv_slice.py`. It queries the
+[arXiv API](https://info.arxiv.org/help/api/user-manual.html) under the
+[API terms](https://info.arxiv.org/help/api/tou.html): identified
+User-Agent, ≥ 3 seconds between requests, a few dozen records only.
+
+Paper ids are real (`1706.03762`, `1412.6980`, …) and only appear if the
+API returned them. CI runs `--offline` and never hits the network.
+
+### These are not citation edges
+
+`citations.csv` in this directory keeps the pipeline column names
+(`citing,cited,year`) so `claimledger` runs unchanged, but the rows are
+an **author-coupling / cross-list graph**:
+
+1. shared author (normalized `lastname|first-initial`);
+2. different primary categories with nonempty category-set overlap;
+3. Atom `rel=related` links, when the feed supplies them.
+
+Each pair is emitted once, lexicographic order,
+`year = max(year_a, year_b)`. The COBOL ledger will still post DR/CR;
+read that as coupling mass, not a bibliographic citation. Details:
+`data/fixtures/arxiv-slice/SOURCE.md`.
+
+Do not treat this fixture as a citation graph and do not impersonate
+papers the API did not return.

@@ -1,0 +1,43 @@
+id,title,year,category,field,authors
+0907.1815,Frustratingly Easy Domain Adaptation,2009,cs.LG,cs,Hal Daumé
+1412.6980,Adam: A Method for Stochastic Optimization,2014,cs.LG,cs,Diederik P. Kingma; Jimmy Ba
+1502.03167,Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift,2015,cs.LG,cs,Sergey Ioffe; Christian Szegedy
+1509.06461,Deep Reinforcement Learning with Double Q-learning,2015,cs.LG,cs,Hado van Hasselt; Arthur Guez; David Silver
+1606.09470,Programming Patterns in Dataflow Matrix Machines and Generalized Recurrent Neural Nets,2016,cs.PL,cs,Michael Bukatin; Steve Matthews; Andrey Radul
+1706.02515,Self-Normalizing Neural Networks,2017,cs.LG,cs,Günter Klambauer; Thomas Unterthiner; Andreas Mayr; Sepp Hochreiter
+1706.03762,Attention Is All You Need,2017,cs.CL,cs,Ashish Vaswani; Noam Shazeer; Niki Parmar; Jakob Uszkoreit; Llion Jones; Aidan N. Gomez; Lukasz Kaiser; Illia Polosukhin
+1802.05957,Spectral Normalization for Generative Adversarial Networks,2018,cs.LG,cs,Takeru Miyato; Toshiki Kataoka; Masanori Koyama; Yuichi Yoshida
+1904.07969,DNN Architecture for High Performance Prediction on Natural Videos Loses Submodule's Ability to Learn Discrete-World Dataset,2019,cs.CV,cs,Lana Sinapayen; Atsushi Noda
+1904.07998,SynC: A Unified Framework for Generating Synthetic Population with Gaussian Copula,2019,cs.LG,cs,Colin Wan; Zheng Li; Alicia Guo; Yue Zhao
+1904.08034,People infer recursive visual concepts from just a few examples,2019,cs.LG,cs,Brenden M. Lake; Steven T. Piantadosi
+1904.08049,Neural Message Passing for Multi-Label Classification,2019,cs.LG,cs,Jack Lanchantin; Arshdeep Sekhon; Yanjun Qi
+1904.08050,Sparseout: Controlling Sparsity in Deep Networks,2019,cs.LG,cs,Najeeb Khan; Ian Stavness
+1904.12070,Optimal Bayesian Estimation for Random Dot Product Graphs,2019,math.ST,math,Fangzheng Xie; Yanxun Xu
+1904.12775,Exact Testing of Many Moment Inequalities Against Multiple Violations,2019,math.ST,math,Nick Koning; Paul Bekker
+1904.12891,Optimal Statistical Inference for Individualized Treatment Effects in High-dimensional Models,2019,stat.ME,stat,Tianxi Cai; Tony Cai; Zijian Guo
+1905.00206,On the excursion area of perturbed Gaussian fields,2019,math.PR,math,Elena Di Bernardino; Anne Estrade; Maurizia Rossi
+1905.01958,Text2Node: a Cross-Domain System for Mapping Arbitrary Phrases to a Taxonomy,2019,cs.CL,cs,Rohollah Soltani; Alexandre Tomberg
+1905.01973,Who wrote this book? A challenge for e-commerce,2019,cs.CL,cs,Béranger Dumont; Simona Maggio; Ghiles Sidi Said; Quoc-Tien Au
+1905.01991,A Content-Based Approach to Email Triage Action Prediction: Exploration and Evaluation,2019,cs.IR,cs,Sudipto Mukherjee; Ke Jiang
+1905.01998,A Persona-based Multi-turn Conversation Model in an Adversarial Learning Framework,2019,cs.CL,cs,Oluwatobi O. Olabiyi; Anish Khazane; Erik T. Mueller
+1905.02019,Conditioning LSTM Decoder and Bi-directional Attention Based Question Answering System,2019,cs.CL,cs,Heguang Liu
+1905.02618,Moderate deviations in a class of stable but nearly unstable processes,2019,math.ST,math,Frédéric Proïa
+1905.02796,Collaborative and Privacy-Preserving Machine Teaching via Consensus Optimization,2019,cs.LG,cs,Yufei Han; Yuzhe Ma; Christopher Gates; Kevin Roundy; Yun Shen
+1905.02845,Feature Selection and Feature Extraction in Pattern Analysis: A Literature Review,2019,cs.LG,cs,Benyamin Ghojogh; Maria N. Samad; Sayema Asif Mashhadi; Tania Kapoor; Wahab Ali; Fakhri Karray; Mark Crowley
+1905.02898,A Generative Model for Sampling High-Performance and Diverse Weights for Neural Networks,2019,stat.ML,stat,Lior Deutsch; Erik Nijkamp; Yu Yang
+1905.02941,Robust Federated Training via Collaborative Machine Teaching using Trusted Instances,2019,cs.LG,cs,Yufei Han; Xiangliang Zhang
+1905.03421,Adversarial Image Translation: Unrestricted Adversarial Examples in Face Recognition Systems,2019,cs.LG,cs,Kazuya Kakizaki; Kosuke Yoshida
+1905.03530,Double-calibration estimators accounting for under-coverage and nonresponse in socio-economic surveys,2019,math.ST,math,Maria Michela Dickson; Giuseppe Espa; Lorenzo Fattorini
+1906.00629,Computing Valid p-values for Image Segmentation by Selective Inference,2019,cs.CV,cs,Kosuke Tanizaki; Noriaki Hashimoto; Yu Inatsu; Hidekata Hontani; Ichiro Takeuchi
+1906.00723,Semiparametric Analysis of the Proportional Likelihood Ratio Model and Omnibus Estimation Procedure,2019,math.ST,math,Yair Goldberg; Malka Gorfine
+1906.00875,Asymptotic Properties of Neural Network Sieve Estimators,2019,math.ST,math,Xiaoxi Shen; Chang Jiang; Lyudmila Sakhanenko; Qing Lu
+1906.01139,On the number of variables to use in principal component regression,2019,math.ST,math,Ji Xu; Daniel Hsu
+1906.01547,Mixture of hidden Markov models for accelerometer data,2019,stat.ME,stat,Marie du Roy de Chaumaray; Matthieu Marbac; Fabien Navarro
+2005.11774,Cumulant methods in the estimation of response functions in time-invariant linear systems,2020,math.ST,math,Irina Blazhievska
+2005.13078,To update or not to update? Delayed Nonparametric Bandits with Randomized Allocation,2020,stat.ML,stat,Sakshi Arya; Yuhong Yang
+2006.00704,Uniform Convergence Rates for Maximum Likelihood Estimation under Two-Component Gaussian Mixture Models,2020,math.ST,math,Tudor Manole; Nhat Ho
+2006.04215,A Generalization of the Pearson Correlation to Riemannian Manifolds,2020,math.ST,math,Patrick Michl
+2006.04266,Sparse learning with CART,2020,stat.ML,stat,Jason M. Klusowski
+2012.11066,"Fairness, Welfare, and Equity in Personalized Pricing",2020,cs.LG,cs,Nathan Kallus; Angela Zhou
+2012.12056,Data Assimilation in the Latent Space of a Neural Network,2020,cs.LG,cs,Maddalena Amendola; Rossella Arcucci; Laetitia Mottet; Cesar Quilodran Casas; Shiwei Fan; Christopher Pain; Paul Linden; Yi-Ke Guo
+2012.13115,Upper Confidence Bounds for Combining Stochastic Bandits,2020,cs.LG,cs,Ashok Cutkosky; Abhimanyu Das; Manish Purohit

@@ -5,6 +5,7 @@
 #include "claimledger/io.hpp"
 #include "claimledger/laplacian.hpp"
 #include "claimledger/ledger.hpp"
+#include "claimledger/timeline.hpp"
 
 #include <algorithm>
 #include <filesystem>
@@ -32,16 +33,20 @@ struct Options {
     int bridges = 32;
     int lanczos_steps = 0;
     unsigned seed = 20260903;
+    bool leave_one_out = true;
+    int loo_candidates = 64;
+    bool timeline = true;
 };
 
 void usage() {
     std::cerr << "claimledger " << kVersion << " — spectral citation atlas + COBOL intellectual-debt ledger\n\n"
               << "Usage: claimledger [command] [options]\n\n"
               << "Commands:\n"
-              << "  run       build + embed + bridges + export (default)\n"
+              << "  run       build + embed + bridges + timeline + export (default)\n"
               << "  build     load corpus, construct CSR graph, write graph_meta stub\n"
               << "  embed     Laplacian + Lanczos embedding + spectral k-means\n"
-              << "  bridges   score spectral bridges\n"
+              << "  bridges   score spectral bridges (heuristic + optional leave-one-out)\n"
+              << "  timeline  cumulative year snapshots of λ2 and the top bridge\n"
               << "  export    write JSON + ledger files for the atlas\n\n"
               << "Options:\n"
               << "  --data DIR            corpus directory (papers.csv, citations.csv, categories.csv)\n"
@@ -55,6 +60,9 @@ void usage() {
               << "  --bridges N           top bridges to emit (default: 32)\n"
               << "  --lanczos-steps N     Lanczos Krylov dimension (default: auto)\n"
               << "  --seed N              RNG seed\n"
+              << "  --loo / --no-loo      leave-one-out Δλ2 (default: on)\n"
+              << "  --loo-candidates N    heuristic pre-filter, then LOO (default: 64)\n"
+              << "  --timeline / --no-timeline  cumulative year slices (default: on)\n"
               << "  --help\n";
 }
 
@@ -99,6 +107,16 @@ Options parse(int argc, char** argv) {
             o.lanczos_steps = std::stoi(require_arg(args, i));
         } else if (a == "--seed") {
             o.seed = static_cast<unsigned>(std::stoul(require_arg(args, i)));
+        } else if (a == "--loo") {
+            o.leave_one_out = true;
+        } else if (a == "--no-loo") {
+            o.leave_one_out = false;
+        } else if (a == "--loo-candidates") {
+            o.loo_candidates = std::stoi(require_arg(args, i));
+        } else if (a == "--timeline") {
+            o.timeline = true;
+        } else if (a == "--no-timeline") {
+            o.timeline = false;
         } else if (!a.empty() && a[0] != '-' && !cmd_set) {
             o.command = a;
             cmd_set = true;
@@ -130,11 +148,14 @@ int field_count(const std::vector<Paper>& papers) {
 }
 
 void write_outputs(const Options& o, const Graph& g, const Embedding& emb, const BridgeResult& br,
-                   const std::vector<Category>& cats) {
+                   const std::vector<Category>& cats, const Timeline* tl) {
     fs::create_directories(o.out);
     write_text_file((fs::path(o.out) / "embedding.json").string(), embedding_json(g, emb));
     write_text_file((fs::path(o.out) / "bridges.json").string(), bridges_json(br));
     write_text_file((fs::path(o.out) / "graph_meta.json").string(), graph_meta_json(g, emb, cats, br));
+    if (tl) {
+        write_text_file((fs::path(o.out) / "timeline.json").string(), timeline_json(*tl));
+    }
 
     auto journal = post_citations(g);
     auto tb = trial_balance(journal, g);
@@ -151,6 +172,9 @@ void write_outputs(const Options& o, const Graph& g, const Embedding& emb, const
         copyj("bridges.json");
         copyj("graph_meta.json");
         copyj("ledger.json");
+        if (tl) {
+            copyj("timeline.json");
+        }
     }
 }
 
@@ -170,6 +194,24 @@ int run(const Options& o) {
         write_text_file((fs::path(o.out) / "graph_meta.json").string(),
                         graph_meta_json(g, empty, corp.categories, br));
         std::cerr << "  wrote " << o.out << "/graph_meta.json\n";
+        return 0;
+    }
+
+    if (o.command == "timeline") {
+        TimelineOptions topt;
+        topt.seed = o.seed;
+        topt.lanczos_steps = o.lanczos_steps;
+        topt.k = std::min(o.k, 3);
+        auto tl = compute_timeline(g.papers(), g.citations(), topt);
+        fs::create_directories(o.out);
+        write_text_file((fs::path(o.out) / "timeline.json").string(), timeline_json(tl));
+        if (!o.docs.empty()) {
+            fs::create_directories(o.docs);
+            fs::copy_file(fs::path(o.out) / "timeline.json", fs::path(o.docs) / "timeline.json",
+                          fs::copy_options::overwrite_existing);
+        }
+        std::cerr << "  timeline slices=" << tl.slices.size() << " wrote " << o.out
+                  << "/timeline.json\n";
         return 0;
     }
 
@@ -195,12 +237,37 @@ int run(const Options& o) {
         return 0;
     }
 
-    auto br = detect_bridges(g, L, emb, o.bridges);
-    std::cerr << "  bridges=" << br.bridges.size();
+    BridgeOptions bopt;
+    bopt.top_k = o.bridges;
+    bopt.leave_one_out = o.leave_one_out;
+    bopt.loo_prefilter = o.loo_candidates;
+    bopt.seed = o.seed;
+    bopt.lanczos_steps = o.lanczos_steps;
+    auto br = detect_bridges(g, L, emb, bopt);
+    std::cerr << "  bridges=" << br.bridges.size() << " method=" << br.method;
     if (!br.bridges.empty()) {
         std::cerr << " top=" << br.bridges.front().id << " score=" << br.bridges.front().score;
+        if (br.bridges.front().has_delta_lambda2) {
+            std::cerr << " Δλ2=" << br.bridges.front().delta_lambda2;
+        }
     }
     std::cerr << "  pair=" << br.pair_a << "↔" << br.pair_b << '\n';
+
+    Timeline tl;
+    const Timeline* tlp = nullptr;
+    if (o.timeline || o.command == "timeline") {
+        TimelineOptions topt;
+        topt.seed = o.seed;
+        topt.lanczos_steps = o.lanczos_steps;
+        topt.k = std::min(o.k, 3);
+        tl = compute_timeline(g.papers(), g.citations(), topt);
+        tlp = &tl;
+        std::cerr << "  timeline slices=" << tl.slices.size();
+        if (!tl.slices.empty()) {
+            std::cerr << " years=" << tl.slices.front().year << ".." << tl.slices.back().year;
+        }
+        std::cerr << '\n';
+    }
 
     if (o.command == "bridges") {
         fs::create_directories(o.out);
@@ -209,7 +276,7 @@ int run(const Options& o) {
         return 0;
     }
 
-    write_outputs(o, g, emb, br, corp.categories);
+    write_outputs(o, g, emb, br, corp.categories, tlp);
     std::cerr << "  wrote artifacts under " << o.out;
     if (!o.docs.empty()) {
         std::cerr << " and " << o.docs;
@@ -224,7 +291,7 @@ int main(int argc, char** argv) {
     try {
         auto opt = parse(argc, argv);
         if (opt.command != "run" && opt.command != "build" && opt.command != "embed" &&
-            opt.command != "bridges" && opt.command != "export") {
+            opt.command != "bridges" && opt.command != "export" && opt.command != "timeline") {
             throw std::runtime_error("unknown command: " + opt.command);
         }
         return run(opt);

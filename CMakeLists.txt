@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(claimledger VERSION 0.1.0 LANGUAGES CXX)
+project(claimledger VERSION 0.2.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -23,6 +23,7 @@ set(CLAIMLEDGER_SOURCES
   src/json.cpp
   src/io.cpp
   src/ledger.cpp
+  src/timeline.cpp
 )
 
 add_library(claimledger_core STATIC ${CLAIMLEDGER_SOURCES})
@@ -64,6 +65,7 @@ if(BUILD_TESTING)
       tests/test_bridges.cpp
       tests/test_ledger.cpp
       tests/test_csv.cpp
+      tests/test_timeline.cpp
     )
     target_link_libraries(claimledger_tests PRIVATE claimledger_core GTest::gtest_main)
     target_compile_definitions(claimledger_tests PRIVATE

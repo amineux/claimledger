@@ -36,6 +36,36 @@ jobs:
             --dat out-tiny/ledger/journal.dat --trial out-tiny/ledger/trial_balance.csv
           test -s out-tiny/embedding.json
           test -s out-tiny/bridges.json
+          test -s out-tiny/timeline.json
+          python3 - << 'PY'
+          import json
+          br = json.load(open("out-tiny/bridges.json"))
+          assert br["method"] == "leave-one-out"
+          assert br["bridges"][0]["id"] == "synth-0007"
+          assert br["bridges"][0]["delta_lambda2"] is not None
+          tl = json.load(open("out-tiny/timeline.json"))
+          assert tl["slices"], "timeline slices missing"
+          assert all("lambda2" in s and "top_bridge_id" in s for s in tl["slices"])
+          emb = json.load(open("out-tiny/embedding.json"))
+          assert "z" in emb["nodes"][0]
+          print("tiny v2 contract ok", "Δλ2", br["bridges"][0]["delta_lambda2"])
+          PY
+
+      - name: Pipeline on arXiv slice (offline snapshot)
+        run: |
+          python3 scripts/fetch_arxiv_slice.py --out data/fixtures/arxiv-slice --offline
+          ./build/claimledger --data data/fixtures/arxiv-slice --out out-arxiv --k 4 --bridges 8
+          python3 scripts/verify_ledger.py --journal out-arxiv/ledger/journal.csv
+          test -s out-arxiv/timeline.json
+          python3 - << 'PY'
+          import json, csv
+          ids = [r["id"] for r in csv.DictReader(open("data/fixtures/arxiv-slice/papers.csv"))]
+          assert "1706.03762" in ids
+          assert not any(i.startswith("synth-") for i in ids)
+          br = json.load(open("out-arxiv/bridges.json"))
+          assert "delta_lambda2" in br["bridges"][0]
+          print("arxiv-slice ok", "n", len(ids), "top", br["bridges"][0]["id"])
+          PY
 
       - name: Compile COBOL (if cobc is present)
         run: |

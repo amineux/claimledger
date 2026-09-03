@@ -13,27 +13,30 @@ removal would pull two literatures apart.
 Let \(G_t = (V, E_t)\) be an undirected projection of a citation graph at time
 \(t\), with a field partition \(V = \bigsqcup_{c \in C} V_c\). For a pair of
 fields \(A, B \in C\) and a budget \(k\), find a vertex set \(S \subset V\),
-\(|S| \le k\), maximizing the **algebraic-connectivity gap** created by the
-deletion
+\(|S| \le k\), maximizing the **drop in algebraic connectivity**
 
 \[
-\Delta_2(A,B; S)
+\delta\lambda_2(A,B; S)
   \;=\;
-  \lambda_2\!\big(L_{\mathrm{sym}}(G_t[V_A \cup V_B] - S)\big)
+  \lambda_2\!\big(L_{\mathrm{sym}}(G_t[V_A \cup V_B])\big)
   \;-\;
-  \lambda_2\!\big(L_{\mathrm{sym}}(G_t[V_A \cup V_B])\big).
+  \lambda_2\!\big(L_{\mathrm{sym}}(G_t[V_A \cup V_B] - S)\big).
 \]
 
-In words: delete the \(k\) papers that most increase the Fiedler gap between
-\(A\) and \(B\) — the papers that were holding the two fields together.
+In words: delete the \(k\) papers that most *drop* the Fiedler gap of the
+two-field graph — the papers that were holding \(A\) and \(B\) together.
+(v1 wrote the difference the other way around while saying “maximize”;
+the English and the combinatorics agree on a drop. Exported `delta_lambda2`
+is \(\delta\lambda_2\).)
 
 This is a spectral interdiction / most-vital-nodes problem. The discrete
 version (most-vital-edges for algebraic connectivity, vertex separators of
-minimum order that raise \(\lambda_2\) above a threshold) is NP-hard by
-reduction from classical cut and interdiction problems
-(see Watanabe–Fiedler, Mosk-Aoyama, and the spectral-interdiction line of
-work). We do not pretend to solve it exactly. We ship a **spectral heuristic
-with a closed-form score, a planted-cut test, and a COBOL audit trail**.
+minimum order that raise a gap above a threshold) is NP-hard by reduction
+from classical cut and interdiction problems (Watanabe–Fiedler, Mosk-Aoyama,
+and the spectral-interdiction line of work). For \(k=1\) we now **solve it
+exactly on a shortlist**: rebuild \(L_{\mathrm{sym}}\) without \(v\),
+recompute \(\lambda_2\), report \(\delta\lambda_2(v)\). For \(k>1\) we still
+do not pretend to have an FPTAS.
 
 ## Graph and Laplacian
 
@@ -71,7 +74,8 @@ eigenvalue is \(\lambda_0 = 0\), with eigenvector \(D^{1/2}\mathbf{1}\) on each
 connected component. The next eigenvalue \(\lambda_2\) (we keep the classical
 Fiedler numbering, writing \(\lambda_2\) for the first nontrivial value even
 when the kernel has multiplicity one) is the **algebraic connectivity**. It is
-small precisely when a sparse cut exists.
+small precisely when a sparse cut exists. If the graph is disconnected, the
+kernel has multiplicity \(\ge 2\) and \(\lambda_2 = 0\).
 
 The associated unit eigenvector \(\varphi\) — the **Fiedler vector** — is a
 harmonic coordinate on the graph. Its sign partitions \(V\) into the two sides
@@ -82,25 +86,31 @@ Higher eigenvectors \(\varphi^{(2)}, \dots, \varphi^{(k)}\) embed each paper
 as a point in \(\mathbb{R}^{k}\). This is the Laplacian-eigenmaps / spectral
 clustering construction of Belkin–Niyogi and Ng–Jordan–Weiss. ClaimLedger
 stores both the raw coordinates and the row-normalized points
-\(u_i = x_i / \|x_i\|\) used for \(k\)-means.
+\(u_i = x_i / \|x_i\|\) used for \(k\)-means. The atlas uses the first two
+as a Fiedler plane and the first three (the third also exported as `z`)
+for the orbiting scatter.
 
-## Temporal caveat
+## Temporal slices
 
 \(G_t\) is a DAG in citation time: an edge \(u \to v\) exists only when
 \(\mathrm{year}(u) \ge \mathrm{year}(v)\). The undirected projection forgets
 that arrow, which is the right thing for *geometry* and the wrong thing for
-*accounting*. The COBOL ledger keeps the arrow (see below). A stricter
-temporal analysis would compute a sequence \(\lambda_2(G_t)\) and watch
-bridges appear and disappear; the shipped pipeline evaluates a single
-snapshot, which is already enough to make the Fiedler picture and the
-planted-cut test honest.
+*accounting*. The COBOL ledger keeps the arrow.
 
-## The heuristic (what we actually compute)
+v2 evaluates the sequence. For each distinct paper year \(t\),
+`claimledger timeline` (and `run` by default) builds the cumulative graph
+on papers with year \(\le t\) and citations with citing year \(\le t\),
+then records \(\{t, n, m, \lambda_2, \text{top heuristic bridge}\}\). That
+is one eigensolve per year — a decade of the 928-node corpus is cheap.
+Leave-one-out is *not* repeated on every slice; the expensive Δλ₂ lives
+on the final snapshot. The atlas slider restyles nodes that have not yet
+appeared and updates the stats strip from `timeline.json`.
 
-Exact maximization of \(\Delta_2(A,B;S)\) requires a Laplacian eigensolve per
-candidate set. For \(n \approx 10^3\) and \(k > 1\) that is already a
-combinatorial explosion. The first-order (leave-one-out) change in the
-Rayleigh quotient when vertex \(v\) and its incident edges are deleted is
+## The heuristic (pre-filter)
+
+Exact maximization of \(\delta\lambda_2(A,B;S)\) for \(|S|>1\) is still
+combinatorial. The first-order (leave-one-out) change in the Rayleigh
+quotient when vertex \(v\) and its incident edges are deleted is
 proportional to the **cross-field Dirichlet energy** of \(v\):
 
 \[
@@ -132,7 +142,7 @@ that happen to have one foreign neighbor:
 2. **Cut proximity.** \(1 / (1 + 8|\varphi_v|)\). Bridges of the global cut
    sit near \(\varphi = 0\).
 
-The shipped score is
+The shipped pre-filter score is
 
 \[
 \mathrm{bridge}(v)
@@ -145,13 +155,37 @@ The shipped score is
 
 where \(f_{\mathrm{cross}}\) is the fraction of neighbors in a foreign field.
 The two fields with the most negative / most positive mean Fiedler coordinate
-are reported as the pair \((A,B)\) whose gap the ranking is most responsible
-for.
+are the pair \((A,B)\) on which leave-one-out is evaluated.
 
-This is a polynomial-time heuristic: one sparse eigensolve plus a linear
-scan. It is *not* an FPTAS. It *is* exact on the planted fixture
-(two cliques, one liaison): the liaison is rank 1, which the unit test
-asserts.
+## Leave-one-out (what is new)
+
+For each candidate \(v\) in the shortlist:
+
+1. Restrict to \(G[V_A \cup V_B]\) (the Fiedler pair). Vertices outside the
+   pair cannot interdict \((A,B)\); their \(\delta\lambda_2\) is 0.
+2. Assemble \(L_{\mathrm{sym}}\) of that graph **without** \(v\) by a
+   **degree deflation**: subtract the deleted adjacency from neighbor
+   degrees and remap the remaining \(n-1\) indices. This is *not* a Kron
+   / Schur complement — Kron reduction would add a clique among the
+   neighbors of \(v\), which is a different graph. The deflated assembly
+   is checked, vertex-by-vertex on the tiny fixture, against a full
+   `Graph::without_vertex` rebuild.
+3. Recompute \(\lambda_2\) with the same Lanczos eigensolver.
+   Disconnected remainders have \(\lambda_2 = 0\) (kernel multiplicity
+   \(\ge 2\); values \(< 10^{-8}\) snap to zero).
+4. \(\delta\lambda_2(v) = \lambda_2(G[A\cup B]) - \lambda_2(G[A\cup B]-v)\).
+
+Default policy:
+
+| corpus | shortlist | LOO |
+|--------|-----------|-----|
+| tiny (n = 10) | all vertices | all |
+| 928-node fixture | heuristic top 64 | those 64 |
+| `--no-loo` | — | skip; emit the heuristic ranking |
+
+The emitted ranking is \(\delta\lambda_2\) descending, heuristic score as
+tie-break. On the 10-node planted-cut fixture the liaison `synth-0007`
+has the unique largest Δλ₂ (it is the only cut vertex of \(G[\mathrm{cs}\cup\mathrm{qbio}]\)).
 
 ## Complexity notes
 
@@ -161,8 +195,14 @@ asserts.
 | \(L_{\mathrm{sym}}\) assemble | \(O(n + m)\) |
 | Lanczos, \(s\) steps, full reorth. | \(O(s\, m + s^2 n + s^3)\)  (Jacobi on the \(s \times s\) Ritz matrix) |
 | \(k\)-means, \(t\) iters | \(O(t\, n\, k\, d)\) |
-| Bridge scan | \(O(n + m)\) |
-| Exact \(\arg\max_{|S|\le k} \Delta_2\) | exponential in \(k\); NP-hard |
+| Bridge scan (heuristic) | \(O(n + m)\) |
+| Degree-deflated \(L_{\mathrm{sym}}\) except \(v\) | \(O(n + m)\) |
+| Leave-one-out, \(P\) candidates | \(P \cdot O(s\, m + s^2 n + s^3)\) with \(P=\min(n,64)\) |
+| Timeline, \(T\) distinct years | \(T\) eigensolves + \(T\) heuristic scans |
+| Exact \(\arg\max_{|S|\le k} \delta\lambda_2\) for \(k>1\) | exponential in \(k\); NP-hard |
+
+The expensive term on the 928-node corpus is \(64\) small Lanczos runs, not
+the embedding. \(n \approx 10^3\), \(s = 64\), \(m \sim 10^4\) is laptop-seconds.
 
 The Lanczos implementation is self-contained (no Eigen). It builds a Krylov
 basis with double reorthogonalization (Daniel–Gragg–Kaufman–Stewart), solves
@@ -184,7 +224,7 @@ The trial balance of a closed ledger is identically zero: science does not
 create or destroy credit, it transfers it. A spectral bridge with a large
 *credit* balance is a paper the foreign field keeps citing; a bridge with a
 large *debit* balance is a paper that imported the foreign field. The atlas
-exposes both.
+exposes both, plus a DR/CR bar against field peers.
 
 The COBOL programs in `cobol/` are a second, independent implementation of
 these posting rules. When `cobc` is absent, `scripts/verify_ledger.py` and
@@ -197,6 +237,10 @@ fixed-width / CSV files.
 - `data/fixtures/{papers,citations,categories}.csv` — a 10-block stochastic
   block model with planted distant liaisons, generated by
   `scripts/generate_fixtures.py` (seed `20260903`). All ids are `synth-NNNN`.
+- `data/fixtures/arxiv-slice/` — 42 real arXiv records (including
+  `1706.03762`) committed from `scripts/fetch_arxiv_slice.py`. Edges are
+  shared-author / cross-list **coupling**, labeled in SCHEMA.md. CI never
+  hits the network (`--offline`).
 
 Run `cmake --build` and `ctest`, then `./build/claimledger --data data/fixtures --out out --docs docs/data`.
 The atlas in `docs/` is a pure static read of those JSON artifacts.

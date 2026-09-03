@@ -6,46 +6,80 @@
   <title>ClaimLedger — spectral citation atlas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/atlas.css" />
 </head>
 <body>
   <header class="mast">
     <div>
       <h1 class="wordmark">Claim<span>Ledger</span></h1>
-      <div class="tag">Normalized Laplacian of a citation graph. Fiedler bridges. COBOL trial balance of intellectual debt.</div>
+      <div class="tag">Leave-one-out spectral interdiction. Cumulative λ₂. A COBOL trial balance of intellectual debt.</div>
     </div>
     <div class="stats">
       <div>n <b id="stat-n">—</b></div>
       <div>m <b id="stat-m">—</b></div>
       <div>λ₂ <b id="stat-l2">—</b></div>
       <div>cut <b id="stat-pair">—</b></div>
+      <div>year <b id="stat-year">—</b></div>
     </div>
   </header>
 
   <main class="stage">
     <div class="hud">
       <canvas id="atlas"></canvas>
+      <div class="hover" id="hover" hidden></div>
       <div class="hud-bar">
-        <button id="btn-2d" class="active">2D Fiedler</button>
-        <button id="btn-3d">3D eigenspaces</button>
-        <button id="btn-bridges">bridges only</button>
+        <button type="button" id="btn-3d" class="active">3D orbit</button>
+        <button type="button" id="btn-2d">2D Fiedler</button>
+        <button type="button" id="btn-bridges">bridges</button>
+        <label class="search-wrap">
+          <span>/</span>
+          <input id="search" type="search" placeholder="paper id or title" autocomplete="off" spellcheck="false" />
+        </label>
       </div>
       <div class="legend" id="legend"></div>
+      <div class="timebox" id="timebox" hidden>
+        <label for="year">timeline</label>
+        <input id="year" type="range" min="0" max="0" value="0" />
+        <span id="year-label">—</span>
+        <span class="time-bridge" id="year-bridge"></span>
+      </div>
     </div>
     <aside class="side">
       <h2>Ledger</h2>
       <pre id="detail"></pre>
+      <div class="spark" id="spark" hidden>
+        <div class="spark-row"><span>DR</span><div class="bar dr"><i id="bar-dr"></i></div><span id="lab-dr">0</span></div>
+        <div class="spark-row"><span>CR</span><div class="bar cr"><i id="bar-cr"></i></div><span id="lab-cr">0</span></div>
+        <div class="spark-row"><span>NET</span><div class="bar net"><i id="bar-net"></i></div><span id="lab-net">0</span></div>
+        <div class="spark-peer" id="spark-peer"></div>
+      </div>
       <h2>Spectral bridges</h2>
-      <p class="meta">Ranked by cross-field Dirichlet energy × participation entropy × Fiedler-cut proximity. The combinatorial form is NP-hard; this is the polynomial heuristic in PROBLEM.md.</p>
+      <p class="meta" id="bridge-meta">Ranked by true leave-one-out Δλ₂ after a Rayleigh × participation pre-filter. Deleting a bridge drops algebraic connectivity.</p>
       <ul class="bridge-list" id="bridges"></ul>
     </aside>
   </main>
 
   <footer class="foot">
-    <span>synthetic corpus · ids synth-NNNN · no forged arXiv papers</span>
+    <span>default corpus synth-NNNN · optional real slice data/fixtures/arxiv-slice · no forged papers</span>
     <span><a href="https://github.com/amineux/claimledger">source</a> · <a href="https://amineux.github.io/claimledger/">amineux.github.io/claimledger</a></span>
   </footer>
+
+  <div class="sheet" id="sheet" hidden>
+    <div class="sheet-card">
+      <h3>cheatsheet</h3>
+      <dl>
+        <dt>/</dt><dd>focus search</dt>
+        <dt>[ ]</dt><dd>cycle bridges</dt>
+        <dt>?</dt><dd>toggle this sheet</dt>
+        <dt>2 / 3</dt><dd>Fiedler plane / 3D orbit</dt>
+        <dt>b</dt><dd>bridges only</dt>
+        <dt>esc</dt><dd>clear search / close</dt>
+      </dl>
+      <p>Drag to orbit. Scroll the year slider to dim papers that did not exist yet.</p>
+    </div>
+  </div>
+
   <script src="js/atlas.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 #include "claimledger/bridges.hpp"
 
+#include "claimledger/laplacian.hpp"
+
 #include <algorithm>
 #include <cmath>
 #include <sstream>
@@ -41,9 +43,27 @@ std::string field_of(const Paper& p) {
 
 }  // namespace
 
+double leave_one_out_delta(const Graph& g, NodeId v, double lambda2_full, unsigned seed,
+                           int lanczos_steps) {
+    if (g.n() <= 1) {
+        return 0.0;
+    }
+    auto Lexc = normalized_laplacian_except(g, v);
+    const double lam = algebraic_connectivity(Lexc, seed, lanczos_steps);
+    return lambda2_full - lam;
+}
+
 BridgeResult detect_bridges(const Graph& g, const SparseMatrix& L, const Embedding& emb, int top_k) {
+    BridgeOptions opt;
+    opt.top_k = top_k;
+    return detect_bridges(g, L, emb, opt);
+}
+
+BridgeResult detect_bridges(const Graph& g, const SparseMatrix& L, const Embedding& emb,
+                            const BridgeOptions& opt) {
     (void)L;
     BridgeResult out;
+    out.prefilter = "rayleigh-participation";
     const int n = g.n();
     if (n == 0 || emb.nodes.empty()) {
         return out;
@@ -159,7 +179,59 @@ BridgeResult detect_bridges(const Graph& g, const SparseMatrix& L, const Embeddi
         return a.id < b.id;
     });
 
-    const int keep = std::min(top_k, static_cast<int>(scored.size()));
+    if (opt.leave_one_out && !scored.empty()) {
+        const int pre = opt.loo_prefilter > 0 ? opt.loo_prefilter : static_cast<int>(scored.size());
+        const int cand = std::min(pre, static_cast<int>(scored.size()));
+        out.loo_candidates = cand;
+
+        // Interdiction is defined on G[A ∪ B] (PROBLEM.md). Fall back to the
+        // full graph when the Fiedler pair is missing or collapses to one field.
+        const Graph* host = &g;
+        Graph pair_g;
+        double lam_full = emb.algebraic_connectivity;
+        if (!out.pair_a.empty() && !out.pair_b.empty() && out.pair_a != out.pair_b) {
+            pair_g = g.induced_fields(out.pair_a, out.pair_b);
+            if (pair_g.n() >= 3 && pair_g.n() < g.n()) {
+                host = &pair_g;
+                lam_full = algebraic_connectivity(normalized_laplacian(pair_g), opt.seed, opt.lanczos_steps);
+            }
+        }
+
+        for (int i = 0; i < cand; ++i) {
+            auto& rec = scored[static_cast<std::size_t>(i)];
+            auto idx = host->index_of(rec.id);
+            if (!idx.has_value()) {
+                rec.delta_lambda2 = 0.0;
+            } else {
+                rec.delta_lambda2 =
+                    leave_one_out_delta(*host, *idx, lam_full, opt.seed, opt.lanczos_steps);
+            }
+            rec.has_delta_lambda2 = true;
+            rec.loo = true;
+            std::ostringstream ex;
+            ex << rec.explanation << " Δλ2=" << rec.delta_lambda2;
+            rec.explanation = ex.str();
+        }
+        std::sort(scored.begin(), scored.begin() + cand, [](const BridgeRecord& a, const BridgeRecord& b) {
+            if (a.has_delta_lambda2 != b.has_delta_lambda2) {
+                return a.has_delta_lambda2;
+            }
+            if (a.has_delta_lambda2 && b.has_delta_lambda2 &&
+                std::abs(a.delta_lambda2 - b.delta_lambda2) > 1e-8) {
+                return a.delta_lambda2 > b.delta_lambda2;
+            }
+            if (a.score != b.score) {
+                return a.score > b.score;
+            }
+            return a.id < b.id;
+        });
+        out.method = "leave-one-out";
+        out.loo_evaluated = cand;
+    } else {
+        out.method = "rayleigh-participation";
+    }
+
+    const int keep = std::min(opt.top_k, static_cast<int>(scored.size()));
     out.bridges.reserve(static_cast<std::size_t>(keep));
     for (int i = 0; i < keep; ++i) {
         scored[static_cast<std::size_t>(i)].rank = i + 1;
