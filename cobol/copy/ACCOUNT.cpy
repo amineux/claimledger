@@ -1,0 +1,7 @@
+      *> In-memory account used by TRIAL-BALANCE and REPORT.
+       01  ACCOUNT-REC.
+           05  ACCT-ID          PIC X(16).
+           05  ACCT-DEBIT       PIC 9(12) VALUE 0.
+           05  ACCT-CREDIT      PIC 9(12) VALUE 0.
+           05  ACCT-NET         PIC S9(12) VALUE 0.
+           05  ACCT-USED        PIC X VALUE "N".

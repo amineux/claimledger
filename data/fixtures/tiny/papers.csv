@@ -1,0 +1,11 @@
+id,title,year,category,field,authors
+synth-0001,Synthetic clique note on empirical risk,2018,cs.LG,cs,Ada Lovelace
+synth-0002,Synthetic bounds for stochastic oracles,2018,cs.LG,cs,Alan Turing
+synth-0003,Synthetic generalization in shallow nets,2019,cs.LG,cs,Grace Hopper
+synth-0004,Synthetic replay of gradient noise,2019,cs.LG,cs,John von Neumann
+synth-0005,Synthetic spike-train statistics,2018,q-bio.NC,qbio,Santiago Ramon
+synth-0006,Synthetic calcium traces and graphs,2019,q-bio.NC,qbio,Camillo Golgi
+synth-0007,Synthetic liaison: spectra of neural credit,2020,cs.LG,cs,Emmy Noether
+synth-0008,Synthetic connectome motifs,2020,q-bio.NC,qbio,Rita Levi
+synth-0009,Synthetic concentration for estimators,2019,math.ST,math,Andrey Kolmogorov
+synth-0010,Synthetic high-dimensional means,2020,math.ST,math,Harald Cramer

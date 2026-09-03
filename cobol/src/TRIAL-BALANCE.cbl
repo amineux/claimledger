@@ -1,0 +1,155 @@
+>>SOURCE FORMAT FREE
+IDENTIFICATION DIVISION.
+PROGRAM-ID. TRIAL-BALANCE.
+AUTHOR. CLAIMLEDGER.
+REMARKS.
+    Fold journal.dat into per-paper debit/credit/net. The trial balance
+    of a closed citation ledger is identically zero: every debit has a
+    matching credit.
+
+ENVIRONMENT DIVISION.
+INPUT-OUTPUT SECTION.
+FILE-CONTROL.
+    SELECT JOURNAL-FILE ASSIGN TO "journal.dat"
+        ORGANIZATION IS LINE SEQUENTIAL
+        FILE STATUS IS JRNL-STATUS.
+    SELECT BALANCE-FILE ASSIGN TO "trial_balance.csv"
+        ORGANIZATION IS LINE SEQUENTIAL
+        FILE STATUS IS BAL-STATUS.
+
+DATA DIVISION.
+FILE SECTION.
+FD  JOURNAL-FILE.
+01  JOURNAL-LINE              PIC X(96).
+
+FD  BALANCE-FILE.
+01  BAL-LINE                  PIC X(128).
+
+WORKING-STORAGE SECTION.
+COPY JOURNAL.
+COPY ACCOUNT.
+
+01  JRNL-STATUS               PIC XX VALUE "00".
+01  BAL-STATUS                PIC XX VALUE "00".
+01  WS-EOF                    PIC X VALUE "N".
+01  WS-MAX                    PIC 9(4) VALUE 2000.
+01  WS-COUNT                  PIC 9(4) VALUE 0.
+01  WS-I                      PIC 9(4).
+01  WS-FOUND-I                PIC 9(4).
+01  WS-FOUND                  PIC X.
+01  WS-TOTAL-D                PIC 9(14) VALUE 0.
+01  WS-TOTAL-C                PIC 9(14) VALUE 0.
+01  WS-NET                    PIC S9(14) VALUE 0.
+01  WS-AMT                    PIC 9(10).
+
+01  ACCOUNT-TABLE.
+    05  ACCT-ENTRY OCCURS 2000 TIMES.
+        10  T-ID              PIC X(16).
+        10  T-DEBIT           PIC 9(12).
+        10  T-CREDIT          PIC 9(12).
+        10  T-USED            PIC X.
+
+PROCEDURE DIVISION.
+MAIN.
+    PERFORM VARYING WS-I FROM 1 BY 1 UNTIL WS-I > WS-MAX
+        MOVE SPACES TO T-ID(WS-I)
+        MOVE 0 TO T-DEBIT(WS-I)
+        MOVE 0 TO T-CREDIT(WS-I)
+        MOVE "N" TO T-USED(WS-I)
+    END-PERFORM
+    OPEN INPUT JOURNAL-FILE
+    IF JRNL-STATUS NOT = "00"
+        DISPLAY "TRIAL-BALANCE: cannot open journal.dat status=" JRNL-STATUS
+        STOP RUN
+    END-IF
+    PERFORM UNTIL WS-EOF = "Y"
+        READ JOURNAL-FILE
+            AT END
+                MOVE "Y" TO WS-EOF
+            NOT AT END
+                MOVE JOURNAL-LINE TO JOURNAL-REC
+                PERFORM POST-LINE
+        END-READ
+    END-PERFORM
+    CLOSE JOURNAL-FILE
+    OPEN OUTPUT BALANCE-FILE
+    MOVE "account,debit_cents,credit_cents,net_cents" TO BAL-LINE
+    WRITE BAL-LINE
+    PERFORM VARYING WS-I FROM 1 BY 1 UNTIL WS-I > WS-MAX
+        IF T-USED(WS-I) = "Y"
+            COMPUTE WS-NET = T-CREDIT(WS-I) - T-DEBIT(WS-I)
+            ADD T-DEBIT(WS-I) TO WS-TOTAL-D
+            ADD T-CREDIT(WS-I) TO WS-TOTAL-C
+            MOVE SPACES TO BAL-LINE
+            STRING
+                FUNCTION TRIM(T-ID(WS-I)) DELIMITED BY SIZE
+                "," DELIMITED BY SIZE
+                T-DEBIT(WS-I) DELIMITED BY SIZE
+                "," DELIMITED BY SIZE
+                T-CREDIT(WS-I) DELIMITED BY SIZE
+                "," DELIMITED BY SIZE
+                WS-NET DELIMITED BY SIZE
+                INTO BAL-LINE
+            END-STRING
+            WRITE BAL-LINE
+        END-IF
+    END-PERFORM
+    COMPUTE WS-NET = WS-TOTAL-C - WS-TOTAL-D
+    MOVE SPACES TO BAL-LINE
+    STRING
+        "TOTAL," DELIMITED BY SIZE
+        WS-TOTAL-D DELIMITED BY SIZE
+        "," DELIMITED BY SIZE
+        WS-TOTAL-C DELIMITED BY SIZE
+        "," DELIMITED BY SIZE
+        WS-NET DELIMITED BY SIZE
+        INTO BAL-LINE
+    END-STRING
+    WRITE BAL-LINE
+    CLOSE BALANCE-FILE
+    IF WS-TOTAL-D = WS-TOTAL-C
+        DISPLAY "TRIAL-BALANCE: BALANCED  debits=" WS-TOTAL-D
+            " credits=" WS-TOTAL-C
+    ELSE
+        DISPLAY "TRIAL-BALANCE: OUT OF BALANCE  debits=" WS-TOTAL-D
+            " credits=" WS-TOTAL-C
+    END-IF
+    STOP RUN.
+
+POST-LINE.
+    MOVE AMOUNT-CENTS TO WS-AMT
+    MOVE DEBIT-ACCT TO ACCT-ID
+    PERFORM FIND-OR-ADD
+    ADD WS-AMT TO T-DEBIT(WS-I)
+    MOVE CREDIT-ACCT TO ACCT-ID
+    PERFORM FIND-OR-ADD
+    ADD WS-AMT TO T-CREDIT(WS-I).
+
+FIND-OR-ADD.
+    MOVE "N" TO WS-FOUND
+    MOVE 0 TO WS-FOUND-I
+    PERFORM VARYING WS-I FROM 1 BY 1 UNTIL WS-I > WS-MAX OR WS-FOUND = "Y"
+        IF T-USED(WS-I) = "Y" AND T-ID(WS-I) = ACCT-ID
+            MOVE "Y" TO WS-FOUND
+            MOVE WS-I TO WS-FOUND-I
+        END-IF
+    END-PERFORM
+    IF WS-FOUND = "Y"
+        MOVE WS-FOUND-I TO WS-I
+        EXIT PARAGRAPH
+    END-IF
+    PERFORM VARYING WS-I FROM 1 BY 1 UNTIL WS-I > WS-MAX OR WS-FOUND = "Y"
+        IF T-USED(WS-I) = "N"
+            MOVE ACCT-ID TO T-ID(WS-I)
+            MOVE 0 TO T-DEBIT(WS-I)
+            MOVE 0 TO T-CREDIT(WS-I)
+            MOVE "Y" TO T-USED(WS-I)
+            MOVE "Y" TO WS-FOUND
+            MOVE WS-I TO WS-FOUND-I
+        END-IF
+    END-PERFORM
+    IF WS-FOUND = "N"
+        DISPLAY "TRIAL-BALANCE: account table overflow"
+        STOP RUN
+    END-IF
+    MOVE WS-FOUND-I TO WS-I.

@@ -1,0 +1,929 @@
+id,title,year,category,field,authors
+synth-0001,Synthetic high-dimensional ensembles and alignment (cs.LG),2023,cs.LG,cs,Shiing-Shen Chern; Dorothy Vaughan
+synth-0002,Synthetic non-asymptotic ensembles and identifiability (cs.LG),2023,cs.LG,cs,Lotfi Zadeh; Grace Hopper; Maryam Mirzakhani
+synth-0003,Synthetic coarse-grained oracles and inference (cs.LG),2019,cs.LG,cs,Andrey Kolmogorov; Emmy Noether
+synth-0004,Synthetic high-dimensional ensembles and alignment (cs.LG),2017,cs.LG,cs,Sofia Kovalevskaya; Claude Shannon
+synth-0005,Synthetic non-asymptotic ensembles and stability (cs.LG),2016,cs.LG,cs,Katherine Johnson; Sofia Kovalevskaya; Dorothy Vaughan
+synth-0006,Synthetic measure-theoretic credit and generalization (cs.LG),2021,cs.LG,cs,Lise Meitner
+synth-0007,Synthetic measure-theoretic partitions and identifiability (cs.LG),2018,cs.LG,cs,Claude Shannon; Barbara Liskov; Katherine Johnson
+synth-0008,Synthetic non-asymptotic traces and synchrony (cs.LG),2019,cs.LG,cs,Emmy Noether; Frances Allen; Sofia Kovalevskaya
+synth-0009,Synthetic non-asymptotic credit and synchrony (cs.LG),2021,cs.LG,cs,Barbara Liskov; Maryam Mirzakhani; Shiing-Shen Chern
+synth-0010,Synthetic equivariant ensembles and mixing (cs.LG),2019,cs.LG,cs,Subrahmanyan Chandrasekhar; Benoît Mandelbrot; Kiyosi Itô
+synth-0011,Synthetic variational lattices and alignment (cs.LG),2018,cs.LG,cs,Barbara Liskov
+synth-0012,Synthetic equivariant kernels and identifiability (cs.LG),2022,cs.LG,cs,Shiing-Shen Chern
+synth-0013,Synthetic synthetic resolvents and synchrony (cs.LG),2017,cs.LG,cs,Grace Hopper; Katherine Johnson; Emmy Noether
+synth-0014,Synthetic synthetic currents and renormalization (cs.LG),2016,cs.LG,cs,Frances Allen; Grace Hopper; Andrey Kolmogorov
+synth-0015,Synthetic spectral resolvents and renormalization (cs.LG),2018,cs.LG,cs,Lise Meitner; Claude Shannon
+synth-0016,Synthetic coarse-grained oracles and generalization (cs.LG),2020,cs.LG,cs,Subrahmanyan Chandrasekhar; Claude Shannon; Shiing-Shen Chern
+synth-0017,Synthetic coarse-grained lattices and identifiability (cs.LG),2017,cs.LG,cs,Shiing-Shen Chern; Maryam Mirzakhani
+synth-0018,Synthetic variational occupancy and stability (cs.LG),2018,cs.LG,cs,Harald Cramér
+synth-0019,Synthetic variational credit and generalization (cs.LG),2024,cs.LG,cs,Andrey Kolmogorov; Emmy Noether; Shiing-Shen Chern
+synth-0020,Synthetic information-limited kernels and identifiability (cs.LG),2020,cs.LG,cs,Grace Hopper; Claude Shannon; Lotfi Zadeh
+synth-0021,Synthetic measure-theoretic resolvents and renormalization (cs.LG),2023,cs.LG,cs,Ada Lovelace; Sofia Kovalevskaya
+synth-0022,Synthetic synthetic currents and transport (cs.LG),2021,cs.LG,cs,Barbara Liskov; Claude Shannon
+synth-0023,Synthetic equivariant kernels and generalization (cs.LG),2018,cs.LG,cs,Benoît Mandelbrot; Shiing-Shen Chern
+synth-0024,Synthetic information-limited credit and sparsity (cs.LG),2022,cs.LG,cs,Ada Lovelace; Shiing-Shen Chern; Barbara Liskov
+synth-0025,Synthetic dissipative ensembles and alignment (cs.LG),2021,cs.LG,cs,Katherine Johnson; Grace Hopper; Subrahmanyan Chandrasekhar
+synth-0026,Synthetic high-dimensional flows and sparsity (cs.LG),2022,cs.LG,cs,Grace Hopper; Benoît Mandelbrot
+synth-0027,Synthetic non-asymptotic resolvents and stability (cs.LG),2019,cs.LG,cs,Sofia Kovalevskaya
+synth-0028,Synthetic dissipative partitions and inference (cs.LG),2023,cs.LG,cs,Emmy Noether; Subrahmanyan Chandrasekhar; Ada Lovelace
+synth-0029,Synthetic spectral credit and alignment (cs.LG),2016,cs.LG,cs,Subrahmanyan Chandrasekhar
+synth-0030,Synthetic coarse-grained traces and mixing (cs.LG),2018,cs.LG,cs,Chien-Shiung Wu; Sofia Kovalevskaya
+synth-0031,Synthetic equivariant resolvents and alignment (cs.LG),2024,cs.LG,cs,Claude Shannon
+synth-0032,Synthetic equivariant ensembles and sparsity (cs.LG),2020,cs.LG,cs,Grace Hopper; Harald Cramér; Kiyosi Itô
+synth-0033,Synthetic coarse-grained credit and alignment (cs.LG),2024,cs.LG,cs,Grace Hopper
+synth-0034,Synthetic dissipative credit and renormalization (cs.LG),2021,cs.LG,cs,Benoît Mandelbrot
+synth-0035,Synthetic spectral occupancy and synchrony (cs.LG),2019,cs.LG,cs,Ada Lovelace; Katherine Johnson; Harald Cramér
+synth-0036,Synthetic high-dimensional oracles and inference (cs.LG),2018,cs.LG,cs,Chien-Shiung Wu
+synth-0037,Synthetic spectral sheaves and synchrony (cs.LG),2017,cs.LG,cs,Grace Hopper; Alan Turing; Subrahmanyan Chandrasekhar
+synth-0038,Synthetic non-asymptotic oracles and generalization (cs.LG),2016,cs.LG,cs,Dorothy Vaughan; Maryam Mirzakhani
+synth-0039,Synthetic synthetic kernels and synchrony (cs.LG),2021,cs.LG,cs,Chien-Shiung Wu; Katherine Johnson
+synth-0040,Synthetic spectral occupancy and synchrony (cs.LG),2024,cs.LG,cs,Kiyosi Itô
+synth-0041,Synthetic variational currents and identifiability (cs.LG),2017,cs.LG,cs,Sofia Kovalevskaya
+synth-0042,Synthetic non-asymptotic credit and mixing (cs.LG),2020,cs.LG,cs,Alan Turing; Sofia Kovalevskaya; Lise Meitner
+synth-0043,Synthetic spectral sheaves and alignment (cs.LG),2024,cs.LG,cs,Andrey Kolmogorov; Emmy Noether
+synth-0044,Synthetic high-dimensional ensembles and renormalization (cs.LG),2023,cs.LG,cs,Emmy Noether; Lise Meitner
+synth-0045,Synthetic variational ensembles and mixing (cs.LG),2019,cs.LG,cs,Lotfi Zadeh; Ada Lovelace; Sofia Kovalevskaya
+synth-0046,Synthetic dissipative flows and identifiability (cs.LG),2022,cs.LG,cs,Maryam Mirzakhani
+synth-0047,Synthetic spectral occupancy and transport (cs.LG),2023,cs.LG,cs,Lotfi Zadeh; Subrahmanyan Chandrasekhar
+synth-0048,Synthetic high-dimensional traces and sparsity (cs.LG),2022,cs.LG,cs,Lise Meitner; Ada Lovelace
+synth-0049,Synthetic high-dimensional partitions and alignment (cs.LG),2022,cs.LG,cs,Emmy Noether
+synth-0050,Synthetic dissipative kernels and alignment (cs.LG),2016,cs.LG,cs,Sofia Kovalevskaya; Subrahmanyan Chandrasekhar; Lise Meitner
+synth-0051,Synthetic measure-theoretic partitions and mixing (cs.LG),2020,cs.LG,cs,Shiing-Shen Chern; Katherine Johnson; Alan Turing
+synth-0052,Synthetic non-asymptotic occupancy and mixing (cs.LG),2022,cs.LG,cs,Barbara Liskov; Dorothy Vaughan; Alan Turing
+synth-0053,Synthetic measure-theoretic ensembles and identifiability (cs.LG),2024,cs.LG,cs,Andrey Kolmogorov; Claude Shannon
+synth-0054,Synthetic dissipative kernels and identifiability (cs.LG),2024,cs.LG,cs,Subrahmanyan Chandrasekhar; Emmy Noether; Maryam Mirzakhani
+synth-0055,Synthetic high-dimensional traces and sparsity (cs.LG),2020,cs.LG,cs,Harald Cramér
+synth-0056,Synthetic spectral lattices and inference (cs.LG),2023,cs.LG,cs,Grace Hopper
+synth-0057,Synthetic measure-theoretic occupancy and sparsity (cs.LG),2018,cs.LG,cs,Sofia Kovalevskaya
+synth-0058,Synthetic high-dimensional currents and transport (cs.LG),2017,cs.LG,cs,Benoît Mandelbrot
+synth-0059,Synthetic spectral credit and inference (cs.LG),2022,cs.LG,cs,Emmy Noether; Chien-Shiung Wu
+synth-0060,Synthetic information-limited partitions and alignment (cs.LG),2024,cs.LG,cs,Kiyosi Itô; Frances Allen
+synth-0061,Synthetic spectral lattices and inference (cs.LG),2021,cs.LG,cs,Harald Cramér; Chien-Shiung Wu; Barbara Liskov
+synth-0062,Synthetic equivariant currents and sparsity (cs.LG),2022,cs.LG,cs,Kiyosi Itô
+synth-0063,Synthetic information-limited lattices and inference (cs.LG),2018,cs.LG,cs,Frances Allen; Grace Hopper; Benoît Mandelbrot
+synth-0064,Synthetic high-dimensional traces and synchrony (cs.LG),2021,cs.LG,cs,Frances Allen; Dorothy Vaughan; Chien-Shiung Wu
+synth-0065,Synthetic coarse-grained traces and renormalization (cs.LG),2017,cs.LG,cs,Shiing-Shen Chern
+synth-0066,Synthetic non-asymptotic traces and stability (cs.LG),2023,cs.LG,cs,Katherine Johnson; Frances Allen
+synth-0067,Synthetic equivariant traces and generalization (cs.LG),2016,cs.LG,cs,Dorothy Vaughan
+synth-0068,Synthetic equivariant sheaves and renormalization (cs.LG),2017,cs.LG,cs,Maryam Mirzakhani
+synth-0069,Synthetic information-limited partitions and renormalization (cs.LG),2021,cs.LG,cs,Frances Allen; Harald Cramér; Dorothy Vaughan
+synth-0070,Synthetic synthetic resolvents and transport (cs.LG),2024,cs.LG,cs,Maryam Mirzakhani
+synth-0071,Synthetic variational partitions and inference (cs.LG),2020,cs.LG,cs,Emmy Noether; Subrahmanyan Chandrasekhar; Katherine Johnson
+synth-0072,Synthetic spectral oracles and identifiability (cs.LG),2017,cs.LG,cs,Chien-Shiung Wu
+synth-0073,Synthetic information-limited resolvents and identifiability (cs.LG),2022,cs.LG,cs,Frances Allen; Dorothy Vaughan; Alan Turing
+synth-0074,Synthetic coarse-grained occupancy and identifiability (cs.LG),2019,cs.LG,cs,Sofia Kovalevskaya; Lise Meitner; Dorothy Vaughan
+synth-0075,Synthetic equivariant lattices and synchrony (cs.LG),2017,cs.LG,cs,Maryam Mirzakhani; Subrahmanyan Chandrasekhar; Shiing-Shen Chern
+synth-0076,Synthetic spectral flows and renormalization (cs.LG),2020,cs.LG,cs,Chien-Shiung Wu; Subrahmanyan Chandrasekhar
+synth-0077,Synthetic spectral credit and identifiability (cs.LG),2021,cs.LG,cs,Sofia Kovalevskaya
+synth-0078,Synthetic coarse-grained credit and synchrony (cs.LG),2020,cs.LG,cs,Chien-Shiung Wu
+synth-0079,Synthetic spectral lattices and mixing (cs.LG),2024,cs.LG,cs,Benoît Mandelbrot; Claude Shannon; Emmy Noether
+synth-0080,Synthetic dissipative ensembles and generalization (cs.LG),2022,cs.LG,cs,Lise Meitner; Ada Lovelace
+synth-0081,Synthetic spectral ensembles and inference (cs.LG),2021,cs.LG,cs,Lise Meitner; Dorothy Vaughan
+synth-0082,Synthetic high-dimensional ensembles and identifiability (cs.LG),2016,cs.LG,cs,Grace Hopper; Claude Shannon; Barbara Liskov
+synth-0083,Synthetic synthetic ensembles and alignment (cs.LG),2023,cs.LG,cs,Lise Meitner; Lotfi Zadeh; Sofia Kovalevskaya
+synth-0084,Synthetic variational occupancy and stability (cs.LG),2017,cs.LG,cs,Lise Meitner; Grace Hopper; Maryam Mirzakhani
+synth-0085,Synthetic variational partitions and inference (cs.LG),2020,cs.LG,cs,Frances Allen
+synth-0086,Synthetic synthetic oracles and renormalization (cs.LG),2018,cs.LG,cs,Kiyosi Itô; Frances Allen
+synth-0087,Synthetic non-asymptotic lattices and generalization (cs.LG),2018,cs.LG,cs,Grace Hopper; Lise Meitner
+synth-0088,Synthetic measure-theoretic currents and mixing (cs.LG),2024,cs.LG,cs,Barbara Liskov; Dorothy Vaughan; Frances Allen
+synth-0089,Synthetic dissipative currents and generalization (cs.LG),2022,cs.LG,cs,Barbara Liskov
+synth-0090,Synthetic coarse-grained occupancy and synchrony (cs.LG),2024,cs.LG,cs,Subrahmanyan Chandrasekhar
+synth-0091,Synthetic spectral kernels and generalization (cs.AI),2018,cs.AI,cs,Harald Cramér
+synth-0092,Synthetic synthetic credit and synchrony (cs.AI),2020,cs.AI,cs,Claude Shannon; Maryam Mirzakhani
+synth-0093,Synthetic variational oracles and inference (cs.AI),2021,cs.AI,cs,Barbara Liskov
+synth-0094,Synthetic spectral credit and generalization (cs.AI),2022,cs.AI,cs,Barbara Liskov
+synth-0095,Synthetic equivariant oracles and identifiability (cs.AI),2018,cs.AI,cs,Dorothy Vaughan; Chien-Shiung Wu; Sofia Kovalevskaya
+synth-0096,Synthetic high-dimensional credit and renormalization (cs.AI),2016,cs.AI,cs,Barbara Liskov
+synth-0097,Synthetic dissipative kernels and stability (cs.AI),2024,cs.AI,cs,Shiing-Shen Chern
+synth-0098,Synthetic variational resolvents and generalization (cs.AI),2020,cs.AI,cs,Dorothy Vaughan; Shiing-Shen Chern
+synth-0099,Synthetic measure-theoretic flows and alignment (cs.AI),2016,cs.AI,cs,Katherine Johnson
+synth-0100,Synthetic measure-theoretic sheaves and generalization (cs.AI),2017,cs.AI,cs,Barbara Liskov
+synth-0101,Synthetic information-limited currents and sparsity (cs.AI),2017,cs.AI,cs,Harald Cramér
+synth-0102,Synthetic variational flows and mixing (cs.AI),2017,cs.AI,cs,Alan Turing
+synth-0103,Synthetic spectral credit and stability (cs.AI),2019,cs.AI,cs,Emmy Noether
+synth-0104,Synthetic equivariant resolvents and transport (cs.AI),2017,cs.AI,cs,Sofia Kovalevskaya
+synth-0105,Synthetic variational sheaves and sparsity (cs.AI),2020,cs.AI,cs,Shiing-Shen Chern; Katherine Johnson
+synth-0106,Synthetic high-dimensional lattices and alignment (cs.AI),2022,cs.AI,cs,Ada Lovelace; Katherine Johnson; Kiyosi Itô
+synth-0107,Synthetic dissipative partitions and generalization (cs.AI),2024,cs.AI,cs,Maryam Mirzakhani; Andrey Kolmogorov
+synth-0108,Synthetic spectral sheaves and generalization (cs.AI),2019,cs.AI,cs,Harald Cramér; Sofia Kovalevskaya; Dorothy Vaughan
+synth-0109,Synthetic spectral oracles and sparsity (cs.AI),2017,cs.AI,cs,Kiyosi Itô; Emmy Noether
+synth-0110,Synthetic coarse-grained kernels and alignment (cs.AI),2019,cs.AI,cs,Claude Shannon
+synth-0111,Synthetic information-limited ensembles and generalization (cs.AI),2023,cs.AI,cs,Harald Cramér
+synth-0112,Synthetic information-limited resolvents and generalization (cs.AI),2016,cs.AI,cs,Barbara Liskov; Harald Cramér; Dorothy Vaughan
+synth-0113,Synthetic non-asymptotic occupancy and inference (cs.AI),2019,cs.AI,cs,Benoît Mandelbrot; Chien-Shiung Wu
+synth-0114,Synthetic spectral partitions and mixing (cs.AI),2017,cs.AI,cs,Barbara Liskov
+synth-0115,Synthetic measure-theoretic kernels and alignment (cs.AI),2023,cs.AI,cs,Ada Lovelace; Lotfi Zadeh
+synth-0116,Synthetic coarse-grained occupancy and inference (cs.AI),2023,cs.AI,cs,Kiyosi Itô
+synth-0117,Synthetic synthetic occupancy and identifiability (cs.AI),2024,cs.AI,cs,Kiyosi Itô; Frances Allen
+synth-0118,Synthetic equivariant traces and stability (cs.AI),2021,cs.AI,cs,Andrey Kolmogorov
+synth-0119,Synthetic coarse-grained occupancy and generalization (cs.AI),2023,cs.AI,cs,Katherine Johnson
+synth-0120,Synthetic measure-theoretic currents and identifiability (cs.AI),2018,cs.AI,cs,Claude Shannon; Sofia Kovalevskaya
+synth-0121,Synthetic high-dimensional sheaves and mixing (cs.AI),2021,cs.AI,cs,Lise Meitner; Subrahmanyan Chandrasekhar; Maryam Mirzakhani
+synth-0122,Synthetic synthetic sheaves and inference (cs.AI),2023,cs.AI,cs,Harald Cramér; Maryam Mirzakhani; Benoît Mandelbrot
+synth-0123,Synthetic spectral kernels and transport (cs.AI),2021,cs.AI,cs,Dorothy Vaughan; Ada Lovelace; Sofia Kovalevskaya
+synth-0124,Synthetic non-asymptotic credit and identifiability (cs.AI),2016,cs.AI,cs,Grace Hopper
+synth-0125,Synthetic dissipative currents and sparsity (cs.AI),2022,cs.AI,cs,Emmy Noether; Harald Cramér; Chien-Shiung Wu
+synth-0126,Synthetic spectral occupancy and alignment (cs.AI),2024,cs.AI,cs,Ada Lovelace
+synth-0127,Synthetic measure-theoretic sheaves and inference (cs.AI),2023,cs.AI,cs,Shiing-Shen Chern
+synth-0128,Synthetic non-asymptotic partitions and synchrony (cs.AI),2021,cs.AI,cs,Harald Cramér; Dorothy Vaughan
+synth-0129,Synthetic coarse-grained sheaves and mixing (cs.AI),2017,cs.AI,cs,Frances Allen; Emmy Noether
+synth-0130,Synthetic high-dimensional sheaves and transport (cs.AI),2017,cs.AI,cs,Maryam Mirzakhani; Frances Allen; Grace Hopper
+synth-0131,Synthetic measure-theoretic ensembles and stability (cs.AI),2024,cs.AI,cs,Kiyosi Itô
+synth-0132,Synthetic measure-theoretic lattices and identifiability (cs.AI),2020,cs.AI,cs,Lotfi Zadeh; Alan Turing
+synth-0133,Synthetic synthetic sheaves and generalization (cs.AI),2021,cs.AI,cs,Benoît Mandelbrot
+synth-0134,Synthetic variational sheaves and transport (cs.AI),2018,cs.AI,cs,Grace Hopper; Maryam Mirzakhani; Frances Allen
+synth-0135,Synthetic equivariant oracles and renormalization (cs.AI),2016,cs.AI,cs,Claude Shannon
+synth-0136,Synthetic dissipative ensembles and synchrony (cs.AI),2020,cs.AI,cs,Sofia Kovalevskaya
+synth-0137,Synthetic information-limited oracles and inference (cs.AI),2017,cs.AI,cs,Frances Allen
+synth-0138,Synthetic information-limited traces and generalization (cs.AI),2018,cs.AI,cs,Lise Meitner; Harald Cramér; Benoît Mandelbrot
+synth-0139,Synthetic coarse-grained credit and synchrony (cs.AI),2023,cs.AI,cs,Maryam Mirzakhani; Katherine Johnson
+synth-0140,Synthetic measure-theoretic kernels and transport (cs.AI),2023,cs.AI,cs,Subrahmanyan Chandrasekhar; Andrey Kolmogorov; Dorothy Vaughan
+synth-0141,Synthetic measure-theoretic resolvents and sparsity (cs.AI),2018,cs.AI,cs,Harald Cramér; Ada Lovelace
+synth-0142,Synthetic measure-theoretic sheaves and transport (cs.AI),2017,cs.AI,cs,Maryam Mirzakhani
+synth-0143,Synthetic information-limited currents and identifiability (cs.AI),2023,cs.AI,cs,Lotfi Zadeh
+synth-0144,Synthetic high-dimensional oracles and synchrony (cs.AI),2020,cs.AI,cs,Alan Turing
+synth-0145,Synthetic non-asymptotic partitions and mixing (cs.AI),2021,cs.AI,cs,Emmy Noether; Dorothy Vaughan; Lise Meitner
+synth-0146,Synthetic spectral partitions and generalization (cs.AI),2024,cs.AI,cs,Lotfi Zadeh; Kiyosi Itô; Emmy Noether
+synth-0147,Synthetic synthetic partitions and stability (cs.AI),2022,cs.AI,cs,Subrahmanyan Chandrasekhar; Claude Shannon
+synth-0148,Synthetic dissipative ensembles and stability (cs.AI),2019,cs.AI,cs,Shiing-Shen Chern; Lise Meitner; Alan Turing
+synth-0149,Synthetic variational ensembles and synchrony (cs.AI),2022,cs.AI,cs,Barbara Liskov; Shiing-Shen Chern
+synth-0150,Synthetic information-limited sheaves and mixing (cs.AI),2021,cs.AI,cs,Frances Allen
+synth-0151,Synthetic spectral traces and renormalization (cs.AI),2022,cs.AI,cs,Kiyosi Itô
+synth-0152,Synthetic synthetic occupancy and transport (cs.AI),2023,cs.AI,cs,Lise Meitner; Andrey Kolmogorov; Katherine Johnson
+synth-0153,Synthetic information-limited partitions and stability (cs.AI),2024,cs.AI,cs,Benoît Mandelbrot; Frances Allen
+synth-0154,Synthetic high-dimensional credit and stability (cs.AI),2018,cs.AI,cs,Shiing-Shen Chern
+synth-0155,Synthetic equivariant currents and inference (cs.AI),2020,cs.AI,cs,Harald Cramér
+synth-0156,Synthetic spectral kernels and identifiability (cs.AI),2016,cs.AI,cs,Katherine Johnson; Kiyosi Itô
+synth-0157,Synthetic dissipative currents and identifiability (cs.AI),2020,cs.AI,cs,Kiyosi Itô
+synth-0158,Synthetic coarse-grained lattices and identifiability (cs.AI),2022,cs.AI,cs,Sofia Kovalevskaya; Subrahmanyan Chandrasekhar
+synth-0159,Synthetic equivariant sheaves and mixing (cs.AI),2022,cs.AI,cs,Harald Cramér
+synth-0160,Synthetic variational resolvents and stability (cs.AI),2022,cs.AI,cs,Alan Turing; Barbara Liskov
+synth-0161,Synthetic synthetic credit and inference (cs.AI),2017,cs.AI,cs,Grace Hopper; Frances Allen
+synth-0162,Synthetic spectral kernels and alignment (cs.AI),2017,cs.AI,cs,Subrahmanyan Chandrasekhar; Ada Lovelace; Sofia Kovalevskaya
+synth-0163,Synthetic high-dimensional flows and transport (cs.AI),2022,cs.AI,cs,Sofia Kovalevskaya; Claude Shannon
+synth-0164,Synthetic dissipative kernels and stability (cs.AI),2024,cs.AI,cs,Ada Lovelace; Grace Hopper
+synth-0165,Synthetic synthetic ensembles and renormalization (cs.AI),2017,cs.AI,cs,Lise Meitner
+synth-0166,Synthetic measure-theoretic traces and identifiability (cs.AI),2019,cs.AI,cs,Lotfi Zadeh; Grace Hopper; Alan Turing
+synth-0167,Synthetic non-asymptotic credit and sparsity (cs.AI),2020,cs.AI,cs,Lise Meitner; Emmy Noether
+synth-0168,Synthetic spectral traces and generalization (cs.AI),2017,cs.AI,cs,Andrey Kolmogorov
+synth-0169,Synthetic non-asymptotic traces and synchrony (cs.AI),2024,cs.AI,cs,Grace Hopper; Barbara Liskov
+synth-0170,Synthetic measure-theoretic lattices and alignment (cs.AI),2017,cs.AI,cs,Shiing-Shen Chern; Andrey Kolmogorov
+synth-0171,Synthetic non-asymptotic partitions and mixing (cs.AI),2022,cs.AI,cs,Lotfi Zadeh; Harald Cramér; Katherine Johnson
+synth-0172,Synthetic measure-theoretic flows and stability (cs.AI),2019,cs.AI,cs,Shiing-Shen Chern
+synth-0173,Synthetic spectral credit and stability (cs.AI),2019,cs.AI,cs,Subrahmanyan Chandrasekhar; Claude Shannon
+synth-0174,Synthetic high-dimensional oracles and generalization (cs.AI),2024,cs.AI,cs,Subrahmanyan Chandrasekhar
+synth-0175,Synthetic dissipative partitions and identifiability (cs.AI),2023,cs.AI,cs,Chien-Shiung Wu; Kiyosi Itô; Maryam Mirzakhani
+synth-0176,Synthetic information-limited credit and synchrony (cs.AI),2017,cs.AI,cs,Katherine Johnson
+synth-0177,Synthetic variational credit and sparsity (cs.AI),2018,cs.AI,cs,Claude Shannon; Kiyosi Itô
+synth-0178,Synthetic information-limited credit and stability (cs.AI),2016,cs.AI,cs,Ada Lovelace; Shiing-Shen Chern
+synth-0179,Synthetic high-dimensional sheaves and sparsity (cs.AI),2023,cs.AI,cs,Katherine Johnson; Lotfi Zadeh
+synth-0180,Synthetic synthetic ensembles and sparsity (cs.AI),2017,cs.AI,cs,Grace Hopper; Katherine Johnson
+synth-0181,Synthetic coarse-grained traces and transport (cs.CL),2022,cs.CL,cs,Andrey Kolmogorov
+synth-0182,Synthetic coarse-grained partitions and synchrony (cs.CL),2022,cs.CL,cs,Emmy Noether
+synth-0183,Synthetic measure-theoretic sheaves and mixing (cs.CL),2018,cs.CL,cs,Ada Lovelace; Shiing-Shen Chern; Emmy Noether
+synth-0184,Synthetic coarse-grained resolvents and synchrony (cs.CL),2019,cs.CL,cs,Harald Cramér; Kiyosi Itô; Dorothy Vaughan
+synth-0185,Synthetic non-asymptotic ensembles and generalization (cs.CL),2023,cs.CL,cs,Ada Lovelace; Lise Meitner
+synth-0186,Synthetic equivariant lattices and inference (cs.CL),2020,cs.CL,cs,Lise Meitner
+synth-0187,Synthetic dissipative kernels and identifiability (cs.CL),2019,cs.CL,cs,Dorothy Vaughan; Shiing-Shen Chern
+synth-0188,Synthetic high-dimensional credit and mixing (cs.CL),2018,cs.CL,cs,Kiyosi Itô
+synth-0189,Synthetic coarse-grained lattices and generalization (cs.CL),2017,cs.CL,cs,Frances Allen; Maryam Mirzakhani
+synth-0190,Synthetic variational credit and transport (cs.CL),2017,cs.CL,cs,Grace Hopper; Katherine Johnson
+synth-0191,Synthetic high-dimensional flows and stability (cs.CL),2019,cs.CL,cs,Katherine Johnson
+synth-0192,Synthetic equivariant ensembles and inference (cs.CL),2021,cs.CL,cs,Lise Meitner; Sofia Kovalevskaya; Kiyosi Itô
+synth-0193,Synthetic equivariant occupancy and synchrony (cs.CL),2023,cs.CL,cs,Frances Allen; Benoît Mandelbrot; Grace Hopper
+synth-0194,Synthetic synthetic currents and alignment (cs.CL),2020,cs.CL,cs,Lise Meitner
+synth-0195,Synthetic equivariant lattices and sparsity (cs.CL),2019,cs.CL,cs,Ada Lovelace; Sofia Kovalevskaya
+synth-0196,Synthetic variational sheaves and transport (cs.CL),2019,cs.CL,cs,Barbara Liskov; Subrahmanyan Chandrasekhar; Frances Allen
+synth-0197,Synthetic equivariant traces and renormalization (cs.CL),2016,cs.CL,cs,Katherine Johnson
+synth-0198,Synthetic measure-theoretic resolvents and generalization (cs.CL),2018,cs.CL,cs,Andrey Kolmogorov
+synth-0199,Synthetic synthetic ensembles and renormalization (cs.CL),2022,cs.CL,cs,Chien-Shiung Wu; Kiyosi Itô
+synth-0200,Synthetic information-limited lattices and sparsity (cs.CL),2024,cs.CL,cs,Ada Lovelace
+synth-0201,Synthetic synthetic resolvents and transport (cs.CL),2017,cs.CL,cs,Dorothy Vaughan
+synth-0202,Synthetic information-limited traces and transport (cs.CL),2019,cs.CL,cs,Chien-Shiung Wu
+synth-0203,Synthetic high-dimensional credit and identifiability (cs.CL),2020,cs.CL,cs,Frances Allen; Chien-Shiung Wu; Katherine Johnson
+synth-0204,Synthetic information-limited credit and sparsity (cs.CL),2021,cs.CL,cs,Maryam Mirzakhani; Ada Lovelace; Subrahmanyan Chandrasekhar
+synth-0205,Synthetic synthetic lattices and identifiability (cs.CL),2016,cs.CL,cs,Grace Hopper; Barbara Liskov
+synth-0206,Synthetic variational partitions and synchrony (cs.CL),2016,cs.CL,cs,Shiing-Shen Chern; Harald Cramér
+synth-0207,Synthetic non-asymptotic lattices and generalization (cs.CL),2018,cs.CL,cs,Emmy Noether
+synth-0208,Synthetic synthetic resolvents and identifiability (cs.CL),2018,cs.CL,cs,Lise Meitner; Claude Shannon; Ada Lovelace
+synth-0209,Synthetic high-dimensional flows and renormalization (cs.CL),2016,cs.CL,cs,Ada Lovelace; Lise Meitner
+synth-0210,Synthetic dissipative kernels and mixing (cs.CL),2024,cs.CL,cs,Lise Meitner; Shiing-Shen Chern
+synth-0211,Synthetic high-dimensional kernels and inference (cs.CL),2024,cs.CL,cs,Barbara Liskov; Benoît Mandelbrot; Shiing-Shen Chern
+synth-0212,Synthetic spectral occupancy and sparsity (cs.CL),2024,cs.CL,cs,Dorothy Vaughan; Alan Turing
+synth-0213,Synthetic measure-theoretic resolvents and synchrony (cs.CL),2016,cs.CL,cs,Dorothy Vaughan; Grace Hopper
+synth-0214,Synthetic variational lattices and inference (cs.CL),2018,cs.CL,cs,Subrahmanyan Chandrasekhar; Chien-Shiung Wu
+synth-0215,Synthetic measure-theoretic ensembles and generalization (cs.CL),2018,cs.CL,cs,Barbara Liskov; Lise Meitner
+synth-0216,Synthetic high-dimensional currents and sparsity (cs.CL),2016,cs.CL,cs,Lise Meitner; Ada Lovelace; Lotfi Zadeh
+synth-0217,Synthetic dissipative resolvents and identifiability (cs.CL),2023,cs.CL,cs,Claude Shannon; Kiyosi Itô; Lise Meitner
+synth-0218,Synthetic spectral resolvents and transport (cs.CL),2019,cs.CL,cs,Maryam Mirzakhani; Dorothy Vaughan
+synth-0219,Synthetic information-limited credit and renormalization (cs.CL),2019,cs.CL,cs,Lise Meitner; Benoît Mandelbrot; Frances Allen
+synth-0220,Synthetic high-dimensional partitions and renormalization (cs.CL),2018,cs.CL,cs,Sofia Kovalevskaya; Maryam Mirzakhani
+synth-0221,Synthetic coarse-grained sheaves and inference (cs.CL),2022,cs.CL,cs,Lise Meitner
+synth-0222,Synthetic spectral credit and alignment (cs.CL),2018,cs.CL,cs,Maryam Mirzakhani; Claude Shannon; Benoît Mandelbrot
+synth-0223,Synthetic dissipative sheaves and alignment (cs.CL),2016,cs.CL,cs,Sofia Kovalevskaya
+synth-0224,Synthetic high-dimensional kernels and renormalization (cs.CL),2019,cs.CL,cs,Emmy Noether; Frances Allen
+synth-0225,Synthetic non-asymptotic partitions and generalization (cs.CL),2024,cs.CL,cs,Maryam Mirzakhani
+synth-0226,Synthetic variational traces and stability (cs.CL),2016,cs.CL,cs,Harald Cramér
+synth-0227,Synthetic equivariant occupancy and inference (cs.CL),2016,cs.CL,cs,Shiing-Shen Chern
+synth-0228,Synthetic high-dimensional lattices and alignment (cs.CL),2017,cs.CL,cs,Claude Shannon
+synth-0229,Synthetic synthetic occupancy and identifiability (cs.CL),2022,cs.CL,cs,Grace Hopper
+synth-0230,Synthetic synthetic flows and generalization (cs.CL),2016,cs.CL,cs,Barbara Liskov
+synth-0231,Synthetic information-limited credit and synchrony (cs.CL),2017,cs.CL,cs,Emmy Noether; Kiyosi Itô
+synth-0232,Synthetic spectral kernels and sparsity (cs.CL),2024,cs.CL,cs,Lise Meitner
+synth-0233,Synthetic synthetic credit and stability (cs.CL),2018,cs.CL,cs,Kiyosi Itô; Ada Lovelace
+synth-0234,Synthetic equivariant resolvents and identifiability (cs.CL),2019,cs.CL,cs,Barbara Liskov; Lise Meitner; Frances Allen
+synth-0235,Synthetic information-limited occupancy and stability (cs.CL),2021,cs.CL,cs,Benoît Mandelbrot
+synth-0236,Synthetic measure-theoretic lattices and sparsity (cs.CL),2024,cs.CL,cs,Barbara Liskov; Claude Shannon
+synth-0237,Synthetic equivariant sheaves and stability (cs.CL),2021,cs.CL,cs,Lotfi Zadeh; Ada Lovelace; Andrey Kolmogorov
+synth-0238,Synthetic information-limited occupancy and synchrony (cs.CL),2022,cs.CL,cs,Dorothy Vaughan
+synth-0239,Synthetic spectral lattices and inference (cs.CL),2022,cs.CL,cs,Frances Allen
+synth-0240,Synthetic dissipative kernels and synchrony (cs.CL),2018,cs.CL,cs,Harald Cramér; Alan Turing
+synth-0241,Synthetic variational oracles and generalization (cs.CL),2020,cs.CL,cs,Shiing-Shen Chern; Sofia Kovalevskaya
+synth-0242,Synthetic measure-theoretic sheaves and inference (cs.CL),2022,cs.CL,cs,Ada Lovelace; Grace Hopper
+synth-0243,Synthetic dissipative currents and synchrony (cs.CL),2024,cs.CL,cs,Maryam Mirzakhani; Lotfi Zadeh
+synth-0244,Synthetic spectral sheaves and alignment (cs.CL),2017,cs.CL,cs,Lotfi Zadeh
+synth-0245,Synthetic high-dimensional credit and alignment (cs.CL),2018,cs.CL,cs,Katherine Johnson
+synth-0246,Synthetic high-dimensional ensembles and identifiability (cs.CL),2017,cs.CL,cs,Frances Allen
+synth-0247,Synthetic equivariant lattices and generalization (cs.CL),2016,cs.CL,cs,Maryam Mirzakhani; Alan Turing; Lise Meitner
+synth-0248,Synthetic high-dimensional traces and inference (cs.CL),2023,cs.CL,cs,Barbara Liskov
+synth-0249,Synthetic dissipative partitions and alignment (cs.CL),2024,cs.CL,cs,Katherine Johnson; Barbara Liskov; Chien-Shiung Wu
+synth-0250,Synthetic measure-theoretic traces and stability (cs.CL),2017,cs.CL,cs,Lise Meitner
+synth-0251,Synthetic coarse-grained occupancy and sparsity (cs.CL),2020,cs.CL,cs,Harald Cramér; Benoît Mandelbrot; Katherine Johnson
+synth-0252,Synthetic variational lattices and stability (cs.CL),2022,cs.CL,cs,Andrey Kolmogorov; Dorothy Vaughan
+synth-0253,Synthetic variational resolvents and sparsity (cs.CL),2021,cs.CL,cs,Kiyosi Itô
+synth-0254,Synthetic measure-theoretic traces and identifiability (cs.CL),2016,cs.CL,cs,Chien-Shiung Wu; Maryam Mirzakhani
+synth-0255,Synthetic coarse-grained flows and inference (cs.CL),2019,cs.CL,cs,Ada Lovelace
+synth-0256,Synthetic synthetic traces and inference (cs.CL),2024,cs.CL,cs,Katherine Johnson; Shiing-Shen Chern
+synth-0257,Synthetic dissipative resolvents and identifiability (cs.CL),2018,cs.CL,cs,Barbara Liskov
+synth-0258,Synthetic non-asymptotic currents and alignment (cs.CL),2022,cs.CL,cs,Maryam Mirzakhani
+synth-0259,Synthetic variational partitions and stability (cs.CL),2021,cs.CL,cs,Chien-Shiung Wu; Ada Lovelace
+synth-0260,Synthetic variational lattices and transport (cs.CL),2021,cs.CL,cs,Sofia Kovalevskaya
+synth-0261,Synthetic equivariant oracles and stability (cs.CL),2018,cs.CL,cs,Benoît Mandelbrot
+synth-0262,Synthetic coarse-grained traces and identifiability (cs.CL),2020,cs.CL,cs,Lotfi Zadeh; Ada Lovelace; Grace Hopper
+synth-0263,Synthetic high-dimensional partitions and renormalization (cs.CL),2017,cs.CL,cs,Barbara Liskov; Andrey Kolmogorov; Subrahmanyan Chandrasekhar
+synth-0264,Synthetic measure-theoretic lattices and sparsity (cs.CL),2024,cs.CL,cs,Lise Meitner; Ada Lovelace
+synth-0265,Synthetic information-limited partitions and transport (cs.CL),2016,cs.CL,cs,Emmy Noether
+synth-0266,Synthetic spectral traces and mixing (cs.CL),2024,cs.CL,cs,Dorothy Vaughan; Claude Shannon
+synth-0267,Synthetic dissipative flows and identifiability (cs.CL),2019,cs.CL,cs,Kiyosi Itô; Chien-Shiung Wu
+synth-0268,Synthetic equivariant oracles and identifiability (cs.CL),2022,cs.CL,cs,Chien-Shiung Wu; Katherine Johnson; Shiing-Shen Chern
+synth-0269,Synthetic synthetic currents and generalization (cs.CL),2017,cs.CL,cs,Katherine Johnson; Emmy Noether
+synth-0270,Synthetic variational credit and identifiability (cs.CL),2022,cs.CL,cs,Andrey Kolmogorov; Shiing-Shen Chern
+synth-0271,Synthetic synthetic traces and renormalization (stat.ML),2023,stat.ML,stat,Barbara Liskov; Emmy Noether
+synth-0272,Synthetic synthetic ensembles and inference (stat.ML),2021,stat.ML,stat,Emmy Noether
+synth-0273,Synthetic coarse-grained lattices and synchrony (stat.ML),2022,stat.ML,stat,Shiing-Shen Chern
+synth-0274,Synthetic dissipative oracles and transport (stat.ML),2017,stat.ML,stat,Lotfi Zadeh
+synth-0275,Synthetic synthetic resolvents and mixing (stat.ML),2024,stat.ML,stat,Andrey Kolmogorov
+synth-0276,Synthetic coarse-grained kernels and alignment (stat.ML),2016,stat.ML,stat,Alan Turing; Ada Lovelace; Harald Cramér
+synth-0277,Synthetic measure-theoretic partitions and alignment (stat.ML),2020,stat.ML,stat,Harald Cramér; Benoît Mandelbrot
+synth-0278,Synthetic spectral credit and stability (stat.ML),2023,stat.ML,stat,Claude Shannon; Lotfi Zadeh; Andrey Kolmogorov
+synth-0279,Synthetic measure-theoretic oracles and identifiability (stat.ML),2022,stat.ML,stat,Harald Cramér
+synth-0280,Synthetic high-dimensional traces and generalization (stat.ML),2016,stat.ML,stat,Dorothy Vaughan; Subrahmanyan Chandrasekhar; Claude Shannon
+synth-0281,Synthetic variational credit and stability (stat.ML),2023,stat.ML,stat,Katherine Johnson; Maryam Mirzakhani
+synth-0282,Synthetic spectral traces and stability (stat.ML),2019,stat.ML,stat,Maryam Mirzakhani
+synth-0283,Synthetic equivariant lattices and renormalization (stat.ML),2016,stat.ML,stat,Kiyosi Itô; Grace Hopper
+synth-0284,Synthetic synthetic kernels and renormalization (stat.ML),2017,stat.ML,stat,Kiyosi Itô
+synth-0285,Synthetic equivariant currents and generalization (stat.ML),2020,stat.ML,stat,Frances Allen; Maryam Mirzakhani; Kiyosi Itô
+synth-0286,Synthetic measure-theoretic ensembles and mixing (stat.ML),2016,stat.ML,stat,Alan Turing; Harald Cramér
+synth-0287,Synthetic non-asymptotic flows and identifiability (stat.ML),2016,stat.ML,stat,Sofia Kovalevskaya; Dorothy Vaughan; Claude Shannon
+synth-0288,Synthetic information-limited ensembles and alignment (stat.ML),2019,stat.ML,stat,Kiyosi Itô; Dorothy Vaughan; Frances Allen
+synth-0289,Synthetic dissipative partitions and renormalization (stat.ML),2016,stat.ML,stat,Harald Cramér
+synth-0290,Synthetic measure-theoretic lattices and inference (stat.ML),2024,stat.ML,stat,Harald Cramér; Shiing-Shen Chern; Andrey Kolmogorov
+synth-0291,Synthetic high-dimensional ensembles and stability (stat.ML),2024,stat.ML,stat,Claude Shannon; Shiing-Shen Chern; Dorothy Vaughan
+synth-0292,Synthetic equivariant partitions and sparsity (stat.ML),2023,stat.ML,stat,Emmy Noether; Subrahmanyan Chandrasekhar; Barbara Liskov
+synth-0293,Synthetic information-limited partitions and sparsity (stat.ML),2023,stat.ML,stat,Lotfi Zadeh; Katherine Johnson
+synth-0294,Synthetic dissipative oracles and transport (stat.ML),2017,stat.ML,stat,Andrey Kolmogorov; Harald Cramér; Claude Shannon
+synth-0295,Synthetic non-asymptotic partitions and alignment (stat.ML),2020,stat.ML,stat,Grace Hopper; Harald Cramér
+synth-0296,Synthetic coarse-grained currents and alignment (stat.ML),2021,stat.ML,stat,Grace Hopper; Katherine Johnson
+synth-0297,Synthetic variational flows and identifiability (stat.ML),2021,stat.ML,stat,Dorothy Vaughan; Shiing-Shen Chern; Katherine Johnson
+synth-0298,Synthetic dissipative occupancy and stability (stat.ML),2022,stat.ML,stat,Barbara Liskov; Ada Lovelace
+synth-0299,Synthetic synthetic partitions and synchrony (stat.ML),2016,stat.ML,stat,Andrey Kolmogorov; Sofia Kovalevskaya; Frances Allen
+synth-0300,Synthetic coarse-grained occupancy and identifiability (stat.ML),2022,stat.ML,stat,Dorothy Vaughan; Lotfi Zadeh
+synth-0301,Synthetic dissipative credit and stability (stat.ML),2020,stat.ML,stat,Katherine Johnson; Chien-Shiung Wu; Claude Shannon
+synth-0302,Synthetic high-dimensional credit and alignment (stat.ML),2022,stat.ML,stat,Kiyosi Itô
+synth-0303,Synthetic dissipative oracles and identifiability (stat.ML),2016,stat.ML,stat,Maryam Mirzakhani; Claude Shannon; Katherine Johnson
+synth-0304,Synthetic high-dimensional oracles and sparsity (stat.ML),2024,stat.ML,stat,Chien-Shiung Wu; Benoît Mandelbrot
+synth-0305,Synthetic dissipative partitions and sparsity (stat.ML),2020,stat.ML,stat,Alan Turing
+synth-0306,Synthetic measure-theoretic currents and identifiability (stat.ML),2023,stat.ML,stat,Maryam Mirzakhani; Benoît Mandelbrot; Andrey Kolmogorov
+synth-0307,Synthetic information-limited ensembles and sparsity (stat.ML),2021,stat.ML,stat,Barbara Liskov; Alan Turing; Emmy Noether
+synth-0308,Synthetic information-limited sheaves and transport (stat.ML),2016,stat.ML,stat,Chien-Shiung Wu
+synth-0309,Synthetic variational occupancy and sparsity (stat.ML),2022,stat.ML,stat,Kiyosi Itô; Dorothy Vaughan; Shiing-Shen Chern
+synth-0310,Synthetic synthetic kernels and identifiability (stat.ML),2021,stat.ML,stat,Sofia Kovalevskaya; Shiing-Shen Chern; Grace Hopper
+synth-0311,Synthetic spectral kernels and synchrony (stat.ML),2018,stat.ML,stat,Harald Cramér; Barbara Liskov; Lise Meitner
+synth-0312,Synthetic dissipative sheaves and identifiability (stat.ML),2019,stat.ML,stat,Claude Shannon; Kiyosi Itô
+synth-0313,Synthetic high-dimensional oracles and stability (stat.ML),2024,stat.ML,stat,Claude Shannon; Sofia Kovalevskaya
+synth-0314,Synthetic coarse-grained lattices and synchrony (stat.ML),2016,stat.ML,stat,Lotfi Zadeh; Harald Cramér; Katherine Johnson
+synth-0315,Synthetic information-limited sheaves and mixing (stat.ML),2022,stat.ML,stat,Katherine Johnson
+synth-0316,Synthetic synthetic ensembles and generalization (stat.ML),2024,stat.ML,stat,Maryam Mirzakhani
+synth-0317,Synthetic high-dimensional resolvents and synchrony (stat.ML),2020,stat.ML,stat,Benoît Mandelbrot; Maryam Mirzakhani
+synth-0318,Synthetic high-dimensional partitions and renormalization (stat.ML),2017,stat.ML,stat,Kiyosi Itô; Barbara Liskov; Andrey Kolmogorov
+synth-0319,Synthetic information-limited credit and mixing (stat.ML),2020,stat.ML,stat,Lotfi Zadeh; Chien-Shiung Wu; Dorothy Vaughan
+synth-0320,Synthetic variational occupancy and generalization (stat.ML),2019,stat.ML,stat,Chien-Shiung Wu; Lotfi Zadeh
+synth-0321,Synthetic dissipative ensembles and generalization (stat.ML),2021,stat.ML,stat,Harald Cramér
+synth-0322,Synthetic information-limited ensembles and transport (stat.ML),2021,stat.ML,stat,Alan Turing; Harald Cramér
+synth-0323,Synthetic information-limited ensembles and transport (stat.ML),2024,stat.ML,stat,Alan Turing; Lise Meitner
+synth-0324,Synthetic equivariant oracles and identifiability (stat.ML),2021,stat.ML,stat,Alan Turing
+synth-0325,Synthetic information-limited occupancy and alignment (stat.ML),2019,stat.ML,stat,Katherine Johnson; Subrahmanyan Chandrasekhar
+synth-0326,Synthetic synthetic traces and identifiability (stat.ML),2019,stat.ML,stat,Sofia Kovalevskaya; Grace Hopper; Chien-Shiung Wu
+synth-0327,Synthetic synthetic occupancy and identifiability (stat.ML),2022,stat.ML,stat,Maryam Mirzakhani; Emmy Noether
+synth-0328,Synthetic measure-theoretic credit and inference (stat.ML),2016,stat.ML,stat,Ada Lovelace
+synth-0329,Synthetic measure-theoretic credit and mixing (stat.ML),2021,stat.ML,stat,Subrahmanyan Chandrasekhar
+synth-0330,Synthetic coarse-grained currents and synchrony (stat.ML),2024,stat.ML,stat,Kiyosi Itô
+synth-0331,Synthetic spectral partitions and mixing (stat.ML),2017,stat.ML,stat,Harald Cramér
+synth-0332,Synthetic information-limited traces and transport (stat.ML),2017,stat.ML,stat,Lise Meitner
+synth-0333,Synthetic coarse-grained traces and alignment (stat.ML),2023,stat.ML,stat,Dorothy Vaughan; Harald Cramér
+synth-0334,Synthetic equivariant flows and mixing (stat.ML),2021,stat.ML,stat,Maryam Mirzakhani; Barbara Liskov
+synth-0335,Synthetic measure-theoretic kernels and alignment (stat.ML),2021,stat.ML,stat,Benoît Mandelbrot
+synth-0336,Synthetic coarse-grained sheaves and alignment (stat.ML),2022,stat.ML,stat,Grace Hopper; Harald Cramér; Benoît Mandelbrot
+synth-0337,Synthetic dissipative lattices and stability (stat.ML),2019,stat.ML,stat,Shiing-Shen Chern
+synth-0338,Synthetic information-limited lattices and alignment (stat.ML),2020,stat.ML,stat,Lotfi Zadeh
+synth-0339,Synthetic dissipative occupancy and identifiability (stat.ML),2024,stat.ML,stat,Emmy Noether
+synth-0340,Synthetic equivariant credit and inference (stat.ML),2021,stat.ML,stat,Shiing-Shen Chern; Katherine Johnson; Subrahmanyan Chandrasekhar
+synth-0341,Synthetic synthetic kernels and generalization (stat.ML),2018,stat.ML,stat,Benoît Mandelbrot; Lise Meitner; Ada Lovelace
+synth-0342,Synthetic coarse-grained resolvents and inference (stat.ML),2024,stat.ML,stat,Emmy Noether; Barbara Liskov
+synth-0343,Synthetic spectral traces and generalization (stat.ML),2020,stat.ML,stat,Barbara Liskov; Chien-Shiung Wu; Maryam Mirzakhani
+synth-0344,Synthetic information-limited kernels and synchrony (stat.ML),2019,stat.ML,stat,Lise Meitner
+synth-0345,Synthetic spectral lattices and alignment (stat.ML),2017,stat.ML,stat,Grace Hopper; Maryam Mirzakhani; Lise Meitner
+synth-0346,Synthetic synthetic partitions and alignment (stat.ML),2022,stat.ML,stat,Grace Hopper; Frances Allen
+synth-0347,Synthetic high-dimensional partitions and stability (stat.ML),2016,stat.ML,stat,Lotfi Zadeh
+synth-0348,Synthetic equivariant currents and inference (stat.ML),2017,stat.ML,stat,Lise Meitner; Benoît Mandelbrot; Grace Hopper
+synth-0349,Synthetic measure-theoretic lattices and inference (stat.ML),2024,stat.ML,stat,Maryam Mirzakhani
+synth-0350,Synthetic measure-theoretic oracles and identifiability (stat.ML),2020,stat.ML,stat,Subrahmanyan Chandrasekhar
+synth-0351,Synthetic spectral kernels and sparsity (stat.ML),2016,stat.ML,stat,Benoît Mandelbrot; Subrahmanyan Chandrasekhar
+synth-0352,Synthetic synthetic currents and renormalization (stat.ML),2024,stat.ML,stat,Emmy Noether; Lise Meitner
+synth-0353,Synthetic spectral currents and alignment (stat.ML),2022,stat.ML,stat,Subrahmanyan Chandrasekhar; Grace Hopper; Chien-Shiung Wu
+synth-0354,Synthetic information-limited flows and identifiability (stat.ML),2018,stat.ML,stat,Chien-Shiung Wu; Lise Meitner
+synth-0355,Synthetic variational resolvents and mixing (stat.ML),2016,stat.ML,stat,Ada Lovelace; Grace Hopper
+synth-0356,Synthetic non-asymptotic sheaves and renormalization (stat.ML),2021,stat.ML,stat,Alan Turing; Andrey Kolmogorov
+synth-0357,Synthetic dissipative currents and inference (stat.ML),2024,stat.ML,stat,Grace Hopper
+synth-0358,Synthetic equivariant resolvents and mixing (stat.ML),2023,stat.ML,stat,Frances Allen
+synth-0359,Synthetic non-asymptotic currents and sparsity (stat.ML),2020,stat.ML,stat,Ada Lovelace; Sofia Kovalevskaya
+synth-0360,Synthetic equivariant ensembles and stability (stat.ML),2020,stat.ML,stat,Benoît Mandelbrot; Shiing-Shen Chern
+synth-0361,Synthetic non-asymptotic partitions and sparsity (math.ST),2017,math.ST,math,Grace Hopper; Barbara Liskov
+synth-0362,Synthetic spectral traces and generalization (math.ST),2020,math.ST,math,Benoît Mandelbrot
+synth-0363,Synthetic variational lattices and synchrony (math.ST),2023,math.ST,math,Subrahmanyan Chandrasekhar
+synth-0364,Synthetic information-limited oracles and stability (math.ST),2017,math.ST,math,Subrahmanyan Chandrasekhar; Ada Lovelace
+synth-0365,Synthetic equivariant traces and renormalization (math.ST),2022,math.ST,math,Alan Turing; Grace Hopper
+synth-0366,Synthetic information-limited currents and sparsity (math.ST),2022,math.ST,math,Harald Cramér
+synth-0367,Synthetic spectral kernels and sparsity (math.ST),2017,math.ST,math,Barbara Liskov
+synth-0368,Synthetic coarse-grained kernels and renormalization (math.ST),2018,math.ST,math,Harald Cramér; Subrahmanyan Chandrasekhar
+synth-0369,Synthetic synthetic traces and identifiability (math.ST),2023,math.ST,math,Benoît Mandelbrot
+synth-0370,Synthetic information-limited oracles and renormalization (math.ST),2018,math.ST,math,Frances Allen
+synth-0371,Synthetic synthetic kernels and synchrony (math.ST),2022,math.ST,math,Alan Turing; Barbara Liskov
+synth-0372,Synthetic dissipative kernels and mixing (math.ST),2017,math.ST,math,Dorothy Vaughan; Benoît Mandelbrot; Emmy Noether
+synth-0373,Synthetic synthetic flows and sparsity (math.ST),2018,math.ST,math,Ada Lovelace; Maryam Mirzakhani; Kiyosi Itô
+synth-0374,Synthetic coarse-grained oracles and alignment (math.ST),2017,math.ST,math,Barbara Liskov; Shiing-Shen Chern
+synth-0375,Synthetic non-asymptotic lattices and mixing (math.ST),2024,math.ST,math,Grace Hopper; Lotfi Zadeh
+synth-0376,Synthetic variational partitions and inference (math.ST),2019,math.ST,math,Emmy Noether; Benoît Mandelbrot
+synth-0377,Synthetic non-asymptotic lattices and synchrony (math.ST),2023,math.ST,math,Chien-Shiung Wu; Subrahmanyan Chandrasekhar
+synth-0378,Synthetic coarse-grained oracles and transport (math.ST),2017,math.ST,math,Sofia Kovalevskaya
+synth-0379,Synthetic information-limited sheaves and inference (math.ST),2016,math.ST,math,Harald Cramér; Frances Allen; Maryam Mirzakhani
+synth-0380,Synthetic synthetic ensembles and identifiability (math.ST),2022,math.ST,math,Harald Cramér; Lise Meitner
+synth-0381,Synthetic equivariant resolvents and inference (math.ST),2021,math.ST,math,Emmy Noether
+synth-0382,Synthetic dissipative credit and alignment (math.ST),2021,math.ST,math,Frances Allen; Barbara Liskov
+synth-0383,Synthetic non-asymptotic kernels and transport (math.ST),2019,math.ST,math,Benoît Mandelbrot; Katherine Johnson; Subrahmanyan Chandrasekhar
+synth-0384,Synthetic measure-theoretic lattices and alignment (math.ST),2018,math.ST,math,Dorothy Vaughan
+synth-0385,Synthetic synthetic flows and synchrony (math.ST),2021,math.ST,math,Sofia Kovalevskaya; Claude Shannon
+synth-0386,Synthetic measure-theoretic traces and alignment (math.ST),2022,math.ST,math,Frances Allen; Andrey Kolmogorov
+synth-0387,Synthetic dissipative flows and generalization (math.ST),2020,math.ST,math,Chien-Shiung Wu; Grace Hopper
+synth-0388,Synthetic equivariant partitions and identifiability (math.ST),2019,math.ST,math,Lise Meitner; Subrahmanyan Chandrasekhar
+synth-0389,Synthetic high-dimensional credit and identifiability (math.ST),2021,math.ST,math,Emmy Noether
+synth-0390,Synthetic information-limited oracles and generalization (math.ST),2024,math.ST,math,Katherine Johnson; Emmy Noether; Frances Allen
+synth-0391,Synthetic high-dimensional kernels and synchrony (math.ST),2022,math.ST,math,Benoît Mandelbrot
+synth-0392,Synthetic measure-theoretic kernels and generalization (math.ST),2016,math.ST,math,Benoît Mandelbrot; Lotfi Zadeh; Katherine Johnson
+synth-0393,Synthetic non-asymptotic credit and renormalization (math.ST),2018,math.ST,math,Alan Turing; Barbara Liskov; Sofia Kovalevskaya
+synth-0394,Synthetic measure-theoretic occupancy and transport (math.ST),2024,math.ST,math,Andrey Kolmogorov
+synth-0395,Synthetic non-asymptotic lattices and sparsity (math.ST),2020,math.ST,math,Lise Meitner
+synth-0396,Synthetic dissipative lattices and transport (math.ST),2019,math.ST,math,Benoît Mandelbrot; Barbara Liskov
+synth-0397,Synthetic spectral oracles and inference (math.ST),2023,math.ST,math,Lotfi Zadeh
+synth-0398,Synthetic variational credit and generalization (math.ST),2019,math.ST,math,Emmy Noether; Grace Hopper
+synth-0399,Synthetic measure-theoretic traces and alignment (math.ST),2016,math.ST,math,Benoît Mandelbrot
+synth-0400,Synthetic equivariant occupancy and identifiability (math.ST),2022,math.ST,math,Grace Hopper
+synth-0401,Synthetic high-dimensional sheaves and generalization (math.ST),2016,math.ST,math,Harald Cramér; Maryam Mirzakhani
+synth-0402,Synthetic information-limited partitions and mixing (math.ST),2016,math.ST,math,Katherine Johnson
+synth-0403,Synthetic synthetic sheaves and mixing (math.ST),2016,math.ST,math,Lise Meitner; Alan Turing; Ada Lovelace
+synth-0404,Synthetic coarse-grained flows and stability (math.ST),2020,math.ST,math,Harald Cramér; Chien-Shiung Wu; Andrey Kolmogorov
+synth-0405,Synthetic measure-theoretic partitions and mixing (math.ST),2020,math.ST,math,Kiyosi Itô
+synth-0406,Synthetic dissipative credit and stability (math.ST),2023,math.ST,math,Shiing-Shen Chern; Dorothy Vaughan
+synth-0407,Synthetic non-asymptotic ensembles and sparsity (math.ST),2024,math.ST,math,Kiyosi Itô
+synth-0408,Synthetic measure-theoretic currents and identifiability (math.ST),2024,math.ST,math,Shiing-Shen Chern; Claude Shannon
+synth-0409,Synthetic synthetic resolvents and inference (math.ST),2016,math.ST,math,Ada Lovelace; Frances Allen; Claude Shannon
+synth-0410,Synthetic synthetic resolvents and renormalization (math.ST),2016,math.ST,math,Shiing-Shen Chern; Ada Lovelace; Dorothy Vaughan
+synth-0411,Synthetic information-limited ensembles and mixing (math.ST),2016,math.ST,math,Harald Cramér
+synth-0412,Synthetic spectral currents and synchrony (math.ST),2021,math.ST,math,Grace Hopper; Kiyosi Itô
+synth-0413,Synthetic non-asymptotic ensembles and synchrony (math.ST),2022,math.ST,math,Emmy Noether
+synth-0414,Synthetic equivariant credit and alignment (math.ST),2024,math.ST,math,Lise Meitner; Maryam Mirzakhani; Dorothy Vaughan
+synth-0415,Synthetic equivariant oracles and inference (math.ST),2019,math.ST,math,Sofia Kovalevskaya; Shiing-Shen Chern; Dorothy Vaughan
+synth-0416,Synthetic variational partitions and identifiability (math.ST),2018,math.ST,math,Barbara Liskov; Andrey Kolmogorov
+synth-0417,Synthetic information-limited lattices and sparsity (math.ST),2021,math.ST,math,Emmy Noether; Ada Lovelace
+synth-0418,Synthetic information-limited traces and inference (math.ST),2018,math.ST,math,Dorothy Vaughan; Maryam Mirzakhani; Sofia Kovalevskaya
+synth-0419,Synthetic equivariant currents and transport (math.ST),2017,math.ST,math,Sofia Kovalevskaya; Emmy Noether; Claude Shannon
+synth-0420,Synthetic synthetic flows and identifiability (math.ST),2024,math.ST,math,Barbara Liskov
+synth-0421,Synthetic spectral kernels and renormalization (math.ST),2024,math.ST,math,Frances Allen; Claude Shannon; Subrahmanyan Chandrasekhar
+synth-0422,Synthetic non-asymptotic oracles and generalization (math.ST),2023,math.ST,math,Maryam Mirzakhani; Lise Meitner; Dorothy Vaughan
+synth-0423,Synthetic high-dimensional partitions and renormalization (math.ST),2016,math.ST,math,Ada Lovelace; Alan Turing; Subrahmanyan Chandrasekhar
+synth-0424,Synthetic non-asymptotic currents and mixing (math.ST),2023,math.ST,math,Alan Turing; Shiing-Shen Chern
+synth-0425,Synthetic high-dimensional ensembles and renormalization (math.ST),2022,math.ST,math,Harald Cramér; Lise Meitner
+synth-0426,Synthetic equivariant traces and renormalization (math.ST),2016,math.ST,math,Emmy Noether; Andrey Kolmogorov; Dorothy Vaughan
+synth-0427,Synthetic non-asymptotic traces and generalization (math.ST),2023,math.ST,math,Shiing-Shen Chern
+synth-0428,Synthetic non-asymptotic traces and stability (math.ST),2021,math.ST,math,Katherine Johnson; Chien-Shiung Wu
+synth-0429,Synthetic non-asymptotic occupancy and transport (math.ST),2018,math.ST,math,Ada Lovelace; Lotfi Zadeh; Benoît Mandelbrot
+synth-0430,Synthetic spectral flows and renormalization (math.ST),2020,math.ST,math,Sofia Kovalevskaya; Kiyosi Itô; Harald Cramér
+synth-0431,Synthetic non-asymptotic ensembles and sparsity (math.ST),2020,math.ST,math,Subrahmanyan Chandrasekhar; Maryam Mirzakhani
+synth-0432,Synthetic equivariant occupancy and identifiability (math.ST),2020,math.ST,math,Frances Allen; Maryam Mirzakhani
+synth-0433,Synthetic dissipative ensembles and transport (math.ST),2023,math.ST,math,Claude Shannon; Barbara Liskov; Kiyosi Itô
+synth-0434,Synthetic synthetic currents and renormalization (math.ST),2019,math.ST,math,Lotfi Zadeh; Grace Hopper; Chien-Shiung Wu
+synth-0435,Synthetic coarse-grained traces and sparsity (math.ST),2024,math.ST,math,Harald Cramér; Alan Turing
+synth-0436,Synthetic measure-theoretic traces and inference (math.ST),2021,math.ST,math,Andrey Kolmogorov; Barbara Liskov; Subrahmanyan Chandrasekhar
+synth-0437,Synthetic equivariant oracles and sparsity (math.ST),2019,math.ST,math,Benoît Mandelbrot
+synth-0438,Synthetic synthetic flows and inference (math.ST),2020,math.ST,math,Frances Allen
+synth-0439,Synthetic equivariant flows and identifiability (math.ST),2022,math.ST,math,Lise Meitner; Benoît Mandelbrot; Ada Lovelace
+synth-0440,Synthetic high-dimensional sheaves and stability (math.ST),2016,math.ST,math,Chien-Shiung Wu; Lise Meitner
+synth-0441,Synthetic equivariant flows and inference (math.ST),2021,math.ST,math,Katherine Johnson; Benoît Mandelbrot
+synth-0442,Synthetic variational ensembles and identifiability (math.ST),2017,math.ST,math,Benoît Mandelbrot; Ada Lovelace; Sofia Kovalevskaya
+synth-0443,Synthetic coarse-grained flows and identifiability (math.ST),2024,math.ST,math,Kiyosi Itô; Andrey Kolmogorov
+synth-0444,Synthetic equivariant kernels and stability (math.ST),2022,math.ST,math,Emmy Noether; Katherine Johnson
+synth-0445,Synthetic variational ensembles and renormalization (math.ST),2016,math.ST,math,Benoît Mandelbrot; Chien-Shiung Wu
+synth-0446,Synthetic measure-theoretic traces and mixing (math.ST),2020,math.ST,math,Lise Meitner
+synth-0447,Synthetic equivariant sheaves and mixing (math.ST),2016,math.ST,math,Lise Meitner; Lotfi Zadeh
+synth-0448,Synthetic coarse-grained traces and synchrony (math.ST),2016,math.ST,math,Benoît Mandelbrot; Lise Meitner; Dorothy Vaughan
+synth-0449,Synthetic coarse-grained resolvents and synchrony (math.ST),2020,math.ST,math,Ada Lovelace; Sofia Kovalevskaya; Maryam Mirzakhani
+synth-0450,Synthetic dissipative occupancy and renormalization (math.ST),2016,math.ST,math,Grace Hopper; Frances Allen; Shiing-Shen Chern
+synth-0451,Synthetic synthetic lattices and transport (math.PR),2016,math.PR,math,Barbara Liskov; Alan Turing; Grace Hopper
+synth-0452,Synthetic information-limited oracles and mixing (math.PR),2024,math.PR,math,Sofia Kovalevskaya
+synth-0453,Synthetic spectral resolvents and inference (math.PR),2024,math.PR,math,Shiing-Shen Chern; Ada Lovelace
+synth-0454,Synthetic dissipative occupancy and transport (math.PR),2016,math.PR,math,Sofia Kovalevskaya; Harald Cramér; Claude Shannon
+synth-0455,Synthetic coarse-grained resolvents and renormalization (math.PR),2023,math.PR,math,Lotfi Zadeh
+synth-0456,Synthetic coarse-grained resolvents and transport (math.PR),2017,math.PR,math,Lise Meitner
+synth-0457,Synthetic coarse-grained resolvents and stability (math.PR),2019,math.PR,math,Maryam Mirzakhani; Lise Meitner
+synth-0458,Synthetic information-limited occupancy and transport (math.PR),2018,math.PR,math,Lotfi Zadeh
+synth-0459,Synthetic non-asymptotic traces and sparsity (math.PR),2016,math.PR,math,Grace Hopper; Andrey Kolmogorov; Subrahmanyan Chandrasekhar
+synth-0460,Synthetic information-limited oracles and stability (math.PR),2024,math.PR,math,Ada Lovelace; Andrey Kolmogorov
+synth-0461,Synthetic information-limited lattices and sparsity (math.PR),2020,math.PR,math,Barbara Liskov; Lise Meitner; Frances Allen
+synth-0462,Synthetic dissipative kernels and generalization (math.PR),2017,math.PR,math,Harald Cramér; Sofia Kovalevskaya; Dorothy Vaughan
+synth-0463,Synthetic variational flows and generalization (math.PR),2017,math.PR,math,Katherine Johnson; Andrey Kolmogorov
+synth-0464,Synthetic equivariant kernels and synchrony (math.PR),2020,math.PR,math,Lotfi Zadeh; Frances Allen
+synth-0465,Synthetic equivariant traces and identifiability (math.PR),2020,math.PR,math,Kiyosi Itô
+synth-0466,Synthetic information-limited lattices and synchrony (math.PR),2018,math.PR,math,Maryam Mirzakhani; Ada Lovelace; Shiing-Shen Chern
+synth-0467,Synthetic synthetic occupancy and identifiability (math.PR),2024,math.PR,math,Alan Turing; Dorothy Vaughan; Chien-Shiung Wu
+synth-0468,Synthetic spectral sheaves and renormalization (math.PR),2016,math.PR,math,Frances Allen
+synth-0469,Synthetic non-asymptotic lattices and inference (math.PR),2018,math.PR,math,Benoît Mandelbrot
+synth-0470,Synthetic spectral kernels and mixing (math.PR),2024,math.PR,math,Grace Hopper
+synth-0471,Synthetic equivariant occupancy and sparsity (math.PR),2018,math.PR,math,Chien-Shiung Wu; Harald Cramér; Kiyosi Itô
+synth-0472,Synthetic information-limited currents and stability (math.PR),2016,math.PR,math,Katherine Johnson; Barbara Liskov
+synth-0473,Synthetic dissipative flows and stability (math.PR),2018,math.PR,math,Lise Meitner
+synth-0474,Synthetic information-limited lattices and generalization (math.PR),2021,math.PR,math,Subrahmanyan Chandrasekhar; Ada Lovelace; Chien-Shiung Wu
+synth-0475,Synthetic coarse-grained lattices and inference (math.PR),2021,math.PR,math,Subrahmanyan Chandrasekhar
+synth-0476,Synthetic coarse-grained sheaves and synchrony (math.PR),2017,math.PR,math,Maryam Mirzakhani; Emmy Noether; Benoît Mandelbrot
+synth-0477,Synthetic variational oracles and renormalization (math.PR),2018,math.PR,math,Grace Hopper; Barbara Liskov
+synth-0478,Synthetic information-limited traces and identifiability (math.PR),2018,math.PR,math,Claude Shannon; Kiyosi Itô
+synth-0479,Synthetic synthetic occupancy and identifiability (math.PR),2023,math.PR,math,Ada Lovelace
+synth-0480,Synthetic equivariant sheaves and identifiability (math.PR),2020,math.PR,math,Maryam Mirzakhani; Katherine Johnson
+synth-0481,Synthetic measure-theoretic credit and alignment (math.PR),2016,math.PR,math,Emmy Noether
+synth-0482,Synthetic coarse-grained partitions and identifiability (math.PR),2018,math.PR,math,Ada Lovelace
+synth-0483,Synthetic measure-theoretic lattices and sparsity (math.PR),2017,math.PR,math,Sofia Kovalevskaya; Grace Hopper
+synth-0484,Synthetic spectral sheaves and transport (math.PR),2016,math.PR,math,Subrahmanyan Chandrasekhar
+synth-0485,Synthetic coarse-grained oracles and alignment (math.PR),2024,math.PR,math,Shiing-Shen Chern
+synth-0486,Synthetic equivariant partitions and renormalization (math.PR),2019,math.PR,math,Katherine Johnson; Alan Turing
+synth-0487,Synthetic coarse-grained occupancy and synchrony (math.PR),2018,math.PR,math,Subrahmanyan Chandrasekhar
+synth-0488,Synthetic non-asymptotic flows and mixing (math.PR),2022,math.PR,math,Subrahmanyan Chandrasekhar; Shiing-Shen Chern; Emmy Noether
+synth-0489,Synthetic non-asymptotic credit and inference (math.PR),2021,math.PR,math,Benoît Mandelbrot; Chien-Shiung Wu; Barbara Liskov
+synth-0490,Synthetic equivariant resolvents and stability (math.PR),2020,math.PR,math,Subrahmanyan Chandrasekhar; Sofia Kovalevskaya; Lotfi Zadeh
+synth-0491,Synthetic non-asymptotic ensembles and identifiability (math.PR),2017,math.PR,math,Andrey Kolmogorov
+synth-0492,Synthetic information-limited currents and generalization (math.PR),2017,math.PR,math,Frances Allen; Subrahmanyan Chandrasekhar
+synth-0493,Synthetic measure-theoretic credit and synchrony (math.PR),2020,math.PR,math,Lise Meitner
+synth-0494,Synthetic high-dimensional resolvents and synchrony (math.PR),2019,math.PR,math,Lotfi Zadeh; Alan Turing; Dorothy Vaughan
+synth-0495,Synthetic variational kernels and synchrony (math.PR),2016,math.PR,math,Shiing-Shen Chern; Alan Turing
+synth-0496,Synthetic measure-theoretic occupancy and inference (math.PR),2022,math.PR,math,Harald Cramér; Alan Turing
+synth-0497,Synthetic variational flows and inference (math.PR),2019,math.PR,math,Kiyosi Itô; Harald Cramér
+synth-0498,Synthetic equivariant kernels and generalization (math.PR),2017,math.PR,math,Barbara Liskov; Benoît Mandelbrot
+synth-0499,Synthetic spectral currents and generalization (math.PR),2018,math.PR,math,Lotfi Zadeh; Maryam Mirzakhani; Harald Cramér
+synth-0500,Synthetic spectral lattices and mixing (math.PR),2019,math.PR,math,Emmy Noether
+synth-0501,Synthetic spectral traces and sparsity (math.PR),2024,math.PR,math,Lotfi Zadeh
+synth-0502,Synthetic measure-theoretic oracles and identifiability (math.PR),2022,math.PR,math,Shiing-Shen Chern
+synth-0503,Synthetic coarse-grained sheaves and generalization (math.PR),2024,math.PR,math,Frances Allen
+synth-0504,Synthetic coarse-grained kernels and alignment (math.PR),2020,math.PR,math,Chien-Shiung Wu
+synth-0505,Synthetic high-dimensional kernels and transport (math.PR),2022,math.PR,math,Dorothy Vaughan; Claude Shannon; Frances Allen
+synth-0506,Synthetic information-limited ensembles and mixing (math.PR),2018,math.PR,math,Shiing-Shen Chern; Barbara Liskov; Subrahmanyan Chandrasekhar
+synth-0507,Synthetic equivariant ensembles and stability (math.PR),2019,math.PR,math,Alan Turing; Chien-Shiung Wu; Subrahmanyan Chandrasekhar
+synth-0508,Synthetic variational sheaves and stability (math.PR),2023,math.PR,math,Claude Shannon; Lise Meitner
+synth-0509,Synthetic measure-theoretic lattices and sparsity (math.PR),2018,math.PR,math,Grace Hopper
+synth-0510,Synthetic information-limited lattices and sparsity (math.PR),2021,math.PR,math,Chien-Shiung Wu; Ada Lovelace; Kiyosi Itô
+synth-0511,Synthetic synthetic ensembles and generalization (math.PR),2023,math.PR,math,Benoît Mandelbrot; Katherine Johnson
+synth-0512,Synthetic information-limited traces and stability (math.PR),2016,math.PR,math,Emmy Noether; Kiyosi Itô
+synth-0513,Synthetic spectral resolvents and sparsity (math.PR),2023,math.PR,math,Chien-Shiung Wu
+synth-0514,Synthetic synthetic flows and renormalization (math.PR),2019,math.PR,math,Shiing-Shen Chern; Lise Meitner
+synth-0515,Synthetic variational ensembles and sparsity (math.PR),2024,math.PR,math,Sofia Kovalevskaya; Grace Hopper
+synth-0516,Synthetic non-asymptotic traces and sparsity (math.PR),2021,math.PR,math,Sofia Kovalevskaya
+synth-0517,Synthetic spectral sheaves and sparsity (math.PR),2016,math.PR,math,Sofia Kovalevskaya; Andrey Kolmogorov; Shiing-Shen Chern
+synth-0518,Synthetic synthetic traces and transport (math.PR),2020,math.PR,math,Barbara Liskov
+synth-0519,Synthetic dissipative flows and mixing (math.PR),2021,math.PR,math,Lotfi Zadeh
+synth-0520,Synthetic coarse-grained oracles and mixing (math.PR),2023,math.PR,math,Shiing-Shen Chern
+synth-0521,Synthetic non-asymptotic currents and stability (math.PR),2020,math.PR,math,Barbara Liskov; Subrahmanyan Chandrasekhar
+synth-0522,Synthetic non-asymptotic partitions and generalization (math.PR),2021,math.PR,math,Benoît Mandelbrot; Frances Allen
+synth-0523,Synthetic variational currents and transport (math.PR),2021,math.PR,math,Kiyosi Itô; Frances Allen; Emmy Noether
+synth-0524,Synthetic dissipative traces and synchrony (math.PR),2016,math.PR,math,Chien-Shiung Wu; Lise Meitner
+synth-0525,Synthetic dissipative lattices and alignment (math.PR),2023,math.PR,math,Shiing-Shen Chern
+synth-0526,Synthetic coarse-grained lattices and alignment (math.PR),2018,math.PR,math,Emmy Noether; Dorothy Vaughan; Frances Allen
+synth-0527,Synthetic equivariant occupancy and sparsity (math.PR),2019,math.PR,math,Benoît Mandelbrot; Kiyosi Itô; Maryam Mirzakhani
+synth-0528,Synthetic high-dimensional oracles and identifiability (math.PR),2021,math.PR,math,Sofia Kovalevskaya
+synth-0529,Synthetic measure-theoretic flows and synchrony (math.PR),2024,math.PR,math,Alan Turing; Andrey Kolmogorov; Ada Lovelace
+synth-0530,Synthetic non-asymptotic partitions and sparsity (math.PR),2016,math.PR,math,Subrahmanyan Chandrasekhar; Emmy Noether
+synth-0531,Synthetic equivariant flows and transport (math.PR),2024,math.PR,math,Grace Hopper; Ada Lovelace
+synth-0532,Synthetic measure-theoretic ensembles and inference (math.PR),2019,math.PR,math,Claude Shannon
+synth-0533,Synthetic coarse-grained resolvents and alignment (math.PR),2020,math.PR,math,Benoît Mandelbrot; Sofia Kovalevskaya; Frances Allen
+synth-0534,Synthetic synthetic partitions and inference (math.PR),2017,math.PR,math,Ada Lovelace
+synth-0535,Synthetic information-limited credit and renormalization (math.PR),2019,math.PR,math,Kiyosi Itô; Grace Hopper; Andrey Kolmogorov
+synth-0536,Synthetic coarse-grained occupancy and synchrony (math.PR),2021,math.PR,math,Andrey Kolmogorov
+synth-0537,Synthetic information-limited ensembles and identifiability (math.PR),2018,math.PR,math,Benoît Mandelbrot; Lotfi Zadeh; Ada Lovelace
+synth-0538,Synthetic spectral lattices and renormalization (math.PR),2017,math.PR,math,Maryam Mirzakhani; Benoît Mandelbrot; Lise Meitner
+synth-0539,Synthetic information-limited oracles and generalization (math.PR),2022,math.PR,math,Kiyosi Itô; Alan Turing
+synth-0540,Synthetic equivariant oracles and alignment (math.PR),2024,math.PR,math,Benoît Mandelbrot
+synth-0541,Synthetic measure-theoretic flows and inference (physics.comp-ph),2017,physics.comp-ph,physics,Ada Lovelace; Kiyosi Itô
+synth-0542,Synthetic equivariant credit and synchrony (physics.comp-ph),2020,physics.comp-ph,physics,Claude Shannon
+synth-0543,Synthetic dissipative resolvents and alignment (physics.comp-ph),2018,physics.comp-ph,physics,Chien-Shiung Wu; Alan Turing
+synth-0544,Synthetic variational traces and identifiability (physics.comp-ph),2020,physics.comp-ph,physics,Ada Lovelace; Lise Meitner; Benoît Mandelbrot
+synth-0545,Synthetic coarse-grained oracles and stability (physics.comp-ph),2017,physics.comp-ph,physics,Shiing-Shen Chern; Ada Lovelace
+synth-0546,Synthetic dissipative oracles and alignment (physics.comp-ph),2020,physics.comp-ph,physics,Lise Meitner; Frances Allen; Emmy Noether
+synth-0547,Synthetic synthetic traces and sparsity (physics.comp-ph),2024,physics.comp-ph,physics,Kiyosi Itô; Alan Turing; Claude Shannon
+synth-0548,Synthetic high-dimensional traces and renormalization (physics.comp-ph),2024,physics.comp-ph,physics,Maryam Mirzakhani; Alan Turing; Frances Allen
+synth-0549,Synthetic variational partitions and sparsity (physics.comp-ph),2022,physics.comp-ph,physics,Harald Cramér; Lise Meitner; Lotfi Zadeh
+synth-0550,Synthetic measure-theoretic traces and synchrony (physics.comp-ph),2021,physics.comp-ph,physics,Maryam Mirzakhani
+synth-0551,Synthetic coarse-grained traces and identifiability (physics.comp-ph),2022,physics.comp-ph,physics,Claude Shannon; Sofia Kovalevskaya
+synth-0552,Synthetic information-limited currents and identifiability (physics.comp-ph),2020,physics.comp-ph,physics,Harald Cramér; Claude Shannon; Grace Hopper
+synth-0553,Synthetic synthetic credit and renormalization (physics.comp-ph),2024,physics.comp-ph,physics,Ada Lovelace
+synth-0554,Synthetic non-asymptotic kernels and sparsity (physics.comp-ph),2020,physics.comp-ph,physics,Lotfi Zadeh; Shiing-Shen Chern
+synth-0555,Synthetic synthetic lattices and inference (physics.comp-ph),2022,physics.comp-ph,physics,Ada Lovelace
+synth-0556,Synthetic coarse-grained kernels and stability (physics.comp-ph),2022,physics.comp-ph,physics,Alan Turing
+synth-0557,Synthetic non-asymptotic oracles and stability (physics.comp-ph),2022,physics.comp-ph,physics,Katherine Johnson
+synth-0558,Synthetic coarse-grained kernels and mixing (physics.comp-ph),2021,physics.comp-ph,physics,Kiyosi Itô; Benoît Mandelbrot; Harald Cramér
+synth-0559,Synthetic information-limited oracles and mixing (physics.comp-ph),2024,physics.comp-ph,physics,Claude Shannon; Kiyosi Itô; Alan Turing
+synth-0560,Synthetic coarse-grained kernels and synchrony (physics.comp-ph),2021,physics.comp-ph,physics,Sofia Kovalevskaya; Katherine Johnson; Dorothy Vaughan
+synth-0561,Synthetic measure-theoretic oracles and inference (physics.comp-ph),2021,physics.comp-ph,physics,Ada Lovelace; Barbara Liskov; Lise Meitner
+synth-0562,Synthetic spectral occupancy and mixing (physics.comp-ph),2016,physics.comp-ph,physics,Katherine Johnson; Grace Hopper; Ada Lovelace
+synth-0563,Synthetic spectral currents and synchrony (physics.comp-ph),2022,physics.comp-ph,physics,Subrahmanyan Chandrasekhar; Frances Allen
+synth-0564,Synthetic coarse-grained ensembles and identifiability (physics.comp-ph),2020,physics.comp-ph,physics,Harald Cramér; Claude Shannon
+synth-0565,Synthetic measure-theoretic credit and generalization (physics.comp-ph),2016,physics.comp-ph,physics,Lise Meitner; Alan Turing
+synth-0566,Synthetic coarse-grained resolvents and mixing (physics.comp-ph),2016,physics.comp-ph,physics,Emmy Noether
+synth-0567,Synthetic measure-theoretic resolvents and alignment (physics.comp-ph),2019,physics.comp-ph,physics,Shiing-Shen Chern
+synth-0568,Synthetic synthetic kernels and sparsity (physics.comp-ph),2017,physics.comp-ph,physics,Ada Lovelace; Benoît Mandelbrot
+synth-0569,Synthetic spectral traces and stability (physics.comp-ph),2019,physics.comp-ph,physics,Harald Cramér
+synth-0570,Synthetic coarse-grained resolvents and renormalization (physics.comp-ph),2017,physics.comp-ph,physics,Subrahmanyan Chandrasekhar
+synth-0571,Synthetic synthetic ensembles and inference (physics.comp-ph),2016,physics.comp-ph,physics,Katherine Johnson; Maryam Mirzakhani
+synth-0572,Synthetic spectral ensembles and mixing (physics.comp-ph),2016,physics.comp-ph,physics,Katherine Johnson
+synth-0573,Synthetic coarse-grained credit and renormalization (physics.comp-ph),2023,physics.comp-ph,physics,Grace Hopper; Claude Shannon; Barbara Liskov
+synth-0574,Synthetic synthetic occupancy and transport (physics.comp-ph),2024,physics.comp-ph,physics,Emmy Noether; Subrahmanyan Chandrasekhar
+synth-0575,Synthetic measure-theoretic kernels and mixing (physics.comp-ph),2017,physics.comp-ph,physics,Alan Turing
+synth-0576,Synthetic high-dimensional resolvents and identifiability (physics.comp-ph),2023,physics.comp-ph,physics,Dorothy Vaughan; Lise Meitner; Alan Turing
+synth-0577,Synthetic variational partitions and transport (physics.comp-ph),2022,physics.comp-ph,physics,Sofia Kovalevskaya; Andrey Kolmogorov; Ada Lovelace
+synth-0578,Synthetic measure-theoretic oracles and renormalization (physics.comp-ph),2024,physics.comp-ph,physics,Emmy Noether
+synth-0579,Synthetic non-asymptotic ensembles and sparsity (physics.comp-ph),2021,physics.comp-ph,physics,Sofia Kovalevskaya; Frances Allen; Subrahmanyan Chandrasekhar
+synth-0580,Synthetic coarse-grained currents and generalization (physics.comp-ph),2016,physics.comp-ph,physics,Emmy Noether
+synth-0581,Synthetic synthetic sheaves and mixing (physics.comp-ph),2018,physics.comp-ph,physics,Lise Meitner
+synth-0582,Synthetic measure-theoretic oracles and mixing (physics.comp-ph),2022,physics.comp-ph,physics,Harald Cramér
+synth-0583,Synthetic variational ensembles and identifiability (physics.comp-ph),2019,physics.comp-ph,physics,Andrey Kolmogorov; Harald Cramér
+synth-0584,Synthetic spectral sheaves and alignment (physics.comp-ph),2023,physics.comp-ph,physics,Shiing-Shen Chern; Dorothy Vaughan
+synth-0585,Synthetic non-asymptotic sheaves and stability (physics.comp-ph),2017,physics.comp-ph,physics,Lotfi Zadeh; Ada Lovelace; Kiyosi Itô
+synth-0586,Synthetic non-asymptotic partitions and inference (physics.comp-ph),2019,physics.comp-ph,physics,Benoît Mandelbrot; Claude Shannon; Katherine Johnson
+synth-0587,Synthetic equivariant ensembles and stability (physics.comp-ph),2021,physics.comp-ph,physics,Grace Hopper; Katherine Johnson
+synth-0588,Synthetic variational lattices and mixing (physics.comp-ph),2019,physics.comp-ph,physics,Shiing-Shen Chern; Andrey Kolmogorov
+synth-0589,Synthetic coarse-grained traces and alignment (physics.comp-ph),2020,physics.comp-ph,physics,Frances Allen; Kiyosi Itô
+synth-0590,Synthetic equivariant resolvents and renormalization (physics.comp-ph),2021,physics.comp-ph,physics,Shiing-Shen Chern; Andrey Kolmogorov
+synth-0591,Synthetic non-asymptotic resolvents and renormalization (physics.comp-ph),2024,physics.comp-ph,physics,Grace Hopper; Katherine Johnson; Frances Allen
+synth-0592,Synthetic spectral traces and stability (physics.comp-ph),2020,physics.comp-ph,physics,Benoît Mandelbrot; Claude Shannon; Barbara Liskov
+synth-0593,Synthetic coarse-grained sheaves and mixing (physics.comp-ph),2022,physics.comp-ph,physics,Grace Hopper; Benoît Mandelbrot
+synth-0594,Synthetic variational lattices and stability (physics.comp-ph),2018,physics.comp-ph,physics,Chien-Shiung Wu
+synth-0595,Synthetic measure-theoretic oracles and mixing (physics.comp-ph),2021,physics.comp-ph,physics,Andrey Kolmogorov; Maryam Mirzakhani
+synth-0596,Synthetic synthetic kernels and generalization (physics.comp-ph),2016,physics.comp-ph,physics,Barbara Liskov; Grace Hopper
+synth-0597,Synthetic dissipative flows and synchrony (physics.comp-ph),2017,physics.comp-ph,physics,Claude Shannon
+synth-0598,Synthetic equivariant currents and identifiability (physics.comp-ph),2017,physics.comp-ph,physics,Maryam Mirzakhani
+synth-0599,Synthetic coarse-grained flows and sparsity (physics.comp-ph),2022,physics.comp-ph,physics,Frances Allen
+synth-0600,Synthetic variational lattices and alignment (physics.comp-ph),2020,physics.comp-ph,physics,Shiing-Shen Chern; Dorothy Vaughan
+synth-0601,Synthetic information-limited kernels and sparsity (physics.comp-ph),2022,physics.comp-ph,physics,Chien-Shiung Wu
+synth-0602,Synthetic dissipative currents and inference (physics.comp-ph),2017,physics.comp-ph,physics,Andrey Kolmogorov; Grace Hopper; Alan Turing
+synth-0603,Synthetic high-dimensional resolvents and stability (physics.comp-ph),2019,physics.comp-ph,physics,Subrahmanyan Chandrasekhar; Sofia Kovalevskaya
+synth-0604,Synthetic variational occupancy and mixing (physics.comp-ph),2023,physics.comp-ph,physics,Frances Allen; Emmy Noether; Sofia Kovalevskaya
+synth-0605,Synthetic spectral occupancy and renormalization (physics.comp-ph),2016,physics.comp-ph,physics,Subrahmanyan Chandrasekhar
+synth-0606,Synthetic high-dimensional sheaves and mixing (physics.comp-ph),2023,physics.comp-ph,physics,Maryam Mirzakhani; Emmy Noether
+synth-0607,Synthetic equivariant resolvents and mixing (physics.comp-ph),2020,physics.comp-ph,physics,Chien-Shiung Wu
+synth-0608,Synthetic measure-theoretic oracles and identifiability (physics.comp-ph),2019,physics.comp-ph,physics,Claude Shannon; Frances Allen
+synth-0609,Synthetic synthetic occupancy and renormalization (physics.comp-ph),2019,physics.comp-ph,physics,Grace Hopper; Katherine Johnson
+synth-0610,Synthetic coarse-grained credit and stability (physics.comp-ph),2023,physics.comp-ph,physics,Lotfi Zadeh; Subrahmanyan Chandrasekhar
+synth-0611,Synthetic coarse-grained traces and alignment (physics.comp-ph),2022,physics.comp-ph,physics,Ada Lovelace; Frances Allen; Maryam Mirzakhani
+synth-0612,Synthetic synthetic traces and sparsity (physics.comp-ph),2022,physics.comp-ph,physics,Benoît Mandelbrot
+synth-0613,Synthetic high-dimensional kernels and synchrony (physics.comp-ph),2020,physics.comp-ph,physics,Ada Lovelace; Lotfi Zadeh; Benoît Mandelbrot
+synth-0614,Synthetic high-dimensional sheaves and stability (physics.comp-ph),2017,physics.comp-ph,physics,Frances Allen
+synth-0615,Synthetic spectral flows and identifiability (physics.comp-ph),2017,physics.comp-ph,physics,Claude Shannon
+synth-0616,Synthetic high-dimensional resolvents and synchrony (physics.comp-ph),2023,physics.comp-ph,physics,Lotfi Zadeh
+synth-0617,Synthetic spectral ensembles and generalization (physics.comp-ph),2016,physics.comp-ph,physics,Maryam Mirzakhani; Andrey Kolmogorov
+synth-0618,Synthetic dissipative ensembles and generalization (physics.comp-ph),2024,physics.comp-ph,physics,Barbara Liskov; Shiing-Shen Chern; Chien-Shiung Wu
+synth-0619,Synthetic coarse-grained lattices and mixing (physics.comp-ph),2019,physics.comp-ph,physics,Chien-Shiung Wu; Claude Shannon; Benoît Mandelbrot
+synth-0620,Synthetic variational partitions and transport (physics.comp-ph),2019,physics.comp-ph,physics,Frances Allen
+synth-0621,Synthetic equivariant sheaves and sparsity (physics.comp-ph),2016,physics.comp-ph,physics,Benoît Mandelbrot; Lotfi Zadeh
+synth-0622,Synthetic variational resolvents and mixing (physics.comp-ph),2023,physics.comp-ph,physics,Dorothy Vaughan; Alan Turing; Grace Hopper
+synth-0623,Synthetic non-asymptotic credit and stability (physics.comp-ph),2017,physics.comp-ph,physics,Maryam Mirzakhani
+synth-0624,Synthetic measure-theoretic credit and synchrony (physics.comp-ph),2021,physics.comp-ph,physics,Frances Allen; Sofia Kovalevskaya; Andrey Kolmogorov
+synth-0625,Synthetic coarse-grained sheaves and generalization (physics.comp-ph),2016,physics.comp-ph,physics,Andrey Kolmogorov
+synth-0626,Synthetic coarse-grained occupancy and mixing (physics.comp-ph),2017,physics.comp-ph,physics,Alan Turing; Maryam Mirzakhani; Grace Hopper
+synth-0627,Synthetic synthetic sheaves and identifiability (physics.comp-ph),2021,physics.comp-ph,physics,Emmy Noether; Maryam Mirzakhani
+synth-0628,Synthetic dissipative ensembles and inference (physics.comp-ph),2021,physics.comp-ph,physics,Andrey Kolmogorov; Emmy Noether; Dorothy Vaughan
+synth-0629,Synthetic coarse-grained kernels and transport (physics.comp-ph),2018,physics.comp-ph,physics,Chien-Shiung Wu
+synth-0630,Synthetic high-dimensional ensembles and transport (physics.comp-ph),2023,physics.comp-ph,physics,Emmy Noether
+synth-0631,Synthetic variational lattices and synchrony (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Emmy Noether
+synth-0632,Synthetic measure-theoretic partitions and transport (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Alan Turing
+synth-0633,Synthetic high-dimensional oracles and alignment (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Harald Cramér; Chien-Shiung Wu; Subrahmanyan Chandrasekhar
+synth-0634,Synthetic synthetic currents and identifiability (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Dorothy Vaughan; Katherine Johnson
+synth-0635,Synthetic high-dimensional occupancy and inference (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Kiyosi Itô; Lotfi Zadeh
+synth-0636,Synthetic variational oracles and synchrony (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Lotfi Zadeh; Frances Allen; Benoît Mandelbrot
+synth-0637,Synthetic measure-theoretic lattices and mixing (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Benoît Mandelbrot; Dorothy Vaughan; Shiing-Shen Chern
+synth-0638,Synthetic synthetic oracles and generalization (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Maryam Mirzakhani; Lotfi Zadeh; Sofia Kovalevskaya
+synth-0639,Synthetic spectral occupancy and identifiability (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Grace Hopper; Claude Shannon
+synth-0640,Synthetic spectral occupancy and sparsity (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Ada Lovelace; Sofia Kovalevskaya
+synth-0641,Synthetic synthetic sheaves and sparsity (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Harald Cramér; Alan Turing; Dorothy Vaughan
+synth-0642,Synthetic coarse-grained flows and identifiability (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Benoît Mandelbrot
+synth-0643,Synthetic high-dimensional partitions and identifiability (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Shiing-Shen Chern; Dorothy Vaughan
+synth-0644,Synthetic information-limited traces and identifiability (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Andrey Kolmogorov; Subrahmanyan Chandrasekhar
+synth-0645,Synthetic spectral credit and generalization (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Harald Cramér
+synth-0646,Synthetic measure-theoretic ensembles and sparsity (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Claude Shannon; Shiing-Shen Chern
+synth-0647,Synthetic non-asymptotic sheaves and inference (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Grace Hopper; Barbara Liskov; Emmy Noether
+synth-0648,Synthetic variational traces and identifiability (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Shiing-Shen Chern; Subrahmanyan Chandrasekhar
+synth-0649,Synthetic non-asymptotic ensembles and sparsity (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Emmy Noether; Lotfi Zadeh
+synth-0650,Synthetic variational oracles and alignment (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Lise Meitner
+synth-0651,Synthetic synthetic resolvents and alignment (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Chien-Shiung Wu
+synth-0652,Synthetic coarse-grained flows and stability (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Maryam Mirzakhani; Grace Hopper
+synth-0653,Synthetic measure-theoretic partitions and sparsity (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Barbara Liskov
+synth-0654,Synthetic variational sheaves and renormalization (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Subrahmanyan Chandrasekhar; Maryam Mirzakhani
+synth-0655,Synthetic spectral oracles and synchrony (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Frances Allen; Shiing-Shen Chern
+synth-0656,Synthetic dissipative ensembles and renormalization (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Maryam Mirzakhani
+synth-0657,Synthetic non-asymptotic partitions and transport (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Maryam Mirzakhani; Emmy Noether; Lise Meitner
+synth-0658,Synthetic synthetic ensembles and synchrony (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Sofia Kovalevskaya; Barbara Liskov
+synth-0659,Synthetic synthetic ensembles and synchrony (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Katherine Johnson; Sofia Kovalevskaya
+synth-0660,Synthetic dissipative ensembles and synchrony (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Chien-Shiung Wu
+synth-0661,Synthetic information-limited flows and inference (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Frances Allen; Lotfi Zadeh
+synth-0662,Synthetic information-limited kernels and transport (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Shiing-Shen Chern
+synth-0663,Synthetic dissipative sheaves and mixing (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Lotfi Zadeh; Andrey Kolmogorov
+synth-0664,Synthetic synthetic sheaves and sparsity (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Alan Turing; Kiyosi Itô; Lise Meitner
+synth-0665,Synthetic coarse-grained kernels and generalization (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Shiing-Shen Chern
+synth-0666,Synthetic information-limited traces and alignment (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Ada Lovelace; Chien-Shiung Wu; Kiyosi Itô
+synth-0667,Synthetic non-asymptotic occupancy and alignment (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Emmy Noether; Maryam Mirzakhani
+synth-0668,Synthetic spectral flows and renormalization (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Grace Hopper
+synth-0669,Synthetic coarse-grained traces and mixing (cond-mat.dis-nn),2017,cond-mat.dis-nn,physics,Grace Hopper
+synth-0670,Synthetic measure-theoretic occupancy and generalization (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Shiing-Shen Chern
+synth-0671,Synthetic high-dimensional kernels and transport (cond-mat.dis-nn),2017,cond-mat.dis-nn,physics,Grace Hopper; Harald Cramér; Barbara Liskov
+synth-0672,Synthetic information-limited lattices and synchrony (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Lise Meitner; Frances Allen; Claude Shannon
+synth-0673,Synthetic information-limited traces and alignment (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Subrahmanyan Chandrasekhar; Maryam Mirzakhani
+synth-0674,Synthetic variational ensembles and identifiability (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Maryam Mirzakhani; Claude Shannon; Harald Cramér
+synth-0675,Synthetic dissipative occupancy and inference (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Andrey Kolmogorov; Claude Shannon; Maryam Mirzakhani
+synth-0676,Synthetic information-limited lattices and stability (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Harald Cramér; Emmy Noether; Frances Allen
+synth-0677,Synthetic information-limited kernels and renormalization (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Harald Cramér; Subrahmanyan Chandrasekhar
+synth-0678,Synthetic non-asymptotic oracles and synchrony (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Katherine Johnson; Dorothy Vaughan; Frances Allen
+synth-0679,Synthetic variational sheaves and renormalization (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Barbara Liskov
+synth-0680,Synthetic measure-theoretic credit and sparsity (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Barbara Liskov; Andrey Kolmogorov
+synth-0681,Synthetic spectral partitions and identifiability (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Maryam Mirzakhani
+synth-0682,Synthetic coarse-grained sheaves and stability (cond-mat.dis-nn),2017,cond-mat.dis-nn,physics,Claude Shannon
+synth-0683,Synthetic synthetic credit and sparsity (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Andrey Kolmogorov; Lotfi Zadeh
+synth-0684,Synthetic synthetic currents and transport (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Sofia Kovalevskaya; Frances Allen; Maryam Mirzakhani
+synth-0685,Synthetic non-asymptotic resolvents and stability (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Harald Cramér
+synth-0686,Synthetic information-limited credit and identifiability (cond-mat.dis-nn),2017,cond-mat.dis-nn,physics,Subrahmanyan Chandrasekhar; Frances Allen
+synth-0687,Synthetic measure-theoretic oracles and sparsity (cond-mat.dis-nn),2017,cond-mat.dis-nn,physics,Sofia Kovalevskaya; Kiyosi Itô
+synth-0688,Synthetic variational flows and identifiability (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Frances Allen; Claude Shannon; Barbara Liskov
+synth-0689,Synthetic equivariant occupancy and alignment (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Emmy Noether; Lise Meitner
+synth-0690,Synthetic equivariant resolvents and renormalization (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Shiing-Shen Chern; Ada Lovelace; Andrey Kolmogorov
+synth-0691,Synthetic spectral sheaves and alignment (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Katherine Johnson
+synth-0692,Synthetic synthetic credit and renormalization (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Harald Cramér; Andrey Kolmogorov
+synth-0693,Synthetic coarse-grained lattices and stability (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Kiyosi Itô
+synth-0694,Synthetic variational traces and generalization (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Kiyosi Itô
+synth-0695,Synthetic non-asymptotic oracles and mixing (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Chien-Shiung Wu; Dorothy Vaughan
+synth-0696,Synthetic coarse-grained ensembles and inference (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Grace Hopper; Ada Lovelace; Kiyosi Itô
+synth-0697,Synthetic equivariant occupancy and inference (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Dorothy Vaughan; Emmy Noether
+synth-0698,Synthetic high-dimensional flows and identifiability (cond-mat.dis-nn),2017,cond-mat.dis-nn,physics,Benoît Mandelbrot; Chien-Shiung Wu
+synth-0699,Synthetic equivariant occupancy and generalization (cond-mat.dis-nn),2017,cond-mat.dis-nn,physics,Alan Turing; Subrahmanyan Chandrasekhar; Claude Shannon
+synth-0700,Synthetic coarse-grained flows and alignment (cond-mat.dis-nn),2022,cond-mat.dis-nn,physics,Lise Meitner; Harald Cramér; Lotfi Zadeh
+synth-0701,Synthetic spectral lattices and stability (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Ada Lovelace; Shiing-Shen Chern; Andrey Kolmogorov
+synth-0702,Synthetic dissipative oracles and mixing (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Claude Shannon; Ada Lovelace; Emmy Noether
+synth-0703,Synthetic high-dimensional traces and synchrony (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Lise Meitner; Grace Hopper; Chien-Shiung Wu
+synth-0704,Synthetic spectral sheaves and transport (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Shiing-Shen Chern
+synth-0705,Synthetic variational partitions and renormalization (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Barbara Liskov
+synth-0706,Synthetic measure-theoretic traces and sparsity (cond-mat.dis-nn),2023,cond-mat.dis-nn,physics,Andrey Kolmogorov
+synth-0707,Synthetic variational occupancy and generalization (cond-mat.dis-nn),2016,cond-mat.dis-nn,physics,Emmy Noether
+synth-0708,Synthetic information-limited lattices and identifiability (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Ada Lovelace; Lotfi Zadeh
+synth-0709,Synthetic measure-theoretic sheaves and renormalization (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Claude Shannon; Lise Meitner
+synth-0710,Synthetic spectral flows and identifiability (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Frances Allen; Chien-Shiung Wu
+synth-0711,Synthetic coarse-grained ensembles and transport (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Andrey Kolmogorov; Dorothy Vaughan
+synth-0712,Synthetic non-asymptotic resolvents and alignment (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Frances Allen; Harald Cramér
+synth-0713,Synthetic dissipative kernels and alignment (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Benoît Mandelbrot; Lotfi Zadeh
+synth-0714,Synthetic non-asymptotic credit and alignment (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Katherine Johnson
+synth-0715,Synthetic measure-theoretic partitions and transport (cond-mat.dis-nn),2018,cond-mat.dis-nn,physics,Harald Cramér
+synth-0716,Synthetic variational kernels and sparsity (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Sofia Kovalevskaya
+synth-0717,Synthetic measure-theoretic currents and stability (cond-mat.dis-nn),2017,cond-mat.dis-nn,physics,Lise Meitner; Benoît Mandelbrot; Maryam Mirzakhani
+synth-0718,Synthetic high-dimensional resolvents and stability (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Alan Turing
+synth-0719,Synthetic high-dimensional currents and stability (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Lise Meitner; Alan Turing
+synth-0720,Synthetic equivariant traces and inference (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Lotfi Zadeh
+synth-0721,Synthetic measure-theoretic partitions and stability (q-bio.QM),2018,q-bio.QM,qbio,Benoît Mandelbrot; Alan Turing
+synth-0722,Synthetic information-limited flows and renormalization (q-bio.QM),2017,q-bio.QM,qbio,Dorothy Vaughan; Harald Cramér; Barbara Liskov
+synth-0723,Synthetic equivariant traces and sparsity (q-bio.QM),2023,q-bio.QM,qbio,Frances Allen
+synth-0724,Synthetic variational currents and stability (q-bio.QM),2016,q-bio.QM,qbio,Sofia Kovalevskaya
+synth-0725,Synthetic spectral credit and transport (q-bio.QM),2020,q-bio.QM,qbio,Subrahmanyan Chandrasekhar
+synth-0726,Synthetic spectral credit and renormalization (q-bio.QM),2022,q-bio.QM,qbio,Grace Hopper; Alan Turing
+synth-0727,Synthetic coarse-grained ensembles and inference (q-bio.QM),2018,q-bio.QM,qbio,Shiing-Shen Chern
+synth-0728,Synthetic equivariant ensembles and synchrony (q-bio.QM),2017,q-bio.QM,qbio,Barbara Liskov; Benoît Mandelbrot
+synth-0729,Synthetic dissipative oracles and mixing (q-bio.QM),2021,q-bio.QM,qbio,Grace Hopper
+synth-0730,Synthetic variational lattices and stability (q-bio.QM),2020,q-bio.QM,qbio,Emmy Noether; Ada Lovelace; Chien-Shiung Wu
+synth-0731,Synthetic spectral partitions and sparsity (q-bio.QM),2016,q-bio.QM,qbio,Alan Turing
+synth-0732,Synthetic dissipative resolvents and stability (q-bio.QM),2021,q-bio.QM,qbio,Benoît Mandelbrot; Claude Shannon
+synth-0733,Synthetic spectral traces and alignment (q-bio.QM),2016,q-bio.QM,qbio,Ada Lovelace
+synth-0734,Synthetic measure-theoretic credit and identifiability (q-bio.QM),2020,q-bio.QM,qbio,Frances Allen; Claude Shannon; Benoît Mandelbrot
+synth-0735,Synthetic equivariant resolvents and synchrony (q-bio.QM),2018,q-bio.QM,qbio,Barbara Liskov
+synth-0736,Synthetic high-dimensional credit and alignment (q-bio.QM),2020,q-bio.QM,qbio,Ada Lovelace
+synth-0737,Synthetic dissipative sheaves and stability (q-bio.QM),2019,q-bio.QM,qbio,Kiyosi Itô
+synth-0738,Synthetic non-asymptotic kernels and mixing (q-bio.QM),2021,q-bio.QM,qbio,Shiing-Shen Chern; Maryam Mirzakhani
+synth-0739,Synthetic spectral resolvents and sparsity (q-bio.QM),2024,q-bio.QM,qbio,Lise Meitner; Sofia Kovalevskaya; Andrey Kolmogorov
+synth-0740,Synthetic dissipative currents and sparsity (q-bio.QM),2022,q-bio.QM,qbio,Subrahmanyan Chandrasekhar; Sofia Kovalevskaya; Kiyosi Itô
+synth-0741,Synthetic equivariant currents and transport (q-bio.QM),2017,q-bio.QM,qbio,Maryam Mirzakhani
+synth-0742,Synthetic equivariant partitions and stability (q-bio.QM),2016,q-bio.QM,qbio,Harald Cramér
+synth-0743,Synthetic information-limited partitions and alignment (q-bio.QM),2022,q-bio.QM,qbio,Claude Shannon; Chien-Shiung Wu
+synth-0744,Synthetic high-dimensional kernels and inference (q-bio.QM),2016,q-bio.QM,qbio,Ada Lovelace; Emmy Noether
+synth-0745,Synthetic dissipative resolvents and stability (q-bio.QM),2023,q-bio.QM,qbio,Katherine Johnson; Alan Turing
+synth-0746,Synthetic dissipative partitions and identifiability (q-bio.QM),2022,q-bio.QM,qbio,Barbara Liskov
+synth-0747,Synthetic variational lattices and stability (q-bio.QM),2016,q-bio.QM,qbio,Dorothy Vaughan; Grace Hopper; Lotfi Zadeh
+synth-0748,Synthetic non-asymptotic partitions and generalization (q-bio.QM),2023,q-bio.QM,qbio,Chien-Shiung Wu; Frances Allen
+synth-0749,Synthetic synthetic kernels and inference (q-bio.QM),2024,q-bio.QM,qbio,Alan Turing
+synth-0750,Synthetic information-limited resolvents and synchrony (q-bio.QM),2024,q-bio.QM,qbio,Sofia Kovalevskaya
+synth-0751,Synthetic synthetic sheaves and transport (q-bio.QM),2016,q-bio.QM,qbio,Alan Turing; Katherine Johnson
+synth-0752,Synthetic coarse-grained oracles and renormalization (q-bio.QM),2017,q-bio.QM,qbio,Maryam Mirzakhani
+synth-0753,Synthetic non-asymptotic sheaves and synchrony (q-bio.QM),2022,q-bio.QM,qbio,Harald Cramér
+synth-0754,Synthetic high-dimensional lattices and sparsity (q-bio.QM),2019,q-bio.QM,qbio,Barbara Liskov
+synth-0755,Synthetic synthetic traces and alignment (q-bio.QM),2023,q-bio.QM,qbio,Maryam Mirzakhani
+synth-0756,Synthetic measure-theoretic flows and mixing (q-bio.QM),2019,q-bio.QM,qbio,Maryam Mirzakhani; Sofia Kovalevskaya; Emmy Noether
+synth-0757,Synthetic information-limited ensembles and synchrony (q-bio.QM),2022,q-bio.QM,qbio,Katherine Johnson
+synth-0758,Synthetic variational traces and generalization (q-bio.QM),2021,q-bio.QM,qbio,Ada Lovelace; Shiing-Shen Chern; Sofia Kovalevskaya
+synth-0759,Synthetic information-limited oracles and alignment (q-bio.QM),2024,q-bio.QM,qbio,Lise Meitner
+synth-0760,Synthetic variational oracles and sparsity (q-bio.QM),2018,q-bio.QM,qbio,Dorothy Vaughan; Andrey Kolmogorov
+synth-0761,Synthetic synthetic credit and transport (q-bio.QM),2024,q-bio.QM,qbio,Subrahmanyan Chandrasekhar; Barbara Liskov
+synth-0762,Synthetic non-asymptotic ensembles and synchrony (q-bio.QM),2021,q-bio.QM,qbio,Barbara Liskov; Sofia Kovalevskaya
+synth-0763,Synthetic high-dimensional lattices and synchrony (q-bio.QM),2018,q-bio.QM,qbio,Katherine Johnson
+synth-0764,Synthetic dissipative partitions and alignment (q-bio.QM),2021,q-bio.QM,qbio,Dorothy Vaughan; Maryam Mirzakhani; Alan Turing
+synth-0765,Synthetic dissipative lattices and transport (q-bio.QM),2020,q-bio.QM,qbio,Chien-Shiung Wu; Shiing-Shen Chern; Barbara Liskov
+synth-0766,Synthetic variational partitions and generalization (q-bio.QM),2022,q-bio.QM,qbio,Frances Allen; Subrahmanyan Chandrasekhar
+synth-0767,Synthetic non-asymptotic currents and synchrony (q-bio.QM),2016,q-bio.QM,qbio,Benoît Mandelbrot
+synth-0768,Synthetic high-dimensional flows and renormalization (q-bio.QM),2019,q-bio.QM,qbio,Andrey Kolmogorov; Emmy Noether; Barbara Liskov
+synth-0769,Synthetic high-dimensional flows and renormalization (q-bio.QM),2022,q-bio.QM,qbio,Harald Cramér; Barbara Liskov; Shiing-Shen Chern
+synth-0770,Synthetic coarse-grained sheaves and transport (q-bio.QM),2022,q-bio.QM,qbio,Grace Hopper; Subrahmanyan Chandrasekhar
+synth-0771,Synthetic coarse-grained occupancy and renormalization (q-bio.QM),2018,q-bio.QM,qbio,Emmy Noether
+synth-0772,Synthetic measure-theoretic flows and generalization (q-bio.QM),2016,q-bio.QM,qbio,Harald Cramér; Alan Turing
+synth-0773,Synthetic equivariant occupancy and synchrony (q-bio.QM),2019,q-bio.QM,qbio,Grace Hopper; Katherine Johnson
+synth-0774,Synthetic non-asymptotic lattices and identifiability (q-bio.QM),2019,q-bio.QM,qbio,Maryam Mirzakhani; Grace Hopper
+synth-0775,Synthetic non-asymptotic resolvents and generalization (q-bio.QM),2017,q-bio.QM,qbio,Grace Hopper
+synth-0776,Synthetic non-asymptotic currents and transport (q-bio.QM),2019,q-bio.QM,qbio,Subrahmanyan Chandrasekhar; Dorothy Vaughan
+synth-0777,Synthetic spectral credit and identifiability (q-bio.QM),2021,q-bio.QM,qbio,Benoît Mandelbrot; Alan Turing
+synth-0778,Synthetic variational currents and identifiability (q-bio.QM),2020,q-bio.QM,qbio,Subrahmanyan Chandrasekhar; Emmy Noether
+synth-0779,Synthetic dissipative lattices and transport (q-bio.QM),2017,q-bio.QM,qbio,Shiing-Shen Chern; Maryam Mirzakhani; Lotfi Zadeh
+synth-0780,Synthetic spectral currents and identifiability (q-bio.QM),2024,q-bio.QM,qbio,Andrey Kolmogorov; Chien-Shiung Wu; Alan Turing
+synth-0781,Synthetic non-asymptotic oracles and identifiability (q-bio.QM),2016,q-bio.QM,qbio,Katherine Johnson
+synth-0782,Synthetic coarse-grained traces and stability (q-bio.QM),2016,q-bio.QM,qbio,Shiing-Shen Chern; Kiyosi Itô; Dorothy Vaughan
+synth-0783,Synthetic dissipative partitions and alignment (q-bio.QM),2021,q-bio.QM,qbio,Emmy Noether; Frances Allen; Dorothy Vaughan
+synth-0784,Synthetic variational resolvents and renormalization (q-bio.QM),2017,q-bio.QM,qbio,Kiyosi Itô; Emmy Noether
+synth-0785,Synthetic coarse-grained currents and inference (q-bio.QM),2021,q-bio.QM,qbio,Lotfi Zadeh; Harald Cramér; Ada Lovelace
+synth-0786,Synthetic spectral currents and synchrony (q-bio.QM),2018,q-bio.QM,qbio,Dorothy Vaughan
+synth-0787,Synthetic synthetic credit and synchrony (q-bio.QM),2017,q-bio.QM,qbio,Chien-Shiung Wu
+synth-0788,Synthetic information-limited occupancy and mixing (q-bio.QM),2021,q-bio.QM,qbio,Lise Meitner; Chien-Shiung Wu; Harald Cramér
+synth-0789,Synthetic measure-theoretic kernels and renormalization (q-bio.QM),2016,q-bio.QM,qbio,Ada Lovelace
+synth-0790,Synthetic high-dimensional currents and generalization (q-bio.QM),2024,q-bio.QM,qbio,Chien-Shiung Wu; Harald Cramér
+synth-0791,Synthetic coarse-grained resolvents and transport (q-bio.QM),2022,q-bio.QM,qbio,Subrahmanyan Chandrasekhar; Emmy Noether
+synth-0792,Synthetic high-dimensional lattices and sparsity (q-bio.QM),2019,q-bio.QM,qbio,Shiing-Shen Chern; Lise Meitner
+synth-0793,Synthetic high-dimensional occupancy and inference (q-bio.QM),2021,q-bio.QM,qbio,Lise Meitner; Subrahmanyan Chandrasekhar
+synth-0794,Synthetic dissipative ensembles and inference (q-bio.QM),2024,q-bio.QM,qbio,Barbara Liskov; Katherine Johnson; Grace Hopper
+synth-0795,Synthetic synthetic flows and transport (q-bio.QM),2018,q-bio.QM,qbio,Sofia Kovalevskaya; Benoît Mandelbrot
+synth-0796,Synthetic measure-theoretic lattices and mixing (q-bio.QM),2024,q-bio.QM,qbio,Frances Allen
+synth-0797,Synthetic synthetic partitions and sparsity (q-bio.QM),2023,q-bio.QM,qbio,Barbara Liskov; Benoît Mandelbrot; Chien-Shiung Wu
+synth-0798,Synthetic equivariant traces and stability (q-bio.QM),2021,q-bio.QM,qbio,Harald Cramér
+synth-0799,Synthetic spectral credit and alignment (q-bio.QM),2021,q-bio.QM,qbio,Maryam Mirzakhani; Alan Turing
+synth-0800,Synthetic measure-theoretic oracles and renormalization (q-bio.QM),2020,q-bio.QM,qbio,Maryam Mirzakhani; Andrey Kolmogorov; Shiing-Shen Chern
+synth-0801,Synthetic spectral occupancy and sparsity (q-bio.QM),2018,q-bio.QM,qbio,Frances Allen
+synth-0802,Synthetic information-limited oracles and mixing (q-bio.QM),2017,q-bio.QM,qbio,Grace Hopper; Emmy Noether
+synth-0803,Synthetic equivariant flows and identifiability (q-bio.QM),2021,q-bio.QM,qbio,Dorothy Vaughan
+synth-0804,Synthetic measure-theoretic flows and sparsity (q-bio.QM),2018,q-bio.QM,qbio,Chien-Shiung Wu; Benoît Mandelbrot; Alan Turing
+synth-0805,Synthetic non-asymptotic sheaves and identifiability (q-bio.QM),2020,q-bio.QM,qbio,Kiyosi Itô
+synth-0806,Synthetic measure-theoretic partitions and identifiability (q-bio.QM),2019,q-bio.QM,qbio,Subrahmanyan Chandrasekhar; Ada Lovelace
+synth-0807,Synthetic equivariant sheaves and transport (q-bio.QM),2023,q-bio.QM,qbio,Sofia Kovalevskaya; Katherine Johnson; Kiyosi Itô
+synth-0808,Synthetic non-asymptotic occupancy and renormalization (q-bio.QM),2023,q-bio.QM,qbio,Frances Allen; Chien-Shiung Wu; Benoît Mandelbrot
+synth-0809,Synthetic dissipative lattices and synchrony (q-bio.QM),2023,q-bio.QM,qbio,Shiing-Shen Chern; Kiyosi Itô
+synth-0810,Synthetic dissipative oracles and synchrony (q-bio.QM),2018,q-bio.QM,qbio,Dorothy Vaughan; Ada Lovelace
+synth-0811,Synthetic high-dimensional resolvents and sparsity (q-bio.NC),2018,q-bio.NC,qbio,Barbara Liskov; Chien-Shiung Wu; Shiing-Shen Chern
+synth-0812,Synthetic equivariant ensembles and sparsity (q-bio.NC),2017,q-bio.NC,qbio,Dorothy Vaughan; Sofia Kovalevskaya
+synth-0813,Synthetic equivariant sheaves and generalization (q-bio.NC),2017,q-bio.NC,qbio,Maryam Mirzakhani; Dorothy Vaughan
+synth-0814,Synthetic coarse-grained oracles and sparsity (q-bio.NC),2020,q-bio.NC,qbio,Lotfi Zadeh; Subrahmanyan Chandrasekhar
+synth-0815,Synthetic coarse-grained currents and renormalization (q-bio.NC),2022,q-bio.NC,qbio,Harald Cramér
+synth-0816,Synthetic measure-theoretic partitions and alignment (q-bio.NC),2017,q-bio.NC,qbio,Ada Lovelace; Sofia Kovalevskaya
+synth-0817,Synthetic high-dimensional lattices and mixing (q-bio.NC),2022,q-bio.NC,qbio,Grace Hopper; Shiing-Shen Chern
+synth-0818,Synthetic high-dimensional credit and mixing (q-bio.NC),2019,q-bio.NC,qbio,Lotfi Zadeh; Sofia Kovalevskaya; Grace Hopper
+synth-0819,Synthetic high-dimensional partitions and stability (q-bio.NC),2023,q-bio.NC,qbio,Ada Lovelace; Andrey Kolmogorov; Benoît Mandelbrot
+synth-0820,Synthetic non-asymptotic occupancy and identifiability (q-bio.NC),2018,q-bio.NC,qbio,Kiyosi Itô; Emmy Noether; Andrey Kolmogorov
+synth-0821,Synthetic coarse-grained credit and inference (q-bio.NC),2021,q-bio.NC,qbio,Katherine Johnson; Subrahmanyan Chandrasekhar; Sofia Kovalevskaya
+synth-0822,Synthetic spectral sheaves and generalization (q-bio.NC),2017,q-bio.NC,qbio,Andrey Kolmogorov
+synth-0823,Synthetic high-dimensional traces and renormalization (q-bio.NC),2024,q-bio.NC,qbio,Chien-Shiung Wu; Maryam Mirzakhani
+synth-0824,Synthetic information-limited ensembles and sparsity (q-bio.NC),2016,q-bio.NC,qbio,Chien-Shiung Wu; Shiing-Shen Chern; Lotfi Zadeh
+synth-0825,Synthetic high-dimensional oracles and renormalization (q-bio.NC),2020,q-bio.NC,qbio,Frances Allen; Lise Meitner
+synth-0826,Synthetic coarse-grained resolvents and inference (q-bio.NC),2017,q-bio.NC,qbio,Maryam Mirzakhani; Frances Allen
+synth-0827,Synthetic spectral sheaves and transport (q-bio.NC),2016,q-bio.NC,qbio,Katherine Johnson
+synth-0828,Synthetic coarse-grained resolvents and generalization (q-bio.NC),2022,q-bio.NC,qbio,Barbara Liskov; Grace Hopper
+synth-0829,Synthetic equivariant occupancy and mixing (q-bio.NC),2023,q-bio.NC,qbio,Ada Lovelace
+synth-0830,Synthetic variational sheaves and renormalization (q-bio.NC),2016,q-bio.NC,qbio,Maryam Mirzakhani
+synth-0831,Synthetic coarse-grained ensembles and mixing (q-bio.NC),2017,q-bio.NC,qbio,Lise Meitner; Subrahmanyan Chandrasekhar
+synth-0832,Synthetic measure-theoretic kernels and stability (q-bio.NC),2016,q-bio.NC,qbio,Chien-Shiung Wu
+synth-0833,Synthetic high-dimensional resolvents and mixing (q-bio.NC),2024,q-bio.NC,qbio,Grace Hopper
+synth-0834,Synthetic high-dimensional resolvents and mixing (q-bio.NC),2020,q-bio.NC,qbio,Maryam Mirzakhani; Lise Meitner; Alan Turing
+synth-0835,Synthetic coarse-grained traces and identifiability (q-bio.NC),2024,q-bio.NC,qbio,Lotfi Zadeh; Benoît Mandelbrot
+synth-0836,Synthetic measure-theoretic kernels and mixing (q-bio.NC),2018,q-bio.NC,qbio,Chien-Shiung Wu; Barbara Liskov; Sofia Kovalevskaya
+synth-0837,Synthetic variational occupancy and alignment (q-bio.NC),2017,q-bio.NC,qbio,Kiyosi Itô; Subrahmanyan Chandrasekhar; Dorothy Vaughan
+synth-0838,Synthetic high-dimensional occupancy and generalization (q-bio.NC),2020,q-bio.NC,qbio,Lotfi Zadeh
+synth-0839,Synthetic equivariant partitions and inference (q-bio.NC),2017,q-bio.NC,qbio,Andrey Kolmogorov; Lise Meitner
+synth-0840,Synthetic dissipative partitions and synchrony (q-bio.NC),2024,q-bio.NC,qbio,Maryam Mirzakhani; Lise Meitner
+synth-0841,Synthetic dissipative traces and alignment (q-bio.NC),2023,q-bio.NC,qbio,Maryam Mirzakhani; Frances Allen; Lotfi Zadeh
+synth-0842,Synthetic coarse-grained traces and generalization (q-bio.NC),2019,q-bio.NC,qbio,Frances Allen; Maryam Mirzakhani
+synth-0843,Synthetic non-asymptotic flows and transport (q-bio.NC),2021,q-bio.NC,qbio,Katherine Johnson
+synth-0844,Synthetic non-asymptotic occupancy and identifiability (q-bio.NC),2019,q-bio.NC,qbio,Lotfi Zadeh; Chien-Shiung Wu; Andrey Kolmogorov
+synth-0845,Synthetic spectral oracles and identifiability (q-bio.NC),2022,q-bio.NC,qbio,Kiyosi Itô; Andrey Kolmogorov; Shiing-Shen Chern
+synth-0846,Synthetic synthetic occupancy and sparsity (q-bio.NC),2024,q-bio.NC,qbio,Claude Shannon; Kiyosi Itô
+synth-0847,Synthetic measure-theoretic flows and transport (q-bio.NC),2016,q-bio.NC,qbio,Barbara Liskov
+synth-0848,Synthetic non-asymptotic flows and renormalization (q-bio.NC),2021,q-bio.NC,qbio,Kiyosi Itô
+synth-0849,Synthetic non-asymptotic lattices and transport (q-bio.NC),2023,q-bio.NC,qbio,Sofia Kovalevskaya
+synth-0850,Synthetic variational kernels and transport (q-bio.NC),2024,q-bio.NC,qbio,Frances Allen
+synth-0851,Synthetic high-dimensional flows and alignment (q-bio.NC),2016,q-bio.NC,qbio,Lotfi Zadeh
+synth-0852,Synthetic information-limited traces and sparsity (q-bio.NC),2019,q-bio.NC,qbio,Shiing-Shen Chern
+synth-0853,Synthetic measure-theoretic kernels and stability (q-bio.NC),2023,q-bio.NC,qbio,Benoît Mandelbrot
+synth-0854,Synthetic variational occupancy and synchrony (q-bio.NC),2023,q-bio.NC,qbio,Emmy Noether; Lise Meitner
+synth-0855,Synthetic synthetic sheaves and alignment (q-bio.NC),2023,q-bio.NC,qbio,Ada Lovelace; Andrey Kolmogorov; Lotfi Zadeh
+synth-0856,Synthetic variational credit and alignment (q-bio.NC),2019,q-bio.NC,qbio,Benoît Mandelbrot; Frances Allen
+synth-0857,Synthetic high-dimensional currents and mixing (q-bio.NC),2020,q-bio.NC,qbio,Lise Meitner; Ada Lovelace
+synth-0858,Synthetic high-dimensional occupancy and renormalization (q-bio.NC),2020,q-bio.NC,qbio,Dorothy Vaughan; Benoît Mandelbrot; Emmy Noether
+synth-0859,Synthetic coarse-grained ensembles and renormalization (q-bio.NC),2017,q-bio.NC,qbio,Subrahmanyan Chandrasekhar; Maryam Mirzakhani; Dorothy Vaughan
+synth-0860,Synthetic dissipative ensembles and inference (q-bio.NC),2024,q-bio.NC,qbio,Shiing-Shen Chern
+synth-0861,Synthetic information-limited ensembles and renormalization (q-bio.NC),2021,q-bio.NC,qbio,Frances Allen; Barbara Liskov; Lise Meitner
+synth-0862,Synthetic information-limited partitions and renormalization (q-bio.NC),2016,q-bio.NC,qbio,Subrahmanyan Chandrasekhar
+synth-0863,Synthetic high-dimensional credit and inference (q-bio.NC),2016,q-bio.NC,qbio,Kiyosi Itô
+synth-0864,Synthetic spectral credit and inference (q-bio.NC),2020,q-bio.NC,qbio,Emmy Noether; Shiing-Shen Chern; Sofia Kovalevskaya
+synth-0865,Synthetic high-dimensional occupancy and inference (q-bio.NC),2024,q-bio.NC,qbio,Claude Shannon; Frances Allen
+synth-0866,Synthetic information-limited currents and generalization (q-bio.NC),2019,q-bio.NC,qbio,Chien-Shiung Wu; Grace Hopper
+synth-0867,Synthetic non-asymptotic partitions and identifiability (q-bio.NC),2022,q-bio.NC,qbio,Andrey Kolmogorov; Claude Shannon; Lotfi Zadeh
+synth-0868,Synthetic dissipative ensembles and generalization (q-bio.NC),2019,q-bio.NC,qbio,Claude Shannon
+synth-0869,Synthetic high-dimensional flows and generalization (q-bio.NC),2016,q-bio.NC,qbio,Lotfi Zadeh
+synth-0870,Synthetic information-limited currents and renormalization (q-bio.NC),2024,q-bio.NC,qbio,Grace Hopper; Shiing-Shen Chern; Harald Cramér
+synth-0871,Synthetic synthetic oracles and alignment (q-bio.NC),2017,q-bio.NC,qbio,Maryam Mirzakhani; Frances Allen
+synth-0872,Synthetic non-asymptotic traces and identifiability (q-bio.NC),2017,q-bio.NC,qbio,Chien-Shiung Wu
+synth-0873,Synthetic information-limited flows and alignment (q-bio.NC),2017,q-bio.NC,qbio,Harald Cramér; Lotfi Zadeh
+synth-0874,Synthetic high-dimensional ensembles and synchrony (q-bio.NC),2017,q-bio.NC,qbio,Chien-Shiung Wu; Grace Hopper
+synth-0875,Synthetic synthetic partitions and stability (q-bio.NC),2016,q-bio.NC,qbio,Andrey Kolmogorov; Dorothy Vaughan; Shiing-Shen Chern
+synth-0876,Synthetic synthetic flows and inference (q-bio.NC),2016,q-bio.NC,qbio,Alan Turing; Andrey Kolmogorov
+synth-0877,Synthetic equivariant credit and alignment (q-bio.NC),2020,q-bio.NC,qbio,Subrahmanyan Chandrasekhar
+synth-0878,Synthetic information-limited partitions and synchrony (q-bio.NC),2021,q-bio.NC,qbio,Harald Cramér; Alan Turing
+synth-0879,Synthetic measure-theoretic occupancy and alignment (q-bio.NC),2022,q-bio.NC,qbio,Chien-Shiung Wu; Dorothy Vaughan
+synth-0880,Synthetic spectral kernels and generalization (q-bio.NC),2016,q-bio.NC,qbio,Alan Turing
+synth-0881,Synthetic spectral flows and inference (q-bio.NC),2017,q-bio.NC,qbio,Lotfi Zadeh; Andrey Kolmogorov
+synth-0882,Synthetic dissipative flows and inference (q-bio.NC),2023,q-bio.NC,qbio,Lise Meitner
+synth-0883,Synthetic coarse-grained flows and stability (q-bio.NC),2016,q-bio.NC,qbio,Ada Lovelace; Sofia Kovalevskaya
+synth-0884,Synthetic information-limited kernels and inference (q-bio.NC),2023,q-bio.NC,qbio,Harald Cramér; Alan Turing; Maryam Mirzakhani
+synth-0885,Synthetic high-dimensional kernels and synchrony (q-bio.NC),2021,q-bio.NC,qbio,Kiyosi Itô; Barbara Liskov; Emmy Noether
+synth-0886,Synthetic synthetic traces and renormalization (q-bio.NC),2024,q-bio.NC,qbio,Claude Shannon
+synth-0887,Synthetic high-dimensional kernels and synchrony (q-bio.NC),2017,q-bio.NC,qbio,Benoît Mandelbrot
+synth-0888,Synthetic equivariant flows and mixing (q-bio.NC),2018,q-bio.NC,qbio,Claude Shannon; Kiyosi Itô
+synth-0889,Synthetic spectral occupancy and renormalization (q-bio.NC),2021,q-bio.NC,qbio,Lotfi Zadeh; Frances Allen; Maryam Mirzakhani
+synth-0890,Synthetic equivariant oracles and synchrony (q-bio.NC),2023,q-bio.NC,qbio,Andrey Kolmogorov
+synth-0891,Synthetic spectral sheaves and sparsity (q-bio.NC),2018,q-bio.NC,qbio,Frances Allen; Shiing-Shen Chern; Claude Shannon
+synth-0892,Synthetic synthetic traces and alignment (q-bio.NC),2018,q-bio.NC,qbio,Kiyosi Itô; Lotfi Zadeh; Claude Shannon
+synth-0893,Synthetic measure-theoretic partitions and stability (q-bio.NC),2020,q-bio.NC,qbio,Katherine Johnson; Lotfi Zadeh
+synth-0894,Synthetic synthetic kernels and transport (q-bio.NC),2018,q-bio.NC,qbio,Claude Shannon; Lotfi Zadeh; Shiing-Shen Chern
+synth-0895,Synthetic equivariant flows and renormalization (q-bio.NC),2019,q-bio.NC,qbio,Andrey Kolmogorov
+synth-0896,Synthetic variational traces and inference (q-bio.NC),2020,q-bio.NC,qbio,Alan Turing; Sofia Kovalevskaya; Subrahmanyan Chandrasekhar
+synth-0897,Synthetic dissipative currents and sparsity (q-bio.NC),2023,q-bio.NC,qbio,Lotfi Zadeh
+synth-0898,Synthetic non-asymptotic partitions and generalization (q-bio.NC),2020,q-bio.NC,qbio,Claude Shannon; Maryam Mirzakhani
+synth-0899,Synthetic measure-theoretic resolvents and renormalization (q-bio.NC),2024,q-bio.NC,qbio,Subrahmanyan Chandrasekhar; Harald Cramér
+synth-0900,Synthetic non-asymptotic resolvents and generalization (q-bio.NC),2021,q-bio.NC,qbio,Benoît Mandelbrot; Harald Cramér
+synth-0901,Synthetic liaison: equivariant currents for cross-field inference (cs.LG),2022,cs.LG,cs,Emmy Noether
+synth-0902,Synthetic liaison: variational kernels for cross-field inference (q-bio.NC),2024,q-bio.NC,qbio,Kiyosi Itô
+synth-0903,Synthetic liaison: coarse-grained ensembles for cross-field identifiability (cs.CL),2025,cs.CL,cs,Subrahmanyan Chandrasekhar
+synth-0904,Synthetic liaison: measure-theoretic ensembles for cross-field stability (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Emmy Noether
+synth-0905,Synthetic liaison: synthetic oracles for cross-field identifiability (math.ST),2024,math.ST,math,Emmy Noether; Lotfi Zadeh; Claude Shannon
+synth-0906,Synthetic liaison: spectral lattices for cross-field synchrony (q-bio.QM),2019,q-bio.QM,qbio,Emmy Noether; Grace Hopper; Subrahmanyan Chandrasekhar
+synth-0907,Synthetic liaison: high-dimensional sheaves for cross-field identifiability (cs.LG),2025,cs.LG,cs,Subrahmanyan Chandrasekhar; Katherine Johnson; Harald Cramér
+synth-0908,Synthetic liaison: variational partitions for cross-field sparsity (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Grace Hopper; Chien-Shiung Wu; Alan Turing
+synth-0909,Synthetic liaison: synthetic kernels for cross-field identifiability (cs.LG),2020,cs.LG,cs,Benoît Mandelbrot; Lotfi Zadeh
+synth-0910,Synthetic liaison: information-limited flows for cross-field identifiability (q-bio.NC),2022,q-bio.NC,qbio,Shiing-Shen Chern; Maryam Mirzakhani
+synth-0911,Synthetic liaison: dissipative occupancy for cross-field sparsity (cs.CL),2022,cs.CL,cs,Chien-Shiung Wu
+synth-0912,Synthetic liaison: high-dimensional flows for cross-field renormalization (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Katherine Johnson
+synth-0913,Synthetic liaison: synthetic lattices for cross-field sparsity (math.ST),2024,math.ST,math,Grace Hopper
+synth-0914,Synthetic liaison: equivariant occupancy for cross-field stability (q-bio.QM),2023,q-bio.QM,qbio,Dorothy Vaughan
+synth-0915,Synthetic liaison: non-asymptotic oracles for cross-field synchrony (cs.LG),2022,cs.LG,cs,Dorothy Vaughan; Harald Cramér
+synth-0916,Synthetic liaison: non-asymptotic flows for cross-field mixing (cond-mat.dis-nn),2024,cond-mat.dis-nn,physics,Barbara Liskov; Claude Shannon
+synth-0917,Synthetic liaison: equivariant lattices for cross-field synchrony (cs.LG),2025,cs.LG,cs,Emmy Noether
+synth-0918,Synthetic liaison: measure-theoretic flows for cross-field stability (q-bio.NC),2019,q-bio.NC,qbio,Barbara Liskov; Maryam Mirzakhani; Kiyosi Itô
+synth-0919,Synthetic liaison: information-limited lattices for cross-field mixing (cs.CL),2020,cs.CL,cs,Andrey Kolmogorov
+synth-0920,Synthetic liaison: variational occupancy for cross-field transport (cond-mat.dis-nn),2019,cond-mat.dis-nn,physics,Dorothy Vaughan; Claude Shannon; Grace Hopper
+synth-0921,Synthetic liaison: information-limited traces for cross-field inference (math.ST),2023,math.ST,math,Chien-Shiung Wu; Maryam Mirzakhani; Barbara Liskov
+synth-0922,Synthetic liaison: equivariant currents for cross-field renormalization (q-bio.QM),2025,q-bio.QM,qbio,Kiyosi Itô; Maryam Mirzakhani; Benoît Mandelbrot
+synth-0923,Synthetic liaison: synthetic partitions for cross-field alignment (cs.LG),2022,cs.LG,cs,Barbara Liskov; Shiing-Shen Chern; Frances Allen
+synth-0924,Synthetic liaison: information-limited ensembles for cross-field generalization (cond-mat.dis-nn),2021,cond-mat.dis-nn,physics,Barbara Liskov
+synth-0925,Synthetic liaison: coarse-grained currents for cross-field inference (cs.LG),2021,cs.LG,cs,Emmy Noether
+synth-0926,Synthetic liaison: synthetic lattices for cross-field transport (q-bio.NC),2023,q-bio.NC,qbio,Kiyosi Itô; Frances Allen
+synth-0927,Synthetic liaison: non-asymptotic kernels for cross-field alignment (cs.CL),2024,cs.CL,cs,Claude Shannon; Andrey Kolmogorov; Frances Allen
+synth-0928,Synthetic liaison: synthetic oracles for cross-field transport (cond-mat.dis-nn),2020,cond-mat.dis-nn,physics,Frances Allen

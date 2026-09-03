@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "generator": "claimledger",
+  "claimledger_version": "0.1.0",
+  "n": 928,
+  "undirected_edges": 7777,
+  "directed_citations": 7838,
+  "components": 1,
+  "algebraic_connectivity": 0.239942728588,
+  "embedding_k": 8,
+  "bridge_method": "rayleigh-participation",
+  "bridge_pair": [
+    "math",
+    "cs"
+  ],
+  "categories": [
+    {
+      "id": "cs.LG",
+      "name": "Machine Learning",
+      "group": "cs"
+    },
+    {
+      "id": "cs.AI",
+      "name": "Artificial Intelligence",
+      "group": "cs"
+    },
+    {
+      "id": "cs.CL",
+      "name": "Computation and Language",
+      "group": "cs"
+    },
+    {
+      "id": "stat.ML",
+      "name": "Machine Learning (Statistics)",
+      "group": "stat"
+    },
+    {
+      "id": "math.ST",
+      "name": "Statistics Theory",
+      "group": "math"
+    },
+    {
+      "id": "math.PR",
+      "name": "Probability",
+      "group": "math"
+    },
+    {
+      "id": "physics.comp-ph",
+      "name": "Computational Physics",
+      "group": "physics"
+    },
+    {
+      "id": "cond-mat.dis-nn",
+      "name": "Disordered Systems and Neural Networks",
+      "group": "physics"
+    },
+    {
+      "id": "q-bio.QM",
+      "name": "Quantitative Methods",
+      "group": "qbio"
+    },
+    {
+      "id": "q-bio.NC",
+      "name": "Neurons and Cognition",
+      "group": "qbio"
+    }
+  ],
+  "fields": [
+    {
+      "id": "qbio",
+      "count": 187
+    },
+    {
+      "id": "physics",
+      "count": 187
+    },
+    {
+      "id": "math",
+      "count": 183
+    },
+    {
+      "id": "stat",
+      "count": 90
+    },
+    {
+      "id": "cs",
+      "count": 281
+    }
+  ]
+}

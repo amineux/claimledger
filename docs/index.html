@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ClaimLedger — spectral citation atlas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/atlas.css" />
+</head>
+<body>
+  <header class="mast">
+    <div>
+      <h1 class="wordmark">Claim<span>Ledger</span></h1>
+      <div class="tag">Normalized Laplacian of a citation graph. Fiedler bridges. COBOL trial balance of intellectual debt.</div>
+    </div>
+    <div class="stats">
+      <div>n <b id="stat-n">—</b></div>
+      <div>m <b id="stat-m">—</b></div>
+      <div>λ₂ <b id="stat-l2">—</b></div>
+      <div>cut <b id="stat-pair">—</b></div>
+    </div>
+  </header>
+
+  <main class="stage">
+    <div class="hud">
+      <canvas id="atlas"></canvas>
+      <div class="hud-bar">
+        <button id="btn-2d" class="active">2D Fiedler</button>
+        <button id="btn-3d">3D eigenspaces</button>
+        <button id="btn-bridges">bridges only</button>
+      </div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <aside class="side">
+      <h2>Ledger</h2>
+      <pre id="detail"></pre>
+      <h2>Spectral bridges</h2>
+      <p class="meta">Ranked by cross-field Dirichlet energy × participation entropy × Fiedler-cut proximity. The combinatorial form is NP-hard; this is the polynomial heuristic in PROBLEM.md.</p>
+      <ul class="bridge-list" id="bridges"></ul>
+    </aside>
+  </main>
+
+  <footer class="foot">
+    <span>synthetic corpus · ids synth-NNNN · no forged arXiv papers</span>
+    <span><a href="https://github.com/amineux/claimledger">source</a> · <a href="https://amineux.github.io/claimledger/">amineux.github.io/claimledger</a></span>
+  </footer>
+  <script src="js/atlas.js"></script>
+</body>
+</html>
