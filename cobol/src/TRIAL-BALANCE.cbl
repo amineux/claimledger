@@ -1,10 +1,7 @@
 >>SOURCE FORMAT FREE
+*> Fold journal.dat into per-paper debit/credit/net. A closed book balances.
 IDENTIFICATION DIVISION.
 PROGRAM-ID. TRIAL-BALANCE.
-
-*> Fold journal.dat into per-paper debit/credit/net. A closed citation
-*> ledger balances: every debit has a matching credit.
-
 ENVIRONMENT DIVISION.
 INPUT-OUTPUT SECTION.
 FILE-CONTROL.

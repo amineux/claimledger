@@ -1,9 +1,7 @@
 >>SOURCE FORMAT FREE
+*> Green-bar intellectual-debt report from trial_balance.csv.
 IDENTIFICATION DIVISION.
 PROGRAM-ID. LEDGER-REPORT.
-
-*> Green-bar intellectual-debt report from trial_balance.csv.
-
 ENVIRONMENT DIVISION.
 INPUT-OUTPUT SECTION.
 FILE-CONTROL.

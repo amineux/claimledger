@@ -1,11 +1,8 @@
 >>SOURCE FORMAT FREE
+*> Read citations.csv (citing,cited,year) and write a double-entry journal.
+*> Citing paper is debited; cited paper is credited. One citation = 100 cents.
 IDENTIFICATION DIVISION.
 PROGRAM-ID. POST-CITATION.
-
-*> Read citations.csv (citing,cited,year) and write a double-entry journal:
-*> citing paper is DEBITed (intellectual debt), cited paper is CREDITED
-*> (intellectual capital). One citation = 100 cents.
-
 ENVIRONMENT DIVISION.
 INPUT-OUTPUT SECTION.
 FILE-CONTROL.

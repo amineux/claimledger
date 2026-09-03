@@ -1,5 +1,5 @@
 >>SOURCE FORMAT FREE
-*> Fixed-width journal record — 96 bytes. Matches SPECS.md / journal_dat().
+*> Fixed-width journal record, 96 bytes. Matches SPECS.md / journal_dat().
 01 JOURNAL-REC.
     05 JE-ID         PIC 9(8).
     05 JE-DATE       PIC 9(8).

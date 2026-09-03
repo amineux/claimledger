@@ -1,5 +1,5 @@
 >>SOURCE FORMAT FREE
-*> In-memory account used by TRIAL-BALANCE and REPORT.
+*> In-memory account used by TRIAL-BALANCE and LEDGER-REPORT.
 01 ACCOUNT-REC.
     05 ACCT-ID       PIC X(16).
     05 ACCT-DEBIT    PIC 9(12) VALUE 0.
