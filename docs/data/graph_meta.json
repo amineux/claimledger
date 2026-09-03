@@ -1,14 +1,16 @@
 {
-  "version": 1,
+  "version": 2,
   "generator": "claimledger",
-  "claimledger_version": "0.1.0",
+  "claimledger_version": "0.2.0",
   "n": 928,
   "undirected_edges": 7777,
   "directed_citations": 7838,
   "components": 1,
   "algebraic_connectivity": 0.239942728588,
   "embedding_k": 8,
-  "bridge_method": "rayleigh-participation",
+  "bridge_method": "leave-one-out",
+  "loo_candidates": 64,
+  "loo_evaluated": 64,
   "bridge_pair": [
     "math",
     "cs"

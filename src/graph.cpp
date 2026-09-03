@@ -79,6 +79,74 @@ Graph Graph::from_papers_and_citations(std::vector<Paper> papers, std::vector<Ci
     return g;
 }
 
+Graph Graph::without_vertex(NodeId v) const {
+    if (v < 0 || v >= n()) {
+        throw std::runtime_error("without_vertex: index out of range");
+    }
+    const std::string& drop = papers_[static_cast<std::size_t>(v)].id;
+    std::vector<Paper> keep;
+    keep.reserve(static_cast<std::size_t>(n() - 1));
+    for (int i = 0; i < n(); ++i) {
+        if (i != v) {
+            keep.push_back(papers_[static_cast<std::size_t>(i)]);
+        }
+    }
+    std::vector<Citation> cites;
+    cites.reserve(citations_.size());
+    for (const auto& c : citations_) {
+        if (c.citing != drop && c.cited != drop) {
+            cites.push_back(c);
+        }
+    }
+    return Graph::from_papers_and_citations(std::move(keep), std::move(cites));
+}
+
+namespace {
+
+std::string paper_field(const Paper& p) {
+    if (!p.field.empty()) {
+        return p.field;
+    }
+    const auto pos = p.category.find('.');
+    if (pos == std::string::npos) {
+        return p.category;
+    }
+    return p.category.substr(0, pos);
+}
+
+}  // namespace
+
+Graph Graph::cumulative_at_year(const std::vector<Paper>& papers,
+                                const std::vector<Citation>& citations, int year) {
+    std::vector<Paper> keep;
+    keep.reserve(papers.size());
+    for (const auto& p : papers) {
+        if (p.year <= year) {
+            keep.push_back(p);
+        }
+    }
+    std::vector<Citation> cites;
+    cites.reserve(citations.size());
+    for (const auto& c : citations) {
+        if (c.year <= year) {
+            cites.push_back(c);
+        }
+    }
+    return Graph::from_papers_and_citations(std::move(keep), std::move(cites));
+}
+
+Graph Graph::induced_fields(std::string_view field_a, std::string_view field_b) const {
+    std::vector<Paper> keep;
+    keep.reserve(papers_.size());
+    for (const auto& p : papers_) {
+        const auto f = paper_field(p);
+        if (f == field_a || f == field_b) {
+            keep.push_back(p);
+        }
+    }
+    return Graph::from_papers_and_citations(std::move(keep), citations_);
+}
+
 std::optional<NodeId> Graph::index_of(std::string_view paper_id) const {
     auto it = id_to_index_.find(std::string(paper_id));
     if (it == id_to_index_.end()) {

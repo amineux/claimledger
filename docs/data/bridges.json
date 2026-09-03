@@ -1,19 +1,132 @@
 {
-  "version": 1,
-  "method": "rayleigh-participation",
+  "version": 2,
+  "method": "leave-one-out",
+  "prefilter": "rayleigh-participation",
+  "loo_candidates": 64,
+  "loo_evaluated": 64,
   "pair_a": "math",
   "pair_b": "cs",
   "pair_algebraic_connectivity": 0.239942728588,
   "bridges": [
     {
-      "id": "synth-0906",
+      "id": "synth-0925",
       "rank": 1,
+      "score": 0.000724096962098,
+      "participation_entropy": 1.14673349858,
+      "rayleigh_energy": 0.000560911761601,
+      "fiedler_abs": 0.0425107082542,
+      "cross_field_fraction": 0.604166666667,
+      "delta_lambda2": 0.00179004399824,
+      "loo": true,
+      "explanation": "H=1.14673 cross=0.604167 R_cross=0.000560912 |φ|=0.0425107 Δλ2=0.00179004",
+      "fields": [
+        "qbio",
+        "cs",
+        "physics",
+        "stat"
+      ]
+    },
+    {
+      "id": "synth-0463",
+      "rank": 2,
+      "score": 0.000557122652804,
+      "participation_entropy": 1.1648729119,
+      "rayleigh_energy": 0.000549608755134,
+      "fiedler_abs": 0.0595122577699,
+      "cross_field_fraction": 0.411764705882,
+      "delta_lambda2": 0.00104557585562,
+      "loo": true,
+      "explanation": "H=1.16487 cross=0.411765 R_cross=0.000549609 |φ|=0.0595123 Δλ2=0.00104558",
+      "fields": [
+        "math",
+        "qbio",
+        "stat",
+        "physics"
+      ]
+    },
+    {
+      "id": "synth-0486",
+      "rank": 3,
+      "score": 0.000730064798423,
+      "participation_entropy": 1.31171665872,
+      "rayleigh_energy": 0.00050439102351,
+      "fiedler_abs": 0.0344567443499,
+      "cross_field_fraction": 0.611111111111,
+      "delta_lambda2": 0.000996547134608,
+      "loo": true,
+      "explanation": "H=1.31172 cross=0.611111 R_cross=0.000504391 |φ|=0.0344567 Δλ2=0.000996547",
+      "fields": [
+        "math",
+        "qbio",
+        "physics",
+        "cs"
+      ]
+    },
+    {
+      "id": "synth-0389",
+      "rank": 4,
+      "score": 0.00058722535153,
+      "participation_entropy": 1.12095039267,
+      "rayleigh_energy": 0.000508220304797,
+      "fiedler_abs": 0.0377541034122,
+      "cross_field_fraction": 0.47619047619,
+      "delta_lambda2": 0.000960501395792,
+      "loo": true,
+      "explanation": "H=1.12095 cross=0.47619 R_cross=0.00050822 |φ|=0.0377541 Δλ2=0.000960501",
+      "fields": [
+        "math",
+        "physics",
+        "qbio",
+        "cs"
+      ]
+    },
+    {
+      "id": "synth-0496",
+      "rank": 5,
+      "score": 0.00070849995885,
+      "participation_entropy": 1.28300412937,
+      "rayleigh_energy": 0.000620460113929,
+      "fiedler_abs": 0.0599699749178,
+      "cross_field_fraction": 0.478260869565,
+      "delta_lambda2": 0.00085949694871,
+      "loo": true,
+      "explanation": "H=1.283 cross=0.478261 R_cross=0.00062046 |φ|=0.05997 Δλ2=0.000859497",
+      "fields": [
+        "math",
+        "physics",
+        "qbio",
+        "stat"
+      ]
+    },
+    {
+      "id": "synth-0480",
+      "rank": 6,
+      "score": 0.000688618385674,
+      "participation_entropy": 1.11854059564,
+      "rayleigh_energy": 0.000697113701766,
+      "fiedler_abs": 0.050136038815,
+      "cross_field_fraction": 0.375,
+      "delta_lambda2": 0.00081758290771,
+      "loo": true,
+      "explanation": "H=1.11854 cross=0.375 R_cross=0.000697114 |φ|=0.050136 Δλ2=0.000817583",
+      "fields": [
+        "math",
+        "qbio",
+        "cs",
+        "physics"
+      ]
+    },
+    {
+      "id": "synth-0906",
+      "rank": 7,
       "score": 0.00162654581603,
       "participation_entropy": 1.18198315687,
       "rayleigh_energy": 0.00111981543402,
       "fiedler_abs": 0.0393221471161,
       "cross_field_fraction": 0.709677419355,
-      "explanation": "H=1.18198 cross=0.709677 R_cross=0.00111982 |φ|=0.0393221",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.18198 cross=0.709677 R_cross=0.00111982 |φ|=0.0393221 Δλ2=0",
       "fields": [
         "math",
         "qbio",
@@ -23,13 +136,15 @@
     },
     {
       "id": "synth-0922",
-      "rank": 2,
+      "rank": 8,
       "score": 0.00142817930167,
       "participation_entropy": 1.07730491313,
       "rayleigh_energy": 0.00118334946336,
       "fiedler_abs": 0.0468063349016,
       "cross_field_fraction": 0.584905660377,
-      "explanation": "H=1.0773 cross=0.584906 R_cross=0.00118335 |φ|=0.0468063",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.0773 cross=0.584906 R_cross=0.00118335 |φ|=0.0468063 Δλ2=0",
       "fields": [
         "math",
         "qbio",
@@ -39,13 +154,15 @@
     },
     {
       "id": "synth-0914",
-      "rank": 3,
+      "rank": 9,
       "score": 0.00131002278608,
       "participation_entropy": 0.900256051269,
       "rayleigh_energy": 0.00107842007878,
       "fiedler_abs": 0.0617259396287,
       "cross_field_fraction": 0.769230769231,
-      "explanation": "H=0.900256 cross=0.769231 R_cross=0.00107842 |φ|=0.0617259",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=0.900256 cross=0.769231 R_cross=0.00107842 |φ|=0.0617259 Δλ2=0",
       "fields": [
         "math",
         "qbio",
@@ -53,29 +170,16 @@
       ]
     },
     {
-      "id": "synth-0905",
-      "rank": 4,
-      "score": 0.00115994837214,
-      "participation_entropy": 0.968368378127,
-      "rayleigh_energy": 0.000813409234515,
-      "fiedler_abs": 0.010647265354,
-      "cross_field_fraction": 0.645833333333,
-      "explanation": "H=0.968368 cross=0.645833 R_cross=0.000813409 |φ|=0.0106473",
-      "fields": [
-        "qbio",
-        "math",
-        "physics"
-      ]
-    },
-    {
       "id": "synth-0282",
-      "rank": 5,
+      "rank": 10,
       "score": 0.0010628633113,
       "participation_entropy": 1.33714535007,
       "rayleigh_energy": 0.00058084288623,
       "fiedler_abs": 8.20013685862e-05,
       "cross_field_fraction": 0.666666666667,
-      "explanation": "H=1.33715 cross=0.666667 R_cross=0.000580843 |φ|=8.20014e-05",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.33715 cross=0.666667 R_cross=0.000580843 |φ|=8.20014e-05 Δλ2=0",
       "fields": [
         "cs",
         "stat",
@@ -85,13 +189,15 @@
     },
     {
       "id": "synth-0924",
-      "rank": 6,
+      "rank": 11,
       "score": 0.0010529137495,
       "participation_entropy": 1.06418216944,
       "rayleigh_energy": 0.000773929093988,
       "fiedler_abs": 0.0105641112291,
       "cross_field_fraction": 0.538461538462,
-      "explanation": "H=1.06418 cross=0.538462 R_cross=0.000773929 |φ|=0.0105641",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.06418 cross=0.538462 R_cross=0.000773929 |φ|=0.0105641 Δλ2=0",
       "fields": [
         "physics",
         "cs",
@@ -101,13 +207,15 @@
     },
     {
       "id": "synth-0916",
-      "rank": 7,
+      "rank": 12,
       "score": 0.00102460643361,
       "participation_entropy": 0.971916552329,
       "rayleigh_energy": 0.000821441583062,
       "fiedler_abs": 0.0207510516429,
       "cross_field_fraction": 0.551020408163,
-      "explanation": "H=0.971917 cross=0.55102 R_cross=0.000821442 |φ|=0.0207511",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=0.971917 cross=0.55102 R_cross=0.000821442 |φ|=0.0207511 Δλ2=0",
       "fields": [
         "cs",
         "physics",
@@ -116,45 +224,16 @@
       ]
     },
     {
-      "id": "synth-0913",
-      "rank": 8,
-      "score": 0.000978347919026,
-      "participation_entropy": 1.03217785533,
-      "rayleigh_energy": 0.000686149892916,
-      "fiedler_abs": 0.00852019808467,
-      "cross_field_fraction": 0.595238095238,
-      "explanation": "H=1.03218 cross=0.595238 R_cross=0.00068615 |φ|=0.0085202",
-      "fields": [
-        "qbio",
-        "math",
-        "cs",
-        "physics"
-      ]
-    },
-    {
-      "id": "synth-0921",
-      "rank": 9,
-      "score": 0.000965595101558,
-      "participation_entropy": 0.876609676196,
-      "rayleigh_energy": 0.000777570555093,
-      "fiedler_abs": 0.0155019550087,
-      "cross_field_fraction": 0.571428571429,
-      "explanation": "H=0.87661 cross=0.571429 R_cross=0.000777571 |φ|=0.015502",
-      "fields": [
-        "qbio",
-        "math",
-        "physics"
-      ]
-    },
-    {
       "id": "synth-0347",
-      "rank": 10,
+      "rank": 13,
       "score": 0.000943464758513,
       "participation_entropy": 1.38314875125,
       "rayleigh_energy": 0.000595995800479,
       "fiedler_abs": 0.016073625136,
       "cross_field_fraction": 0.578947368421,
-      "explanation": "H=1.38315 cross=0.578947 R_cross=0.000595996 |φ|=0.0160736",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.38315 cross=0.578947 R_cross=0.000595996 |φ|=0.0160736 Δλ2=0",
       "fields": [
         "stat",
         "math",
@@ -164,13 +243,15 @@
     },
     {
       "id": "synth-0908",
-      "rank": 11,
+      "rank": 14,
       "score": 0.000924191266946,
       "participation_entropy": 1.05184441497,
       "rayleigh_energy": 0.00072520047791,
       "fiedler_abs": 0.00423999392376,
       "cross_field_fraction": 0.441176470588,
-      "explanation": "H=1.05184 cross=0.441176 R_cross=0.0007252 |φ|=0.00423999",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.05184 cross=0.441176 R_cross=0.0007252 |φ|=0.00423999 Δλ2=0",
       "fields": [
         "physics",
         "cs",
@@ -180,13 +261,15 @@
     },
     {
       "id": "synth-0272",
-      "rank": 12,
+      "rank": 15,
       "score": 0.000866308954059,
       "participation_entropy": 1.17987970477,
       "rayleigh_energy": 0.000632460313414,
       "fiedler_abs": 0.0126853326386,
       "cross_field_fraction": 0.5,
-      "explanation": "H=1.17988 cross=0.5 R_cross=0.00063246 |φ|=0.0126853",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.17988 cross=0.5 R_cross=0.00063246 |φ|=0.0126853 Δλ2=0",
       "fields": [
         "stat",
         "cs",
@@ -196,13 +279,15 @@
     },
     {
       "id": "synth-0622",
-      "rank": 13,
+      "rank": 16,
       "score": 0.000856824738343,
       "participation_entropy": 1.22151067322,
       "rayleigh_energy": 0.000556508069686,
       "fiedler_abs": 0.0252946930315,
       "cross_field_fraction": 0.681818181818,
-      "explanation": "H=1.22151 cross=0.681818 R_cross=0.000556508 |φ|=0.0252947",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.22151 cross=0.681818 R_cross=0.000556508 |φ|=0.0252947 Δλ2=0",
       "fields": [
         "qbio",
         "physics",
@@ -212,13 +297,15 @@
     },
     {
       "id": "synth-0690",
-      "rank": 14,
+      "rank": 17,
       "score": 0.000856398843709,
       "participation_entropy": 1.36356462164,
       "rayleigh_energy": 0.00056033816215,
       "fiedler_abs": 0.0200510765175,
       "cross_field_fraction": 0.571428571429,
-      "explanation": "H=1.36356 cross=0.571429 R_cross=0.000560338 |φ|=0.0200511",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.36356 cross=0.571429 R_cross=0.000560338 |φ|=0.0200511 Δλ2=0",
       "fields": [
         "physics",
         "qbio",
@@ -227,45 +314,16 @@
       ]
     },
     {
-      "id": "synth-0907",
-      "rank": 15,
-      "score": 0.000808924090951,
-      "participation_entropy": 0.94869319538,
-      "rayleigh_energy": 0.000619456271332,
-      "fiedler_abs": 0.0130947947106,
-      "cross_field_fraction": 0.571428571429,
-      "explanation": "H=0.948693 cross=0.571429 R_cross=0.000619456 |φ|=0.0130948",
-      "fields": [
-        "physics",
-        "cs",
-        "qbio"
-      ]
-    },
-    {
-      "id": "synth-0923",
-      "rank": 16,
-      "score": 0.000807288467224,
-      "participation_entropy": 0.960581750063,
-      "rayleigh_energy": 0.000604365122402,
-      "fiedler_abs": 0.00334636867578,
-      "cross_field_fraction": 0.530612244898,
-      "explanation": "H=0.960582 cross=0.530612 R_cross=0.000604365 |φ|=0.00334637",
-      "fields": [
-        "cs",
-        "physics",
-        "stat",
-        "math"
-      ]
-    },
-    {
       "id": "synth-0774",
-      "rank": 17,
+      "rank": 18,
       "score": 0.00078639157668,
       "participation_entropy": 1.18753184415,
       "rayleigh_energy": 0.000545868042773,
       "fiedler_abs": 0.0136622852628,
       "cross_field_fraction": 0.555555555556,
-      "explanation": "H=1.18753 cross=0.555556 R_cross=0.000545868 |φ|=0.0136623",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.18753 cross=0.555556 R_cross=0.000545868 |φ|=0.0136623 Δλ2=0",
       "fields": [
         "qbio",
         "cs",
@@ -275,33 +333,19 @@
     },
     {
       "id": "synth-0707",
-      "rank": 18,
+      "rank": 19,
       "score": 0.000748689049281,
       "participation_entropy": 1.28317264802,
       "rayleigh_energy": 0.000484556966018,
       "fiedler_abs": 0.0203815989351,
       "cross_field_fraction": 0.625,
-      "explanation": "H=1.28317 cross=0.625 R_cross=0.000484557 |φ|=0.0203816",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.28317 cross=0.625 R_cross=0.000484557 |φ|=0.0203816 Δλ2=0",
       "fields": [
         "physics",
         "math",
         "qbio",
-        "cs"
-      ]
-    },
-    {
-      "id": "synth-0486",
-      "rank": 19,
-      "score": 0.000730064798423,
-      "participation_entropy": 1.31171665872,
-      "rayleigh_energy": 0.00050439102351,
-      "fiedler_abs": 0.0344567443499,
-      "cross_field_fraction": 0.611111111111,
-      "explanation": "H=1.31172 cross=0.611111 R_cross=0.000504391 |φ|=0.0344567",
-      "fields": [
-        "math",
-        "qbio",
-        "physics",
         "cs"
       ]
     },
@@ -313,7 +357,9 @@
       "rayleigh_energy": 0.000463840125526,
       "fiedler_abs": 0.00957738946794,
       "cross_field_fraction": 0.55,
-      "explanation": "H=1.3419 cross=0.55 R_cross=0.00046384 |φ|=0.00957739",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.3419 cross=0.55 R_cross=0.00046384 |φ|=0.00957739 Δλ2=0",
       "fields": [
         "stat",
         "cs",
@@ -322,46 +368,16 @@
       ]
     },
     {
-      "id": "synth-0925",
-      "rank": 21,
-      "score": 0.000724096962098,
-      "participation_entropy": 1.14673349858,
-      "rayleigh_energy": 0.000560911761601,
-      "fiedler_abs": 0.0425107082542,
-      "cross_field_fraction": 0.604166666667,
-      "explanation": "H=1.14673 cross=0.604167 R_cross=0.000560912 |φ|=0.0425107",
-      "fields": [
-        "qbio",
-        "cs",
-        "physics",
-        "stat"
-      ]
-    },
-    {
-      "id": "synth-0496",
-      "rank": 22,
-      "score": 0.00070849995885,
-      "participation_entropy": 1.28300412937,
-      "rayleigh_energy": 0.000620460113929,
-      "fiedler_abs": 0.0599699749178,
-      "cross_field_fraction": 0.478260869565,
-      "explanation": "H=1.283 cross=0.478261 R_cross=0.00062046 |φ|=0.05997",
-      "fields": [
-        "math",
-        "physics",
-        "qbio",
-        "stat"
-      ]
-    },
-    {
       "id": "synth-0569",
-      "rank": 23,
+      "rank": 21,
       "score": 0.00070645203662,
       "participation_entropy": 1.49856907968,
       "rayleigh_energy": 0.000371547821761,
       "fiedler_abs": 0.0173387886307,
       "cross_field_fraction": 0.75,
-      "explanation": "H=1.49857 cross=0.75 R_cross=0.000371548 |φ|=0.0173388",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.49857 cross=0.75 R_cross=0.000371548 |φ|=0.0173388 Δλ2=0",
       "fields": [
         "math",
         "physics",
@@ -371,13 +387,15 @@
     },
     {
       "id": "synth-0858",
-      "rank": 24,
+      "rank": 22,
       "score": 0.000706244510192,
       "participation_entropy": 1.23424494558,
       "rayleigh_energy": 0.000488767808233,
       "fiedler_abs": 0.0132095542539,
       "cross_field_fraction": 0.533333333333,
-      "explanation": "H=1.23424 cross=0.533333 R_cross=0.000488768 |φ|=0.0132096",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.23424 cross=0.533333 R_cross=0.000488768 |φ|=0.0132096 Δλ2=0",
       "fields": [
         "qbio",
         "physics",
@@ -387,13 +405,15 @@
     },
     {
       "id": "synth-0344",
-      "rank": 25,
+      "rank": 23,
       "score": 0.000697061376069,
       "participation_entropy": 1.16159133433,
       "rayleigh_energy": 0.000485169932632,
       "fiedler_abs": 0.00749575258416,
       "cross_field_fraction": 0.529411764706,
-      "explanation": "H=1.16159 cross=0.529412 R_cross=0.00048517 |φ|=0.00749575",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.16159 cross=0.529412 R_cross=0.00048517 |φ|=0.00749575 Δλ2=0",
       "fields": [
         "stat",
         "cs",
@@ -403,13 +423,15 @@
     },
     {
       "id": "synth-0343",
-      "rank": 26,
+      "rank": 24,
       "score": 0.000696066172106,
       "participation_entropy": 1.39892039376,
       "rayleigh_energy": 0.000440929867838,
       "fiedler_abs": 0.0236503865665,
       "cross_field_fraction": 0.611111111111,
-      "explanation": "H=1.39892 cross=0.611111 R_cross=0.00044093 |φ|=0.0236504",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.39892 cross=0.611111 R_cross=0.00044093 |φ|=0.0236504 Δλ2=0",
       "fields": [
         "stat",
         "math",
@@ -418,30 +440,16 @@
       ]
     },
     {
-      "id": "synth-0480",
-      "rank": 27,
-      "score": 0.000688618385674,
-      "participation_entropy": 1.11854059564,
-      "rayleigh_energy": 0.000697113701766,
-      "fiedler_abs": 0.050136038815,
-      "cross_field_fraction": 0.375,
-      "explanation": "H=1.11854 cross=0.375 R_cross=0.000697114 |φ|=0.050136",
-      "fields": [
-        "math",
-        "qbio",
-        "cs",
-        "physics"
-      ]
-    },
-    {
       "id": "synth-0895",
-      "rank": 28,
+      "rank": 25,
       "score": 0.000685891574668,
       "participation_entropy": 1.18826065271,
       "rayleigh_energy": 0.000482002169082,
       "fiedler_abs": 0.016089668996,
       "cross_field_fraction": 0.555555555556,
-      "explanation": "H=1.18826 cross=0.555556 R_cross=0.000482002 |φ|=0.0160897",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.18826 cross=0.555556 R_cross=0.000482002 |φ|=0.0160897 Δλ2=0",
       "fields": [
         "qbio",
         "physics",
@@ -450,30 +458,16 @@
       ]
     },
     {
-      "id": "synth-0915",
-      "rank": 29,
-      "score": 0.000685214733637,
-      "participation_entropy": 0.991810417582,
-      "rayleigh_energy": 0.000474679629026,
-      "fiedler_abs": 0.00735454222491,
-      "cross_field_fraction": 0.625,
-      "explanation": "H=0.99181 cross=0.625 R_cross=0.00047468 |φ|=0.00735454",
-      "fields": [
-        "physics",
-        "cs",
-        "qbio",
-        "stat"
-      ]
-    },
-    {
       "id": "synth-0293",
-      "rank": 30,
+      "rank": 26,
       "score": 0.000664993858943,
       "participation_entropy": 1.20227880156,
       "rayleigh_energy": 0.000450646590534,
       "fiedler_abs": 0.0115983275813,
       "cross_field_fraction": 0.5625,
-      "explanation": "H=1.20228 cross=0.5625 R_cross=0.000450647 |φ|=0.0115983",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.20228 cross=0.5625 R_cross=0.000450647 |φ|=0.0115983 Δλ2=0",
       "fields": [
         "stat",
         "math",
@@ -483,13 +477,15 @@
     },
     {
       "id": "synth-0785",
-      "rank": 31,
+      "rank": 27,
       "score": 0.000646169049362,
       "participation_entropy": 1.20751532504,
       "rayleigh_energy": 0.000429307062287,
       "fiedler_abs": 0.0131103550658,
       "cross_field_fraction": 0.590909090909,
-      "explanation": "H=1.20752 cross=0.590909 R_cross=0.000429307 |φ|=0.0131104",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.20752 cross=0.590909 R_cross=0.000429307 |φ|=0.0131104 Δλ2=0",
       "fields": [
         "qbio",
         "cs",
@@ -499,18 +495,91 @@
     },
     {
       "id": "synth-0336",
-      "rank": 32,
+      "rank": 28,
       "score": 0.000634838393931,
       "participation_entropy": 1.33166431029,
       "rayleigh_energy": 0.000422742968959,
       "fiedler_abs": 0.0149099347535,
       "cross_field_fraction": 0.538461538462,
-      "explanation": "H=1.33166 cross=0.538462 R_cross=0.000422743 |φ|=0.0149099",
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.33166 cross=0.538462 R_cross=0.000422743 |φ|=0.0149099 Δλ2=0",
       "fields": [
         "stat",
         "math",
         "cs",
         "physics"
+      ]
+    },
+    {
+      "id": "synth-0310",
+      "rank": 29,
+      "score": 0.000625747781227,
+      "participation_entropy": 1.08889997535,
+      "rayleigh_energy": 0.000423319597614,
+      "fiedler_abs": 0.012773863231,
+      "cross_field_fraction": 0.631578947368,
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.0889 cross=0.631579 R_cross=0.00042332 |φ|=0.0127739 Δλ2=0",
+      "fields": [
+        "stat",
+        "math",
+        "cs"
+      ]
+    },
+    {
+      "id": "synth-0349",
+      "rank": 30,
+      "score": 0.000620992370338,
+      "participation_entropy": 1.1816543399,
+      "rayleigh_energy": 0.000436950044481,
+      "fiedler_abs": 0.0147687552836,
+      "cross_field_fraction": 0.55,
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.18165 cross=0.55 R_cross=0.00043695 |φ|=0.0147688 Δλ2=0",
+      "fields": [
+        "stat",
+        "math",
+        "cs",
+        "physics"
+      ]
+    },
+    {
+      "id": "synth-0354",
+      "rank": 31,
+      "score": 0.000612896371221,
+      "participation_entropy": 1.24068429195,
+      "rayleigh_energy": 0.000418446392445,
+      "fiedler_abs": 0.0178911284223,
+      "cross_field_fraction": 0.571428571429,
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.24068 cross=0.571429 R_cross=0.000418446 |φ|=0.0178911 Δλ2=0",
+      "fields": [
+        "stat",
+        "cs",
+        "math",
+        "physics"
+      ]
+    },
+    {
+      "id": "synth-0860",
+      "rank": 32,
+      "score": 0.00061235394542,
+      "participation_entropy": 1.33208311959,
+      "rayleigh_energy": 0.000354788852973,
+      "fiedler_abs": 0.0143815973385,
+      "cross_field_fraction": 0.695652173913,
+      "delta_lambda2": 0,
+      "loo": true,
+      "explanation": "H=1.33208 cross=0.695652 R_cross=0.000354789 |φ|=0.0143816 Δλ2=0",
+      "fields": [
+        "qbio",
+        "cs",
+        "physics",
+        "math"
       ]
     }
   ]

@@ -7,12 +7,14 @@ ClaimLedger is three programs that share one journal and one Laplacian.
             │
             ▼
    ┌────────────────────┐
-   │  C++20 core        │  Graph CSR → L_sym → Lanczos → k-means → bridges
-   │  libclaimledger    │  + double-entry poster
+   │  C++20 core        │  Graph CSR → L_sym → Lanczos → k-means
+   │  libclaimledger    │  → heuristic bridges → leave-one-out Δλ₂
+   │                    │  → cumulative year slices + double-entry poster
    └────────┬───────────┘
             │
             ├─ out/embedding.json
             ├─ out/bridges.json
+            ├─ out/timeline.json
             ├─ out/graph_meta.json
             ├─ out/ledger.json
             └─ out/ledger/journal.{csv,dat}
@@ -41,11 +43,12 @@ ClaimLedger is three programs that share one journal and one Laplacian.
 | `lanczos` | Smallest eigenpairs, full reorth. + Jacobi Ritz |
 | `embedding` | Drop \(\lambda \approx 0\), export raw + row-normalized coords |
 | `clustering` | \(k\)-means++ on the unit embedding (Ng–Jordan–Weiss) |
-| `bridges` | Rayleigh-participation score (PROBLEM.md) |
+| `bridges` | Rayleigh-participation pre-filter + leave-one-out Δλ₂ |
+| `timeline` | Cumulative year snapshots of n, m, λ₂, top bridge |
 | `ledger` | Post citations, trial balance, CSV + 96-byte `journal.dat` |
 | `csv` / `json` | Zero-dependency interchange |
 | `io` | Corpus load and atlas writers |
-| `main` | CLI: `run` / `build` / `embed` / `bridges` / `export` |
+| `main` | CLI: `run` / `build` / `embed` / `bridges` / `timeline` / `export` |
 
 The library is a static target `claimledger_core`. The CLI links it. Tests
 link it plus GoogleTest (FetchContent, v1.14.0).
@@ -67,8 +70,10 @@ verifier has no such ceiling and is what CI runs when `cobc` is missing.
 ### Atlas (`docs/`)
 
 Vanilla HTML / CSS / Canvas. No bundler, no npm. GitHub Pages serves
-`/docs`. The page fetches `docs/data/*.json` and draws a 2D/3D projection
-of the first spectral coordinates, colored by field, with bridges lit.
+`/docs`. The page fetches `docs/data/*.json` and draws a 3D orbit of the
+first three nontrivial eigenvectors, field-colored, with amber bridges,
+search, a year slider, a COBOL-terminal ledger plus DR/CR bars, and
+keyboard shortcuts (`/`, `[` `]`, `?`).
 
 ### CI (`.github/workflows/`)
 
@@ -82,7 +87,7 @@ of the first spectral coordinates, colored by field, with bridges lit.
 CMakeLists.txt
  ├─ claimledger_core (static)
  │    src/{sparse,graph,laplacian,lanczos,embedding,
- │         clustering,bridges,csv,json,io,ledger}.cpp
+ │         clustering,bridges,timeline,csv,json,io,ledger}.cpp
  ├─ claimledger          → src/main.cpp + core
  ├─ claimledger_tests    → tests/*.cpp + core + GTest
  └─ cobol-ledger         → cobc (optional)
@@ -104,8 +109,10 @@ python3 scripts/verify_ledger.py --journal out/ledger/journal.csv
 2. Isolated vertices have a zero Laplacian row.
 3. Every journal line is a balanced pair (debit paper ≠ credit paper,
    amount > 0). \(\sum \mathrm{DR} = \sum \mathrm{CR}\).
-4. Atlas JSON is a pure function of the corpus + `--k/--clusters/--bridges/--seed`.
-5. Fixture ids match `synth-[0-9]{4}`. No forged arXiv ids.
+4. Atlas JSON is a pure function of the corpus + `--k/--clusters/--bridges/--seed/--loo-candidates`.
+5. Default fixture ids match `synth-[0-9]{4}`. The optional
+   `data/fixtures/arxiv-slice/` uses real public arXiv ids from a committed
+   API snapshot; its edges are coupling, not citations.
 
 ## Why COBOL
 

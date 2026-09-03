@@ -110,7 +110,7 @@ std::string embedding_json(const Graph& g, const Embedding& emb) {
     JsonWriter j(2);
     j.begin_object();
     j.key("version");
-    j.value(1);
+    j.value(2);
     j.key("k");
     j.value(emb.k);
     j.key("algebraic_connectivity");
@@ -150,6 +150,8 @@ std::string embedding_json(const Graph& g, const Embedding& emb) {
         j.value(g.degree_of(node.index));
         j.key("radius");
         j.value(node.radius);
+        j.key("z");
+        j.value(node.coords.size() > 2 ? node.coords[2] : 0.0);
         j.key("x");
         j.begin_array();
         for (double c : node.coords) {
@@ -173,9 +175,15 @@ std::string bridges_json(const BridgeResult& br) {
     JsonWriter j(2);
     j.begin_object();
     j.key("version");
-    j.value(1);
+    j.value(2);
     j.key("method");
     j.value(br.method);
+    j.key("prefilter");
+    j.value(br.prefilter);
+    j.key("loo_candidates");
+    j.value(br.loo_candidates);
+    j.key("loo_evaluated");
+    j.value(br.loo_evaluated);
     j.key("pair_a");
     j.value(br.pair_a);
     j.key("pair_b");
@@ -200,6 +208,14 @@ std::string bridges_json(const BridgeResult& br) {
         j.value(b.fiedler_abs);
         j.key("cross_field_fraction");
         j.value(b.cross_field_fraction);
+        j.key("delta_lambda2");
+        if (b.has_delta_lambda2) {
+            j.value(b.delta_lambda2);
+        } else {
+            j.value(nullptr);
+        }
+        j.key("loo");
+        j.value(b.loo);
         j.key("explanation");
         j.value(b.explanation);
         j.key("fields");
@@ -220,7 +236,7 @@ std::string graph_meta_json(const Graph& g, const Embedding& emb, const std::vec
     JsonWriter j(2);
     j.begin_object();
     j.key("version");
-    j.value(1);
+    j.value(2);
     j.key("generator");
     j.value("claimledger");
     j.key("claimledger_version");
@@ -239,6 +255,10 @@ std::string graph_meta_json(const Graph& g, const Embedding& emb, const std::vec
     j.value(emb.k);
     j.key("bridge_method");
     j.value(br.method);
+    j.key("loo_candidates");
+    j.value(br.loo_candidates);
+    j.key("loo_evaluated");
+    j.value(br.loo_evaluated);
     j.key("bridge_pair");
     j.begin_array();
     j.value(br.pair_a);
@@ -271,6 +291,32 @@ std::string graph_meta_json(const Graph& g, const Embedding& emb, const std::vec
         j.value(name);
         j.key("count");
         j.value(count);
+        j.end_object();
+    }
+    j.end_array();
+    j.end_object();
+    return j.str();
+}
+
+std::string timeline_json(const Timeline& tl) {
+    JsonWriter j(2);
+    j.begin_object();
+    j.key("version");
+    j.value(2);
+    j.key("slices");
+    j.begin_array();
+    for (const auto& s : tl.slices) {
+        j.begin_object();
+        j.key("year");
+        j.value(s.year);
+        j.key("n");
+        j.value(s.n);
+        j.key("m");
+        j.value(s.m);
+        j.key("lambda2");
+        j.value(s.lambda2);
+        j.key("top_bridge_id");
+        j.value(s.top_bridge_id);
         j.end_object();
     }
     j.end_array();

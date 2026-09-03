@@ -16,9 +16,11 @@ and a static atlas under `docs/`.
 
 ## Non-goals
 
-- Not a crawler. We do not fetch live arXiv. Fixtures are synthetic.
+- Not a crawler. The CLI never hits the network. `scripts/fetch_arxiv_slice.py`
+  is an optional offline-cached fetch of a few dozen public Atom records.
 - Not a replacement for Semantic Scholar / OpenAlex.
-- Not an exact solver of the NP-hard interdiction problem in PROBLEM.md.
+- Not an FPTAS for the \(k>1\) interdiction problem in PROBLEM.md. \(k=1\)
+  is solved exactly on a heuristic shortlist.
 - No secrets, no accounts, no network I/O in the CLI.
 
 ## CLI
@@ -29,10 +31,11 @@ claimledger [command] [options]
 
 | command   | effect |
 |-----------|--------|
-| `run`     | Full pipeline (default). |
+| `run`     | Full pipeline (default): embed + LOO bridges + timeline + export. |
 | `build`   | Load corpus, write `graph_meta.json` only. |
 | `embed`   | Laplacian + Lanczos + k-means, write `embedding.json`. |
-| `bridges` | Score bridges, write `bridges.json`. |
+| `bridges` | Score bridges (heuristic + optional leave-one-out), write `bridges.json`. |
+| `timeline`| Cumulative year snapshots, write `timeline.json`. |
 | `export`  | Same as `run` (JSON + ledger + optional `--docs` copy). |
 
 | option | default | meaning |
@@ -48,6 +51,9 @@ claimledger [command] [options]
 | `--bridges N` | `32` | Top bridges emitted |
 | `--lanczos-steps N` | auto | Krylov dimension |
 | `--seed N` | `20260903` | RNG seed (Lanczos start + k-means++) |
+| `--loo` / `--no-loo` | on | Leave-one-out Δλ₂ on the heuristic shortlist |
+| `--loo-candidates N` | `64` | Pre-filter width; if \(n\le N\), every vertex is LOO'd |
+| `--timeline` / `--no-timeline` | on | Write cumulative year slices |
 
 Exit status is `0` on success, `1` on user/data/solver errors. Diagnostics
 go to stderr; artifacts are files.
@@ -82,10 +88,23 @@ self-loops are skipped, not invented.
    Sign convention: the largest-magnitude entry of each vector is positive.
 4. Row-normalize for k-means++ (`unit_coords`). Cluster count defaults to
    the number of distinct `field` values.
-5. Bridge score as in PROBLEM.md. Stable sort by score desc, id asc.
+5. Bridge score as in PROBLEM.md (Rayleigh × participation). This is the
+   pre-filter.
+6. Leave-one-out (default on): take the top `loo-candidates` by score
+   (or all vertices if \(n\) is that small). For each candidate \(v\),
+   rebuild \(L_{\mathrm{sym}}\) of \(G[A\cup B]-v\) via degree deflation,
+   recompute \(\lambda_2\), set `delta_lambda2 = λ2 − λ2_without`. Stable
+   sort by Δλ₂ desc, score desc, id asc.
 
 Residuals \(\|Lq-\lambda q\|\) are computed; they are diagnostic, not a
 hard failure.
+
+### Timeline
+
+For each distinct paper year \(t\), build the cumulative graph on papers
+with `year <= t` and citations with citing `year <= t`. Record
+`n`, `m` (undirected edges), `lambda2`, `top_bridge_id` (heuristic, no
+LOO). Written to `timeline.json`.
 
 ## Ledger
 
@@ -151,13 +170,13 @@ supported check. This is documented, not a silent skip of correctness.
 
 ## Output JSON (atlas contract)
 
-All files are pretty-printed JSON, version field `1`.
+All files are pretty-printed JSON, version field `2`.
 
 ### `embedding.json`
 
 ```
 {
-  "version": 1,
+  "version": 2,
   "k": 8,
   "algebraic_connectivity": 0.02,
   "trivial_eigenvalue": 1e-16,
@@ -173,6 +192,7 @@ All files are pretty-printed JSON, version field `1`.
       "cluster": 2,
       "degree": 12,
       "radius": 0.04,
+      "z": 0.01,
       "x": [/* k raw coords */],
       "u": [/* k unit coords */]
     }
@@ -180,25 +200,45 @@ All files are pretty-printed JSON, version field `1`.
 }
 ```
 
+`z` is the third nontrivial coordinate (0 if \(k<3\)). `x` remains the
+full vector.
+
 ### `bridges.json`
 
 ```
 {
-  "version": 1,
-  "method": "rayleigh-participation",
+  "version": 2,
+  "method": "leave-one-out",
+  "prefilter": "rayleigh-participation",
+  "loo_candidates": 64,
+  "loo_evaluated": 64,
   "pair_a": "qbio",
   "pair_b": "cs",
   "pair_algebraic_connectivity": 0.02,
   "bridges": [{ "id", "rank", "score", "participation_entropy",
                 "rayleigh_energy", "fiedler_abs", "cross_field_fraction",
-                "explanation", "fields": [] }]
+                "delta_lambda2", "loo", "explanation", "fields": [] }]
+}
+```
+
+`delta_lambda2` is `null` when `--no-loo`. `method` is `leave-one-out`
+or `rayleigh-participation`.
+
+### `timeline.json`
+
+```
+{
+  "version": 2,
+  "slices": [{ "year": 2018, "n": 40, "m": 80, "lambda2": 0.11,
+               "top_bridge_id": "synth-0012" }]
 }
 ```
 
 ### `graph_meta.json`
 
 `n`, `undirected_edges`, `directed_citations`, `components`,
-`algebraic_connectivity`, `categories[]`, `fields[]`.
+`algebraic_connectivity`, `loo_candidates`, `loo_evaluated`,
+`categories[]`, `fields[]`.
 
 ### `ledger.json`
 
@@ -210,6 +250,11 @@ All files are pretty-printed JSON, version field `1`.
 checked-in `docs/data/*.json`. A local preview is
 `python3 -m http.server --directory docs 8000`.
 
+Keyboard: `/` search, `[` `]` cycle bridges, `?` cheatsheet, `2`/`3`
+dimension, `b` bridges-only. The year slider restyles nodes that do not
+yet exist. 928 points are drawn with a cached projection and O(n) knn
+strokes; the target is 60 fps on a laptop.
+
 ## Build / test
 
 ```
@@ -220,7 +265,9 @@ ctest --test-dir build --output-on-failure
 
 C++20, `-Wall -Wextra -Wpedantic`. GoogleTest via FetchContent. Tests cover
 CSR symmetry, Laplacian kernel, cycle and complete-graph spectra, the
-planted liaison, journal conservation, and CSV/JSON edge cases.
+planted liaison (heuristic and leave-one-out Δλ₂), deflate-vs-rebuild
+agreement, cumulative year slices, journal conservation, and CSV/JSON
+edge cases.
 
 ## Reproducibility
 
