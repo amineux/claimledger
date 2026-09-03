@@ -1,0 +1,14 @@
+/build/
+/out/
+/cmake-build-*/
+/cobol/bin/
+__pycache__/
+*.pyc
+*.o
+*.a
+.cache/
+.DS_Store
+compile_commands.json
+CMakeUserPresets.json
+.idea/
+.vscode/

@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install toolchain
+        run: |
+          sudo apt-get update
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+            build-essential cmake ninja-build python3 g++
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends gnucobol \
+            || sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends gnucobol3 \
+            || sudo DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends open-cobol \
+            || echo "cobc package unavailable; Python verifier is the fallback"
+
+      - name: Configure and build
+        run: |
+          cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_COMPILER=g++
+          cmake --build build
+
+      - name: Test
+        run: ctest --test-dir build --output-on-failure
+
+      - name: Pipeline on tiny fixture
+        run: |
+          ./build/claimledger --data data/fixtures/tiny --out out-tiny --k 4 --bridges 5
+          python3 scripts/verify_ledger.py --journal out-tiny/ledger/journal.csv \
+            --dat out-tiny/ledger/journal.dat --trial out-tiny/ledger/trial_balance.csv
+          test -s out-tiny/embedding.json
+          test -s out-tiny/bridges.json
+
+      - name: Compile COBOL (if cobc is present)
+        run: |
+          if command -v cobc >/dev/null 2>&1; then
+            cmake --build build --target cobol-ledger
+            test -x build/cobol/post-citation
+            test -x build/cobol/trial-balance
+            test -x build/cobol/report
+            cp data/fixtures/tiny/citations.csv out-tiny/ledger/citations.csv
+            ( cd out-tiny/ledger && ../../build/cobol/post-citation && ../../build/cobol/trial-balance && ../../build/cobol/report )
+            python3 scripts/verify_ledger.py --journal out-tiny/ledger/journal.csv \
+              --dat out-tiny/ledger/journal.dat --trial out-tiny/ledger/trial_balance.csv
+          else
+            echo "cobc not on PATH — accepted; scripts/verify_ledger.py already ran"
+          fi
