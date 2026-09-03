@@ -1,9 +1,8 @@
 >>SOURCE FORMAT FREE
 IDENTIFICATION DIVISION.
-PROGRAM-ID. REPORT.
-AUTHOR. CLAIMLEDGER.
-REMARKS.
-    Green-bar intellectual-debt report from trial_balance.csv.
+PROGRAM-ID. LEDGER-REPORT.
+
+*> Green-bar intellectual-debt report from trial_balance.csv.
 
 ENVIRONMENT DIVISION.
 INPUT-OUTPUT SECTION.
@@ -17,28 +16,28 @@ FILE-CONTROL.
 
 DATA DIVISION.
 FILE SECTION.
-FD  BALANCE-FILE.
-01  BAL-IN                    PIC X(128).
+FD BALANCE-FILE.
+01 BAL-IN                    PIC X(128).
 
-FD  REPORT-FILE.
-01  RPT-LINE                  PIC X(80).
+FD REPORT-FILE.
+01 RPT-LINE                  PIC X(80).
 
 WORKING-STORAGE SECTION.
-01  BAL-STATUS                PIC XX VALUE "00".
-01  RPT-STATUS                PIC XX VALUE "00".
-01  WS-EOF                    PIC X VALUE "N".
-01  WS-SKIP                   PIC X VALUE "Y".
-01  WS-ACCT                   PIC X(16).
-01  WS-DEBIT-X                PIC X(16).
-01  WS-CREDIT-X               PIC X(16).
-01  WS-NET-X                  PIC X(16).
-01  WS-PTR                    PIC 99.
-01  WS-F                      PIC 99.
-01  WS-FIELD                  PIC X(24).
-01  WS-LINES                  PIC 9(4) VALUE 0.
+01 BAL-STATUS                PIC XX VALUE "00".
+01 RPT-STATUS                PIC XX VALUE "00".
+01 WS-EOF                    PIC X VALUE "N".
+01 WS-SKIP                   PIC X VALUE "Y".
+01 WS-ACCT                   PIC X(16).
+01 WS-DEBIT-X                PIC X(16).
+01 WS-CREDIT-X               PIC X(16).
+01 WS-NET-X                  PIC X(16).
+01 WS-PTR                    PIC 99.
+01 WS-F                      PIC 99.
+01 WS-FIELD                  PIC X(24).
+01 WS-LINES                  PIC 9(4) VALUE 0.
 
 PROCEDURE DIVISION.
-MAIN.
+MAIN-SECTION.
     OPEN INPUT BALANCE-FILE
     IF BAL-STATUS NOT = "00"
         DISPLAY "REPORT: cannot open trial_balance.csv status=" BAL-STATUS
@@ -61,7 +60,7 @@ MAIN.
     END-PERFORM
     MOVE "---------------- ------------ ------------ ------------" TO RPT-LINE
     WRITE RPT-LINE
-    MOVE "END OF REPORT — double-entry citation ledger" TO RPT-LINE
+    MOVE "END OF REPORT - double-entry citation ledger" TO RPT-LINE
     WRITE RPT-LINE
     CLOSE BALANCE-FILE
     CLOSE REPORT-FILE
@@ -78,7 +77,10 @@ EMIT.
     END-IF
     MOVE 1 TO WS-PTR
     MOVE 0 TO WS-F
-    MOVE SPACES TO WS-ACCT WS-DEBIT-X WS-CREDIT-X WS-NET-X
+    MOVE SPACES TO WS-ACCT
+    MOVE SPACES TO WS-DEBIT-X
+    MOVE SPACES TO WS-CREDIT-X
+    MOVE SPACES TO WS-NET-X
     PERFORM SPLIT 4 TIMES
     MOVE SPACES TO RPT-LINE
     STRING

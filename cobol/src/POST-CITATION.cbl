@@ -1,11 +1,10 @@
 >>SOURCE FORMAT FREE
 IDENTIFICATION DIVISION.
 PROGRAM-ID. POST-CITATION.
-AUTHOR. CLAIMLEDGER.
-REMARKS.
-    Read a citation extract (citing,cited,year) and write a double-entry
-    journal: citing paper is DEBITed (intellectual debt), cited paper is
-    CREDITED (intellectual capital). One citation = 100 cents.
+
+*> Read citations.csv (citing,cited,year) and write a double-entry journal:
+*> citing paper is DEBITed (intellectual debt), cited paper is CREDITED
+*> (intellectual capital). One citation = 100 cents.
 
 ENVIRONMENT DIVISION.
 INPUT-OUTPUT SECTION.
@@ -22,38 +21,38 @@ FILE-CONTROL.
 
 DATA DIVISION.
 FILE SECTION.
-FD  CITE-FILE.
-01  CITE-LINE                 PIC X(128).
+FD CITE-FILE.
+01 CITE-LINE                 PIC X(128).
 
-FD  JOURNAL-FILE.
-01  JOURNAL-LINE              PIC X(96).
+FD JOURNAL-FILE.
+01 JOURNAL-LINE              PIC X(96).
 
-FD  JOURNAL-CSV.
-01  CSV-LINE                  PIC X(160).
+FD JOURNAL-CSV.
+01 CSV-LINE                  PIC X(160).
 
 WORKING-STORAGE SECTION.
 COPY JOURNAL.
 
-01  CITE-STATUS               PIC XX VALUE "00".
-01  JRNL-STATUS               PIC XX VALUE "00".
-01  CSV-STATUS                PIC XX VALUE "00".
-01  WS-EOF                    PIC X VALUE "N".
-01  WS-HEADER-SKIP            PIC X VALUE "Y".
-01  WS-JE                     PIC 9(8) VALUE 0.
-01  WS-CITING                 PIC X(16).
-01  WS-CITED                  PIC X(16).
-01  WS-YEAR-X                 PIC X(8).
-01  WS-YEAR                   PIC 9(4) VALUE 2020.
-01  WS-DATE                   PIC 9(8).
-01  WS-PTR                    PIC 99.
-01  WS-FIELD                  PIC X(32).
-01  WS-FCOUNT                 PIC 99.
-01  WS-AMOUNT                 PIC 9(10) VALUE 100.
-01  WS-MEMO                   PIC X(38) VALUE "citation debt".
-01  WS-CSV-ID                 PIC 9(8).
+01 CITE-STATUS               PIC XX VALUE "00".
+01 JRNL-STATUS               PIC XX VALUE "00".
+01 CSV-STATUS                PIC XX VALUE "00".
+01 WS-EOF                    PIC X VALUE "N".
+01 WS-HEADER-SKIP            PIC X VALUE "Y".
+01 WS-JE                     PIC 9(8) VALUE 0.
+01 WS-CITING                 PIC X(16).
+01 WS-CITED                  PIC X(16).
+01 WS-YEAR-X                 PIC X(8).
+01 WS-YEAR                   PIC 9(4) VALUE 2020.
+01 WS-DATE                   PIC 9(8).
+01 WS-PTR                    PIC 99.
+01 WS-FIELD                  PIC X(32).
+01 WS-FCOUNT                 PIC 99.
+01 WS-AMOUNT                 PIC 9(10) VALUE 100.
+01 WS-MEMO                   PIC X(38) VALUE "citation debt".
+01 WS-CSV-ID                 PIC 9(8).
 
 PROCEDURE DIVISION.
-MAIN.
+MAIN-SECTION.
     OPEN INPUT CITE-FILE
     IF CITE-STATUS NOT = "00"
         DISPLAY "POST-CITATION: cannot open citations.csv status=" CITE-STATUS
@@ -88,7 +87,9 @@ PARSE-AND-POST.
     IF CITE-LINE = SPACES
         EXIT PARAGRAPH
     END-IF
-    MOVE SPACES TO WS-CITING WS-CITED WS-YEAR-X
+    MOVE SPACES TO WS-CITING
+    MOVE SPACES TO WS-CITED
+    MOVE SPACES TO WS-YEAR-X
     MOVE 1 TO WS-PTR
     MOVE 0 TO WS-FCOUNT
     PERFORM SPLIT-CSV 3 TIMES
@@ -114,6 +115,7 @@ PARSE-AND-POST.
     MOVE JOURNAL-REC TO JOURNAL-LINE
     WRITE JOURNAL-LINE
     MOVE WS-JE TO WS-CSV-ID
+    MOVE SPACES TO CSV-LINE
     STRING
         WS-CSV-ID DELIMITED BY SIZE
         "," DELIMITED BY SIZE
