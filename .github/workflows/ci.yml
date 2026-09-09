@@ -51,6 +51,27 @@ jobs:
           print("tiny v2 contract ok", "Δλ2", br["bridges"][0]["delta_lambda2"])
           PY
 
+      - name: Pipeline on arXiv citations (offline snapshot)
+        run: |
+          python3 scripts/fetch_citation_slice.py --out data/fixtures/arxiv-citations --offline
+          ./build/claimledger --data data/fixtures/arxiv-citations --out out-cite --k 4 --bridges 8
+          python3 scripts/verify_ledger.py --journal out-cite/ledger/journal.csv
+          test -s out-cite/timeline.json
+          python3 - << 'PY'
+          import json, csv
+          ids = [r["id"] for r in csv.DictReader(open("data/fixtures/arxiv-citations/papers.csv"))]
+          cites = list(csv.DictReader(open("data/fixtures/arxiv-citations/citations.csv")))
+          assert len(ids) == 80 and "1706.03762" in ids
+          assert not any(i.startswith("synth-") for i in ids)
+          assert len(cites) == 236
+          br = json.load(open("out-cite/bridges.json"))
+          assert "delta_lambda2" in br["bridges"][0]
+          meta = json.load(open("out-cite/graph_meta.json"))
+          assert meta["n"] == 80
+          assert meta["directed_citations"] == 236
+          print("arxiv-citations ok", "n", len(ids), "m", len(cites), "top", br["bridges"][0]["id"])
+          PY
+
       - name: Pipeline on arXiv slice (offline snapshot)
         run: |
           python3 scripts/fetch_arxiv_slice.py --out data/fixtures/arxiv-slice --offline

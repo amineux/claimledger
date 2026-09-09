@@ -16,8 +16,10 @@ and a static atlas under `docs/`.
 
 ## Non-goals
 
-- Not a crawler. The CLI never hits the network. `scripts/fetch_arxiv_slice.py`
-  is an optional offline-cached fetch of a few dozen public Atom records.
+- Not a crawler. The CLI never hits the network.
+  `scripts/fetch_citation_slice.py` and `scripts/fetch_arxiv_slice.py`
+  are optional offline-cached fetches of a small public snapshot
+  (bibliographic citations vs author/cross-list coupling).
 - Not a replacement for Semantic Scholar / OpenAlex.
 - Not an FPTAS for the \(k>1\) interdiction problem in PROBLEM.md. \(k=1\)
   is solved exactly on a heuristic shortlist.

@@ -4,6 +4,8 @@
 This is NOT a citation dump. The committed `citations.csv` is an
 author-coupling / cross-list category-coupling graph derived from the
 Atom feed. See data/SCHEMA.md and data/fixtures/arxiv-slice/SOURCE.md.
+For a real bibliography graph see scripts/fetch_citation_slice.py and
+data/fixtures/arxiv-citations/.
 
 arXiv API terms of use: https://info.arxiv.org/help/api/tou.html
 - Identify the User-Agent.

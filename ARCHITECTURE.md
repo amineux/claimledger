@@ -110,9 +110,10 @@ python3 scripts/verify_ledger.py --journal out/ledger/journal.csv
 3. Every journal line is a balanced pair (debit paper ≠ credit paper,
    amount > 0). \(\sum \mathrm{DR} = \sum \mathrm{CR}\).
 4. Atlas JSON is a pure function of the corpus + `--k/--clusters/--bridges/--seed/--loo-candidates`.
-5. Default fixture ids match `synth-[0-9]{4}`. The optional
-   `data/fixtures/arxiv-slice/` uses real public arXiv ids from a committed
-   API snapshot; its edges are coupling, not citations.
+5. Default fixture ids match `synth-[0-9]{4}`. Optional real-id snapshots:
+   `data/fixtures/arxiv-citations/` is a bibliographic citation graph;
+   `data/fixtures/arxiv-slice/` uses real public arXiv ids whose edges
+   are author/cross-list coupling, not citations.
 
 ## Why COBOL
 

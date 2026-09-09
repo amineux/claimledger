@@ -66,6 +66,7 @@ if(BUILD_TESTING)
       tests/test_ledger.cpp
       tests/test_csv.cpp
       tests/test_timeline.cpp
+      tests/test_arxiv_citations.cpp
     )
     target_link_libraries(claimledger_tests PRIVATE claimledger_core GTest::gtest_main)
     target_compile_definitions(claimledger_tests PRIVATE

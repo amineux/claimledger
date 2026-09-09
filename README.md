@@ -24,19 +24,26 @@ contracts, [ARCHITECTURE.md](ARCHITECTURE.md) for the build graph.
 ## What you get on clone
 
 ```
-data/fixtures/              10-block synthetic citation corpus (~900 papers)
-data/fixtures/tiny/         10-node planted-cut fixture (liaison synth-0007)
-data/fixtures/arxiv-slice/  real public arXiv metadata + coupling graph
-src/ include/               C++20 core (no Eigen required)
-cobol/                      POST-CITATION / TRIAL-BALANCE / REPORT + COPY books
-docs/                       Pages atlas (vanilla JS, checked-in JSON)
-scripts/                    fixture generator, arXiv fetch, ledger verifier
+data/fixtures/                 10-block synthetic citation corpus (~900 papers)
+data/fixtures/tiny/            10-node planted-cut fixture (liaison synth-0007)
+data/fixtures/arxiv-citations/ real arXiv metadata + bibliographic citation graph
+data/fixtures/arxiv-slice/     real arXiv metadata + author/cross-list coupling
+src/ include/                  C++20 core (no Eigen required)
+cobol/                         POST-CITATION / TRIAL-BALANCE / REPORT + COPY books
+docs/                          Pages atlas (vanilla JS, checked-in JSON)
+scripts/                       fixture generator, arXiv / S2 fetch, ledger verifier
 ```
 
-Default demo ids are `synth-NNNN`. The arXiv slice uses real ids
-(`1706.03762`, …) fetched via the public API; its edges are an
-**author / cross-list coupling graph**, not citations. See
-[data/SCHEMA.md](data/SCHEMA.md).
+Default demo ids are `synth-NNNN`. Two optional real-id snapshots are
+committed; they are not interchangeable:
+
+- `arxiv-citations` — real bibliography. Every id was returned by the
+  arXiv Atom API; every directed edge is a Semantic Scholar
+  `references.externalIds.ArXiv` row induced on that closed set.
+- `arxiv-slice` — real metadata, but its `citations.csv` is an
+  **author / cross-list coupling graph**, not a bibliography.
+
+See [data/SCHEMA.md](data/SCHEMA.md).
 
 ## Build and test
 
@@ -83,9 +90,10 @@ Artifacts:
 | `out/ledger/journal.csv` | canonical journal |
 | `out/ledger/journal.dat` | 96-byte COBOL records |
 
-The same command on the public slice:
+The same command on either public snapshot:
 
 ```bash
+./build/claimledger --data data/fixtures/arxiv-citations --out out-cite
 ./build/claimledger --data data/fixtures/arxiv-slice --out out-arxiv
 ```
 
@@ -122,12 +130,17 @@ build C++ on Ubuntu and deploy the site. No repository secrets required.
 
 ```bash
 python3 scripts/generate_fixtures.py --out data/fixtures --per-block 90 --bridges 28
-python3 scripts/fetch_arxiv_slice.py --out data/fixtures/arxiv-slice          # hits arXiv; 3.1s between requests
-python3 scripts/fetch_arxiv_slice.py --out data/fixtures/arxiv-slice --offline # CI path
+python3 scripts/fetch_citation_slice.py --out data/fixtures/arxiv-citations          # arXiv + S2; 3.1s between requests
+python3 scripts/fetch_citation_slice.py --out data/fixtures/arxiv-citations --offline
+python3 scripts/fetch_arxiv_slice.py --out data/fixtures/arxiv-slice                  # hits arXiv; 3.1s between requests
+python3 scripts/fetch_arxiv_slice.py --out data/fixtures/arxiv-slice --offline        # CI path
 ```
 
-Synthetic generator seed `20260903`. The arXiv script respects
-[arXiv API terms](https://info.arxiv.org/help/api/tou.html).
+Synthetic generator seed `20260903`. The fetch scripts respect
+[arXiv API terms](https://info.arxiv.org/help/api/tou.html) and the
+[Semantic Scholar API license](https://www.semanticscholar.org/product/api/license).
+No API key is required. `--offline` validates the committed snapshot;
+`--from-cache` rebuilds CSVs from cached Atom/JSON.
 
 ## The hard problem, in one paragraph
 
