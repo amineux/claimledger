@@ -1,0 +1,81 @@
+id,title,year,category,field,authors
+0706.4138,Guaranteed Minimum-Rank Solutions of Linear Matrix Equations via Nuclear Norm Minimization,2007,math.OC,math,Benjamin Recht; Maryam Fazel; Pablo A. Parrilo
+0805.4471,Exact Matrix Completion via Convex Optimization,2008,cs.IT,cs,Emmanuel J. Candes; Benjamin Recht
+0810.3286,A Singular Value Thresholding Algorithm for Matrix Completion,2008,math.OC,math,Jian-Feng Cai; Emmanuel J. Candes; Zuowei Shen
+1312.6114,Auto-Encoding Variational Bayes,2013,stat.ML,stat,Diederik P Kingma; Max Welling
+1401.4082,Stochastic Backpropagation and Approximate Inference in Deep Generative Models,2014,stat.ML,stat,Danilo Jimenez Rezende; Shakir Mohamed; Daan Wierstra
+1406.1078,Learning Phrase Representations using RNN Encoder-Decoder for Statistical Machine Translation,2014,cs.CL,cs,Kyunghyun Cho; Bart van Merrienboer; Caglar Gulcehre; Dzmitry Bahdanau; Fethi Bougares; Holger Schwenk; Yoshua Bengio
+1406.2661,Generative Adversarial Networks,2014,stat.ML,stat,Ian J. Goodfellow; Jean Pouget-Abadie; Mehdi Mirza; Bing Xu; David Warde-Farley; Sherjil Ozair; Aaron Courville; Yoshua Bengio
+1409.0473,Neural Machine Translation by Jointly Learning to Align and Translate,2014,cs.CL,cs,Dzmitry Bahdanau; Kyunghyun Cho; Yoshua Bengio
+1409.1556,Very Deep Convolutional Networks for Large-Scale Image Recognition,2014,cs.CV,cs,Karen Simonyan; Andrew Zisserman
+1409.3215,Sequence to Sequence Learning with Neural Networks,2014,cs.CL,cs,Ilya Sutskever; Oriol Vinyals; Quoc V. Le
+1409.4842,Going Deeper with Convolutions,2014,cs.CV,cs,Christian Szegedy; Wei Liu; Yangqing Jia; Pierre Sermanet; Scott Reed; Dragomir Anguelov; Dumitru Erhan; Vincent Vanhoucke; Andrew Rabinovich
+1411.4028,A Quantum Approximate Optimization Algorithm,2014,quant-ph,physics,Edward Farhi; Jeffrey Goldstone; Sam Gutmann
+1412.6980,Adam: A Method for Stochastic Optimization,2014,cs.LG,cs,Diederik P. Kingma; Jimmy Ba
+1502.03167,Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift,2015,cs.LG,cs,Sergey Ioffe; Christian Szegedy
+1505.05424,Weight Uncertainty in Neural Networks,2015,stat.ML,stat,Charles Blundell; Julien Cornebise; Koray Kavukcuoglu; Daan Wierstra
+1505.05770,Variational Inference with Normalizing Flows,2015,stat.ML,stat,Danilo Jimenez Rezende; Shakir Mohamed
+1506.01497,Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks,2015,cs.CV,cs,Shaoqing Ren; Kaiming He; Ross Girshick; Jian Sun
+1506.02142,Dropout as a Bayesian Approximation: Representing Model Uncertainty in Deep Learning,2015,stat.ML,stat,Yarin Gal; Zoubin Ghahramani
+1506.02557,Variational Dropout and the Local Reparameterization Trick,2015,stat.ML,stat,Diederik P. Kingma; Tim Salimans; Max Welling
+1506.02640,"You Only Look Once: Unified, Real-Time Object Detection",2015,cs.CV,cs,Joseph Redmon; Santosh Divvala; Ross Girshick; Ali Farhadi
+1508.04025,Effective Approaches to Attention-based Neural Machine Translation,2015,cs.CL,cs,Minh-Thang Luong; Hieu Pham; Christopher D. Manning
+1508.07909,Neural Machine Translation of Rare Words with Subword Units,2015,cs.CL,cs,Rico Sennrich; Barry Haddow; Alexandra Birch
+1509.00519,Importance Weighted Autoencoders,2015,cs.LG,cs,Yuri Burda; Roger Grosse; Ruslan Salakhutdinov
+1511.06434,Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks,2015,cs.LG,cs,Alec Radford; Luke Metz; Soumith Chintala
+1512.00567,Rethinking the Inception Architecture for Computer Vision,2015,cs.CV,cs,Christian Szegedy; Vincent Vanhoucke; Sergey Ioffe; Jonathon Shlens; Zbigniew Wojna
+1512.03385,Deep Residual Learning for Image Recognition,2015,cs.CV,cs,Kaiming He; Xiangyu Zhang; Shaoqing Ren; Jian Sun
+1603.05027,Identity Mappings in Deep Residual Networks,2016,cs.CV,cs,Kaiming He; Xiangyu Zhang; Shaoqing Ren; Jian Sun
+1606.08415,Gaussian Error Linear Units (GELUs),2016,cs.LG,cs,Dan Hendrycks; Kevin Gimpel
+1607.06450,Layer Normalization,2016,stat.ML,stat,Jimmy Lei Ba; Jamie Ryan Kiros; Geoffrey E. Hinton
+1608.03983,SGDR: Stochastic Gradient Descent with Warm Restarts,2016,cs.LG,cs,Ilya Loshchilov; Frank Hutter
+1608.06993,Densely Connected Convolutional Networks,2016,cs.CV,cs,Gao Huang; Zhuang Liu; Laurens van der Maaten; Kilian Q. Weinberger
+1609.08144,Google's Neural Machine Translation System: Bridging the Gap between Human and Machine Translation,2016,cs.CL,cs,Yonghui Wu; Mike Schuster; Zhifeng Chen; Quoc V. Le; Mohammad Norouzi; Wolfgang Macherey; Maxim Krikun; Yuan Cao; Qin Gao; Klaus Macherey; Jeff Klingner; Apurva Shah; Melvin Johnson; Xiaobing Liu; Łukasz Kaiser; Stephan Gouws; Yoshikiyo Kato; Taku Kudo; Hideto Kazawa; Keith Stevens; George Kurian; Nishant Patil; Wei Wang; Cliff Young; Jason Smith; Jason Riesa; Alex Rudnick; Oriol Vinyals; Greg Corrado; Macduff Hughes; Jeffrey Dean
+1611.03530,Understanding deep learning requires rethinking generalization,2016,cs.LG,cs,Chiyuan Zhang; Samy Bengio; Moritz Hardt; Benjamin Recht; Oriol Vinyals
+1611.05431,Aggregated Residual Transformations for Deep Neural Networks,2016,cs.CV,cs,Saining Xie; Ross Girshick; Piotr Dollár; Zhuowen Tu; Kaiming He
+1612.01474,Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles,2016,stat.ML,stat,Balaji Lakshminarayanan; Alexander Pritzel; Charles Blundell
+1612.03144,Feature Pyramid Networks for Object Detection,2016,cs.CV,cs,Tsung-Yi Lin; Piotr Dollár; Ross Girshick; Kaiming He; Bharath Hariharan; Serge Belongie
+1701.07875,Wasserstein GAN,2017,stat.ML,stat,Martin Arjovsky; Soumith Chintala; Léon Bottou
+1703.03906,Massive Exploration of Neural Machine Translation Architectures,2017,cs.CL,cs,Denny Britz; Anna Goldie; Minh-Thang Luong; Quoc Le
+1704.00028,Improved Training of Wasserstein GANs,2017,cs.LG,cs,Ishaan Gulrajani; Faruk Ahmed; Martin Arjovsky; Vincent Dumoulin; Aaron Courville
+1704.02916,Reinterpreting Importance-Weighted Autoencoders,2017,stat.ML,stat,Chris Cremer; Quaid Morris; David Duvenaud
+1704.05018,Hardware-efficient Variational Quantum Eigensolver for Small Molecules and Quantum Magnets,2017,quant-ph,physics,Abhinav Kandala; Antonio Mezzacapo; Kristan Temme; Maika Takita; Markus Brink; Jerry M. Chow; Jay M. Gambetta
+1705.03122,Convolutional Sequence to Sequence Learning,2017,cs.CL,cs,Jonas Gehring; Michael Auli; David Grangier; Denis Yarats; Yann N. Dauphin
+1706.03762,Attention Is All You Need,2017,cs.CL,cs,Ashish Vaswani; Noam Shazeer; Niki Parmar; Jakob Uszkoreit; Llion Jones; Aidan N. Gomez; Lukasz Kaiser; Illia Polosukhin
+1711.00464,Fixing a Broken ELBO,2017,cs.LG,cs,Alexander A. Alemi; Ben Poole; Ian Fischer; Joshua V. Dillon; Rif A. Saurous; Kevin Murphy
+1711.05101,Decoupled Weight Decay Regularization,2017,cs.LG,cs,Ilya Loshchilov; Frank Hutter
+1801.00862,Quantum Computing in the NISQ era and beyond,2018,quant-ph,physics,John Preskill
+1802.05365,Deep contextualized word representations,2018,cs.CL,cs,Matthew E. Peters; Mark Neumann; Mohit Iyyer; Matt Gardner; Christopher Clark; Kenton Lee; Luke Zettlemoyer
+1802.05957,Spectral Normalization for Generative Adversarial Networks,2018,cs.LG,cs,Takeru Miyato; Toshiki Kataoka; Masanori Koyama; Yuichi Yoshida
+1803.00745,Quantum Circuit Learning,2018,quant-ph,physics,Kosuke Mitarai; Makoto Negoro; Masahiro Kitagawa; Keisuke Fujii
+1803.03635,"The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",2018,cs.LG,cs,Jonathan Frankle; Michael Carbin
+1803.11173,Barren plateaus in quantum neural network training landscapes,2018,quant-ph,physics,Jarrod R. McClean; Sergio Boixo; Vadim N. Smelyanskiy; Ryan Babbush; Hartmut Neven
+1804.07461,GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding,2018,cs.CL,cs,Alex Wang; Amanpreet Singh; Julian Michael; Felix Hill; Omer Levy; Samuel R. Bowman
+1804.11326,Supervised learning with quantum enhanced feature spaces,2018,quant-ph,physics,Vojtech Havlicek; Antonio D. Córcoles; Kristan Temme; Aram W. Harrow; Abhinav Kandala; Jerry M. Chow; Jay M. Gambetta
+1806.07366,Neural Ordinary Differential Equations,2018,cs.LG,cs,Ricky T. Q. Chen; Yulia Rubanova; Jesse Bettencourt; David Duvenaud
+1806.07572,Neural Tangent Kernel: Convergence and Generalization in Neural Networks,2018,cs.LG,cs,Arthur Jacot; Franck Gabriel; Clément Hongler
+1808.03570,Densely Connected Convolutional Networks for Speech Recognition,2018,cs.CL,cs,Chia Yu Li; Ngoc Thang Vu
+1809.09795,Deep contextualized word representations for detecting sarcasm and irony,2018,cs.CL,cs,Suzana Ilić; Edison Marrese-Taylor; Jorge A. Balazs; Yutaka Matsuo
+1810.04805,BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding,2018,cs.CL,cs,Jacob Devlin; Ming-Wei Chang; Kenton Lee; Kristina Toutanova
+1901.02860,Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context,2019,cs.LG,cs,Zihang Dai; Zhilin Yang; Yiming Yang; Jaime Carbonell; Quoc V. Le; Ruslan Salakhutdinov
+1902.06720,Wide Neural Networks of Any Depth Evolve as Linear Models Under Gradient Descent,2019,stat.ML,stat,Jaehoon Lee; Lechao Xiao; Samuel S. Schoenholz; Yasaman Bahri; Roman Novak; Jascha Sohl-Dickstein; Jeffrey Pennington
+1904.09237,On the Convergence of Adam and Beyond,2019,cs.LG,cs,Sashank J. Reddi; Satyen Kale; Sanjiv Kumar
+1904.12070,Optimal Bayesian Estimation for Random Dot Product Graphs,2019,math.ST,math,Fangzheng Xie; Yanxun Xu
+1904.12775,Exact Testing of Many Moment Inequalities Against Multiple Violations,2019,math.ST,math,Nick Koning; Paul Bekker
+1905.00206,On the excursion area of perturbed Gaussian fields,2019,math.PR,math,Elena Di Bernardino; Anne Estrade; Maurizia Rossi
+1905.02618,Moderate deviations in a class of stable but nearly unstable processes,2019,math.ST,math,Frédéric Proïa
+1905.10876,Expressibility and entangling capability of parameterized quantum circuits for hybrid quantum-classical algorithms,2019,quant-ph,physics,Sukin Sim; Peter D. Johnson; Alan Aspuru-Guzik
+1906.01513,Custom Edge-Element FEM Solver and its Application to Eddy-Current Simulation of Realistic 2M-Element Human Brain Phantom,2019,physics.med-ph,physics,Wuliang Yin; Mingyang Lu; Jiawei Tang; Qian Zhao; Zhijie Zhang; Kai Li; Yan Han; Anthony Peyton
+1906.08237,XLNet: Generalized Autoregressive Pretraining for Language Understanding,2019,cs.CL,cs,Zhilin Yang; Zihang Dai; Yiming Yang; Jaime Carbonell; Ruslan Salakhutdinov; Quoc V. Le
+1907.10477,On importance-weighted autoencoders,2019,stat.ML,stat,Axel Finke; Alexandre H. Thiery
+1907.11692,RoBERTa: A Robustly Optimized BERT Pretraining Approach,2019,cs.CL,cs,Yinhan Liu; Myle Ott; Naman Goyal; Jingfei Du; Mandar Joshi; Danqi Chen; Omer Levy; Mike Lewis; Luke Zettlemoyer; Veselin Stoyanov
+2005.11454,"An Automated, Cost-Effective Optical System for Accelerated Anti-microbial Susceptibility Testing (AST) using Deep Learning",2020,q-bio.QM,qbio,Calvin Brown; Derek Tseng; Paige M. K. Larkin; Susan Realegeno; Leanne Mortimer; Arjun Subramonian; Dino Di Carlo; Omai B. Garner; Aydogan Ozcan
+2005.14165,Language Models are Few-Shot Learners,2020,cs.CL,cs,Tom B. Brown; Benjamin Mann; Nick Ryder; Melanie Subbiah; Jared Kaplan; Prafulla Dhariwal; Arvind Neelakantan; Pranav Shyam; Girish Sastry; Amanda Askell; Sandhini Agarwal; Ariel Herbert-Voss; Gretchen Krueger; Tom Henighan; Rewon Child; Aditya Ramesh; Daniel M. Ziegler; Jeffrey Wu; Clemens Winter; Christopher Hesse; Mark Chen; Eric Sigler; Mateusz Litwin; Scott Gray; Benjamin Chess; Jack Clark; Christopher Berner; Sam McCandlish; Alec Radford; Ilya Sutskever; Dario Amodei
+2006.04566,A Public Website for the Automated Assessment and Validation of SARS-CoV-2 Diagnostic PCR Assays,2020,q-bio.GN,qbio,Po-E Li; Adán Myers y Gutiérrez; Karen Davenport; Mark Flynn; Bin Hu; Chien-Chi Lo; Elais Player Jackson; Migun Shakya; Yan Xu; Jason Gans; Patrick S. G. Chain
+2012.10103,"A proposal for Heisenberg uncertainty principle and STUR for curved backgrounds: an application to white dwarf, neutron stars and black holes",2020,gr-qc,physics,Stefano Viaggiu
+2012.10227,"Space, Matter and Interactions in a Quantum Early Universe. Part I : Kac-Moody and Borcherds Algebras",2020,gr-qc,physics,Piero Truini; Alessio Marrani; Michael Rios; Klee Irwin
+2012.11009,Convolutional neural networks for long-time dissipative quantum dynamics,2020,physics.comp-ph,physics,Luis E. Herrera Rodriguez; Alexei A. Kananenka
+2012.11196,On symmetry breaking in the B-L extended spectral Standard Model,2020,hep-ph,physics,Fabien Besnard
+2012.11536,Quantum geometric maps and their properties,2020,gr-qc,physics,Marco Finocchiaro; Yoobin Jeong; Daniele Oriti
+2112.07461,Analog Quantum Approximate Optimization Algorithm,2021,quant-ph,physics,Nancy Barraza; Gabriel Alvarado Barrios; Jie Peng; Lucas Lamata; Enrique Solano; Francisco Albarrán-Arriagada
+math/0409186,Robust Uncertainty Principles: Exact Signal Reconstruction from Highly Incomplete Frequency Information,2004,math.NA,math,Emmanuel Candes; Justin Romberg; Terence Tao

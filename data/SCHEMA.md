@@ -3,8 +3,15 @@
 The **default** fixture identifiers are synthetic (`synth-NNNN`). They are
 not arXiv ids and do not name real papers.
 
-A second, optional fixture `data/fixtures/arxiv-slice/` holds **real
-public arXiv metadata** (see below). It is not the Pages default.
+Two optional real-id fixtures live beside the synthetic default. They
+are not the Pages default and they are **not the same graph**:
+
+- `data/fixtures/arxiv-citations/` — real arXiv metadata and a **real
+  bibliographic citation graph** (Semantic Scholar references induced
+  on a closed 80-id set).
+- `data/fixtures/arxiv-slice/` — real arXiv metadata and an
+  **author / cross-list coupling graph**. Its `citations.csv` is not a
+  bibliography.
 
 ## `papers.csv`
 
@@ -23,7 +30,7 @@ public arXiv metadata** (see below). It is not the Pages default.
 |--------|--------|-----------------------------------------------|
 | citing | string | Paper id that incurs intellectual debt.       |
 | cited  | string | Paper id that receives intellectual credit.   |
-| year   | int    | Year of the citing paper (`citing.year >= cited.year`). |
+| year   | int    | Year of the citing paper. Default synthetic fixtures satisfy `citing.year >= cited.year`. The bibliographic `arxiv-citations` snapshot preserves real latest-version S2 edges even when the cited paper's original arXiv published year is later. |
 
 Self-loops and dangling ids are dropped by the CSR loader.
 
@@ -81,7 +88,33 @@ Version field is `2`.
 by unit tests. The liaison id is `synth-0007`. Leave-one-out on this graph
 is exhaustive (n < 64); the liaison has the largest `delta_lambda2`.
 
-## arXiv slice (real public metadata)
+## arXiv citations (real bibliography graph)
+
+`data/fixtures/arxiv-citations/` is a committed snapshot from
+`scripts/fetch_citation_slice.py`. Paper rows come from the
+[arXiv Atom API](https://info.arxiv.org/help/api/user-manual.html)
+(`id_list` of 80 known records). Directed edges come from the
+[Semantic Scholar Graph API](https://api.semanticscholar.org/api-docs/graph)
+`POST /graph/v1/paper/batch` field `references.externalIds.ArXiv`,
+induced on that closed set.
+
+An id appears only if arXiv returned it. An edge appears only if S2
+listed that arXiv id as a reference of another paper in the set.
+Author overlap and category cross-lists are never turned into edges.
+CI runs `--offline` and never hits the network.
+
+Column names match the pipeline (`papers.csv`, `citations.csv`,
+`categories.csv`). Extra files `nodes.csv`, `edges.csv`,
+`ledger_edges.txt`, `manifest.json`, `SOURCE.md`, and `SCHEMA.md`
+record the dense index map, the undirected weighted view, the
+1.00-per-citation ledger list, and provenance. See
+`data/fixtures/arxiv-citations/SCHEMA.md`.
+
+Latest-version S2 bibliographies can cite a paper whose original arXiv
+published year is later. Those real edges are preserved; `year` stays
+the citing paper's published year.
+
+## arXiv slice (real public metadata, coupling graph)
 
 `data/fixtures/arxiv-slice/` is a committed snapshot from
 `scripts/fetch_arxiv_slice.py`. It queries the
@@ -107,5 +140,6 @@ Each pair is emitted once, lexicographic order,
 read that as coupling mass, not a bibliographic citation. Details:
 `data/fixtures/arxiv-slice/SOURCE.md`.
 
-Do not treat this fixture as a citation graph and do not impersonate
-papers the API did not return.
+Do not treat `arxiv-slice` as a citation graph. For real bibliography
+edges use `data/fixtures/arxiv-citations/`. Do not impersonate papers
+the API did not return.
